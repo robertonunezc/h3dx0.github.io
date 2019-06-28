@@ -1,0 +1,44 @@
+.fa {
+    padding: 10px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+}
+.fa-facebook {
+  border: solid 1px #3B5998;
+  color: #3B5998;
+}
+
+.fa-facebook:hover{
+  background: #3B5998;
+  color: #fff;
+}
+/* Twitter */
+.fa-twitter {
+    border: solid 1px #55ACEE;
+    color: #55ACEE;
+}
+.fa-twitter:hover{
+  background: #55ACEE;
+  color: #fff;
+}
+
+.fa-linkedin {
+  border: solid 1px #007bb5;
+  color: #007bb5;
+}
+
+.fa-linkedin:hover {
+  background: #007bb5;
+  color: #fff;
+}
+.fa-youtube {
+  border: solid 1px #bb0000;
+  color: #bb0000;
+}
+
+.fa-youtube:hover {
+  background: #bb0000;
+  color: #fff;
+}
