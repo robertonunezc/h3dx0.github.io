@@ -1,0 +1,33 @@
+---
+layout: base_blog
+title: Programador Web, Ingeniero en Sistemas. Roberto Nuñez Corrales
+---
+<section class="container-articulos">
+    <article class="detalle-articulo card">
+        <h2 class="text-verde">{{page.title}}</h2>
+        <hr/>
+        <aside class="article-data flex">
+            <span class="fs12 mr15">
+                <i class="fa fa-calendar-plus-o text-verde" aria-hidden="true"></i>
+                {{ page.date | date: "%B %e, %Y" }}
+            </span>
+            <!-- 
+                TODO revisar como hacer esto dinamico 
+                <ul class="tags-list">
+                <li class="tag-item mr5">
+                    <a href="">
+                        <em> javascript</em>
+                    </a>
+                </li>
+                <li class="tag-item">
+                    <a href="">
+                        <em>javascript</em>
+                    </a>
+                </li>
+            </ul> -->
+        </aside>
+        <aside>
+            {{ content }}
+        </aside>
+    </article>
+</section>

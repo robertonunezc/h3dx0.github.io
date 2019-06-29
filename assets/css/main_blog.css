@@ -148,7 +148,7 @@ main{
 }
 .article-data{
     align-items: baseline;
-    justify-content: center;
+    justify-content: flex-start;
     margin-bottom: 10px
 }
 .article-data .fa{
