@@ -1,0 +1,10 @@
+.colored-logo:hover{
+  animation-name: rotate-text;
+  animation-duration: 2s;
+      animation-iteration-count: infinite;
+}
+@keyframes rotate-text {
+  0%   {background-color: #042C4C;}
+  50% {background-color: #0b8cef;}
+ 100%  {background-color: #064677;}
+}

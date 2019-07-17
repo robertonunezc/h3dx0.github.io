@@ -1,0 +1,249 @@
+<!doctype html>
+<html class="no-js" lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Flexbox, conceptos básicos (flex-direction)</title>
+    <meta name="description" content="Artículos sobre desarrollo web, python, django, html, css y todo lo que voy aprendiendo sobre la web en mi día a día">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="manifest" href="site.webmanifest">
+    <link rel="apple-touch-icon" href="icon.png">
+    <!-- Place favicon.ico in the root directory -->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/assets/css/normalize.css">
+    <link rel="stylesheet" href="/assets/css/animate.css">
+    <link rel="stylesheet" href="/assets/css/main_blog.css">
+    <link rel="stylesheet" href="/assets/css/animations.css">
+    <link rel="stylesheet" href="/assets/css/utils.css">
+    <link rel="stylesheet" href="/assets/css/icons.css">
+    <link rel="stylesheet" href="/assets/css/tech-fonts.css">
+    <!-- Begin Jekyll SEO tag v2.6.1 -->
+<title>Flexbox, conceptos básicos (flex-direction) | Roberto Nuñez Corrales Blog de desarrollo web, Django, HTML, CSS ;VUEJS</title>
+<meta name="generator" content="Jekyll v3.8.5" />
+<meta property="og:title" content="Flexbox, conceptos básicos (flex-direction)" />
+<meta name="author" content="robert" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Continuando con la serie de este artículo sobre Flexbox estaremos viendo los conceptos principales que debemos tener en cuenta a la hora de maquetar nuestros layouts con esta técnica en especial la propiedad flex-direction y los axis. Sino lo leíste  aquí hay una introducción para comenzar a usar esta técnica de forma muy fácil." />
+<meta property="og:description" content="Continuando con la serie de este artículo sobre Flexbox estaremos viendo los conceptos principales que debemos tener en cuenta a la hora de maquetar nuestros layouts con esta técnica en especial la propiedad flex-direction y los axis. Sino lo leíste  aquí hay una introducción para comenzar a usar esta técnica de forma muy fácil." />
+<link rel="canonical" href="http://localhost:4000/conceptos-basicos-en-flexbox/" />
+<meta property="og:url" content="http://localhost:4000/conceptos-basicos-en-flexbox/" />
+<meta property="og:site_name" content="Roberto Nuñez Corrales Blog de desarrollo web, Django, HTML, CSS ;VUEJS" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2018-02-12T22:10:54-06:00" />
+<script type="application/ld+json">
+{"description":"Continuando con la serie de este artículo sobre Flexbox estaremos viendo los conceptos principales que debemos tener en cuenta a la hora de maquetar nuestros layouts con esta técnica en especial la propiedad flex-direction y los axis. Sino lo leíste  aquí hay una introducción para comenzar a usar esta técnica de forma muy fácil.","@type":"BlogPosting","headline":"Flexbox, conceptos básicos (flex-direction)","dateModified":"2018-02-12T22:10:54-06:00","datePublished":"2018-02-12T22:10:54-06:00","url":"http://localhost:4000/conceptos-basicos-en-flexbox/","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/conceptos-basicos-en-flexbox/"},"author":{"@type":"Person","name":"robert"},"@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+<body>
+    <header>
+        <div class="container">
+            <a class="link-logo-header text-verde" href="/">Roberto <span class="colored-logo">NUÑEZ</span></a>
+            <nav class="nav-top flr">
+                <ul>
+                    <li>
+                        <a href="/">Inicio</a>
+                    </li>                    
+                    <li>
+                        <a href="quien-soy.html">Quien soy</a>
+                    </li>
+                    <li>
+                        <a href="quien-soy.html#services">Servicios</a>
+                    </li>
+                    <li>
+                        <a href="quien-soy.html#portafolio">Donde he trabajado</a>
+                    </li>
+                    <li>
+                        <a href="quien-soy.html#experiencia">Experiencia</a>
+                    </li>
+                    <li>
+                        <a href="quien-soy.html" style="color:white" class="bold bg-verde-oscuro">Contáctame</a>
+                    </li>
+                    <li class="clearfix"></li>
+                </ul>
+            </nav>
+            <div class="clearfix">
+            </div>
+        </div>
+    </header>
+    <div class="flex direction-column container">
+        <section id="personal-info">
+            <h1 class="text-verde text-center">Mi Blog Personal</h4>
+                <h4 class="text-center">
+                    <em>Aquí podrás encontrar todo lo que he voy aprendiendo en mis proyectos como desarrollador web.</em>
+                </h2>
+            </section>
+            <main class="flex container">
+                <section class="container-articulos">
+    <article class="detalle-articulo card">
+        <h2 class="text-verde">Flexbox, conceptos básicos (flex-direction)</h2>
+        <hr/>
+        <aside class="article-data flex">
+            <span class="fs12 mr15">
+                <i class="fa fa-calendar-plus-o text-verde" aria-hidden="true"></i>
+                February 12, 2018
+            </span>
+            <!-- 
+                TODO revisar como hacer esto dinamico 
+                <ul class="tags-list">
+                <li class="tag-item mr5">
+                    <a href="">
+                        <em> javascript</em>
+                    </a>
+                </li>
+                <li class="tag-item">
+                    <a href="">
+                        <em>javascript</em>
+                    </a>
+                </li>
+            </ul> -->
+        </aside>
+        <aside>
+            <p>Continuando con la serie de este artículo sobre <strong>Flexbox</strong> estaremos viendo los conceptos principales que debemos tener en cuenta a la hora de maquetar nuestros layouts con esta técnica en especial la propiedad <strong>flex-direction</strong> y los axis. Sino lo leíste  <a href="http://localhost/~h3dx0/wordpress/comenzando-con-flexbox-css/">aquí hay una introducción</a> para comenzar a usar esta técnica de forma muy fácil.</p>
+
+<h2 id="los-dos-ejes-o-axis-de-flexbox">Los dos ejes o axis de Flexbox:</h2>
+
+<p>Para comenzar a trabajar con flexbox se debe tener en cuenta que para acomodar los elementos se hace en base a los  2 ejes o axis que existen, el <strong>main axis</strong> y el <strong>cross axis .</strong> Siendo el main axis la principal y que es definida por la propiedad <strong>flex-direction.</strong></p>
+
+<figure id="attachment_57" aria-describedby="caption-attachment-57" style="width: 501px" class="wp-caption alignnone"><img class="wp-image-57 size-full" title="main axis" src="http://localhost/~h3dx0/wordpress/wp-content/uploads/2018/02/main_axis.png" alt="Flex-direction main axis" width="501" height="77" srcset="http://localhost/~h3dx0/wordpress/wp-content/uploads/2018/02/main_axis.png 501w, http://localhost/~h3dx0/wordpress/wp-content/uploads/2018/02/main_axis-300x46.png 300w" sizes="(max-width: 501px) 100vw, 501px" /><figcaption id="caption-attachment-57" class="wp-caption-text">main axis</figcaption></figure>
+
+<p>Al definir la propiedad <strong>flex-direction: row,</strong> estamos diciéndole a nuestro contenedor que acomode los elementos uno al lado del otro, es decir nuestro <strong>main-axis será ubicado horizontalmente</strong> lo cual debemos tener en cuenta porque muchas <strong>otras propiedades dependen de la definición de los axis.</strong></p>
+
+<p>Este es el contenedor de los elementos del menú.</p>
+
+<pre class="lang:default decode:true" title="flex-direction html">&lt;nav&gt;
+  &lt;ul&gt;
+    &lt;li&gt;&lt;a href="#"&gt;Inicio&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="#"&gt;Quienes somos&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="#"&gt;Servicios&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="#"&gt;Contacto&lt;/a&gt;&lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/nav&gt;</pre>
+
+<p>CSS aplicado.</p>
+
+<pre class="lang:css decode:true" title="css">nav{
+  background: #008492;  
+}
+
+ul{
+  display:flex;
+  flex-direction:row;
+
+}
+
+ul &gt; li {
+    margin:10px;
+}
+ul &gt; li &gt; a{
+  color:#fff;
+  text-decoration: none;
+}
+li {
+  list-style:none;
+}</pre>
+
+<p>Si ya leyeron el <a href="http://localhost/~h3dx0/wordpress/comenzando-con-flexbox-css/">artículo anterior</a> pueden notar que no hay cambios en cuanto al resultado que esperamos, en este caso cada elemento del menú se coloca uno al lado del otro. Esto sucede pues al definir en el <strong>ul la propiedad display:flex,</strong> el comportamiento de los elementos hijos por <strong>default es flex-direction:row,</strong> por lo que no es necesario definir la propiedad si queremos que su comportamiento sea el establecido.</p>
+
+<h2 id="valores-de-aceptados-por-flex-direction">Valores de aceptados por flex-direction</h2>
+
+<p>Para manipular los axis de nuestro contenedor  flex-direction acepta los siguientes valores:</p>
+
+<ul>
+  <li><code class="highlighter-rouge">row</code></li>
+  <li><code class="highlighter-rouge">row-reverse</code></li>
+  <li><code class="highlighter-rouge">column</code></li>
+  <li><code class="highlighter-rouge">column-reverse</code>``</li>
+</ul>
+
+<p class="">
+  Así se vería nuestro menú aplicando los distintos valores a esta propiedad
+</p>
+
+<h3 id="row-reverse"> row-reverse</h3>
+
+<p><img class="size-full wp-image-66" src="http://localhost/~h3dx0/wordpress/wp-content/uploads/2018/02/Firefox_Screenshot_2018-02-14T03-28-45.768Z.png" alt="flex-direction:row-reverse" width="808" height="62" srcset="http://localhost/~h3dx0/wordpress/wp-content/uploads/2018/02/Firefox_Screenshot_2018-02-14T03-28-45.768Z.png 808w, http://localhost/~h3dx0/wordpress/wp-content/uploads/2018/02/Firefox_Screenshot_2018-02-14T03-28-45.768Z-300x23.png 300w, http://localhost/~h3dx0/wordpress/wp-content/uploads/2018/02/Firefox_Screenshot_2018-02-14T03-28-45.768Z-768x59.png 768w" sizes="(max-width: 808px) 100vw, 808px" /></p>
+
+<h3 id="column"> column</h3>
+
+<p><img class="size-full wp-image-64" src="http://localhost/~h3dx0/wordpress/wp-content/uploads/2018/02/columns.png" alt="flex-direction:column" width="428" height="237" srcset="http://localhost/~h3dx0/wordpress/wp-content/uploads/2018/02/columns.png 428w, http://localhost/~h3dx0/wordpress/wp-content/uploads/2018/02/columns-300x166.png 300w" sizes="(max-width: 428px) 100vw, 428px" /></p>
+
+<h3 id="column-reverse"> column-reverse</h3>
+
+<p><img class="alignnone size-full wp-image-67" src="http://localhost/~h3dx0/wordpress/wp-content/uploads/2018/02/Firefox_Screenshot_2018-02-14T03-31-29.538Z.png" alt="" width="251" height="183" /></p>
+
+<p>En las imágenes anteriores se puede ver claramente como afecta el orden de los elementos al aplicar los distintos valores a  <strong>flex-direction.</strong></p>
+
+<p> </p>
+
+<h2 id="cross-axis">Cross axis</h2>
+
+<p>El cross axis es el eje encargado de acomodar los elementos perpendicularmente al main axis, por lo que tenemos que tener en cuenta la orientación del mismo dado que dependen uno de otro.</p>
+
+<blockquote>
+  <p>Si el main axis está orientado a column o column-reverse el cross axis estará afectando los elementos horizontalmente.</p>
+</blockquote>
+
+<p>Acá les dejo un codepen para que puedan practicar los conceptos y valores aprendidos.</p>
+
+        </aside>
+    </article>
+</section>
+                <aside id="side-bar">
+                  <div class="card suscribe-form">
+                    <h3 class="text-verde">Suscríbete</h3>
+                    <p class="fs12">Constantemente aprendo cosas interesantes que quisiera compartir contigo. Deja tu correo y no te arrepentirás.</p>
+                    <input type="email" name="email" placeholder="Aprende algo nuevo">
+                    <button class="btn-verde mt10">Quiero aprender</button>
+                </div> 
+                <div class="card personal-info">
+                    <img
+                    class="yo-img image-responsive img-circle dsp-block"
+                    src="/assets/img/yo_web_developer.JPG"
+                    width="150"
+                    height="150"
+                    alt="RobertoNuñez">
+                    <h3 class="text-center">Roberto Nuñez Corrales</h2>
+                        <div class="separator bg-verde-oscuro centered"></div>
+                        <p class="text-center text-verde">Desarrollador Web Full-stack  </p>
+                        <p>
+                          Me apasiona desarrollar para la web. Llevo más de 10 años creando soluciones con estas tecnologías. 
+                          Creo que internet debe ser recurso al alcance de todos así como el conocimiento. He creado este blog 
+                          para compartir todo aquello que voy aprendiendo en mis proyectos y espero les sea útil.              
+                      </p>
+                      <div class="flex">
+                        <div class="col-xs-3">
+                            <a href="#" class="fa fa-facebook"></a>
+                        </div>
+                        <div class="col-xs-3">
+                            <a href="#" class="fa fa-twitter"></a>
+
+                        </div>
+                        <div class="col-xs-3">
+                         <a href="#" class="fa fa-linkedin"></a>
+                     </div>
+                     <div class="col-xs-3">
+                        <a href="#" class="fa fa-youtube"></a>
+                    </div>
+                </div>
+            </div>           
+        </aside>              
+    </main>
+
+</div>
+<script src="/assets/js/vendor/modernizr-3.5.0.min.js"></script>
+
+<!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-53521755-4"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-53521755-4');
+</script>
+</body>
+</html>

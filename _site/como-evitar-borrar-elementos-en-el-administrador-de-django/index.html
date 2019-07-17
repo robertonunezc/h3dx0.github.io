@@ -1,0 +1,185 @@
+<!doctype html>
+<html class="no-js" lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Como evitar borrar elementos en el administrador de Django</title>
+    <meta name="description" content="Artículos sobre desarrollo web, python, django, html, css y todo lo que voy aprendiendo sobre la web en mi día a día">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="manifest" href="site.webmanifest">
+    <link rel="apple-touch-icon" href="icon.png">
+    <!-- Place favicon.ico in the root directory -->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/assets/css/normalize.css">
+    <link rel="stylesheet" href="/assets/css/animate.css">
+    <link rel="stylesheet" href="/assets/css/main_blog.css">
+    <link rel="stylesheet" href="/assets/css/animations.css">
+    <link rel="stylesheet" href="/assets/css/utils.css">
+    <link rel="stylesheet" href="/assets/css/icons.css">
+    <link rel="stylesheet" href="/assets/css/tech-fonts.css">
+    <!-- Begin Jekyll SEO tag v2.6.1 -->
+<title>Como evitar borrar elementos en el administrador de Django | Roberto Nuñez Corrales Blog de desarrollo web, Django, HTML, CSS ;VUEJS</title>
+<meta name="generator" content="Jekyll v3.8.5" />
+<meta property="og:title" content="Como evitar borrar elementos en el administrador de Django" />
+<meta name="author" content="robert" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Hola a todos y muchas gracias por llegar a mi blog. Espero este artículo te sea de utilidad." />
+<meta property="og:description" content="Hola a todos y muchas gracias por llegar a mi blog. Espero este artículo te sea de utilidad." />
+<link rel="canonical" href="http://localhost:4000/como-evitar-borrar-elementos-en-el-administrador-de-django/" />
+<meta property="og:url" content="http://localhost:4000/como-evitar-borrar-elementos-en-el-administrador-de-django/" />
+<meta property="og:site_name" content="Roberto Nuñez Corrales Blog de desarrollo web, Django, HTML, CSS ;VUEJS" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2019-04-24T21:45:30-05:00" />
+<script type="application/ld+json">
+{"description":"Hola a todos y muchas gracias por llegar a mi blog. Espero este artículo te sea de utilidad.","@type":"BlogPosting","headline":"Como evitar borrar elementos en el administrador de Django","dateModified":"2019-04-24T21:45:30-05:00","datePublished":"2019-04-24T21:45:30-05:00","url":"http://localhost:4000/como-evitar-borrar-elementos-en-el-administrador-de-django/","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/como-evitar-borrar-elementos-en-el-administrador-de-django/"},"author":{"@type":"Person","name":"robert"},"@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+<body>
+    <header>
+        <div class="container">
+            <a class="link-logo-header text-verde" href="/">Roberto <span class="colored-logo">NUÑEZ</span></a>
+            <nav class="nav-top flr">
+                <ul>
+                    <li>
+                        <a href="/">Inicio</a>
+                    </li>                    
+                    <li>
+                        <a href="quien-soy.html">Quien soy</a>
+                    </li>
+                    <li>
+                        <a href="quien-soy.html#services">Servicios</a>
+                    </li>
+                    <li>
+                        <a href="quien-soy.html#portafolio">Donde he trabajado</a>
+                    </li>
+                    <li>
+                        <a href="quien-soy.html#experiencia">Experiencia</a>
+                    </li>
+                    <li>
+                        <a href="quien-soy.html" style="color:white" class="bold bg-verde-oscuro">Contáctame</a>
+                    </li>
+                    <li class="clearfix"></li>
+                </ul>
+            </nav>
+            <div class="clearfix">
+            </div>
+        </div>
+    </header>
+    <div class="flex direction-column container">
+        <section id="personal-info">
+            <h1 class="text-verde text-center">Mi Blog Personal</h4>
+                <h4 class="text-center">
+                    <em>Aquí podrás encontrar todo lo que he voy aprendiendo en mis proyectos como desarrollador web.</em>
+                </h2>
+            </section>
+            <main class="flex container">
+                <section class="container-articulos">
+    <article class="detalle-articulo card">
+        <h2 class="text-verde">Como evitar borrar elementos en el administrador de Django</h2>
+        <hr/>
+        <aside class="article-data flex">
+            <span class="fs12 mr15">
+                <i class="fa fa-calendar-plus-o text-verde" aria-hidden="true"></i>
+                April 24, 2019
+            </span>
+            <!-- 
+                TODO revisar como hacer esto dinamico 
+                <ul class="tags-list">
+                <li class="tag-item mr5">
+                    <a href="">
+                        <em> javascript</em>
+                    </a>
+                </li>
+                <li class="tag-item">
+                    <a href="">
+                        <em>javascript</em>
+                    </a>
+                </li>
+            </ul> -->
+        </aside>
+        <aside>
+            <p>Hola a todos y muchas gracias por llegar a mi blog. Espero este artículo te sea de utilidad.</p>
+
+<p>En varios proyectos por cuestiones de manejo de información histórica , nuestro cliente nos comenta que <strong>no se pueden borrar ciertos datos</strong> una ves que ya están en el sistema.</p>
+
+<p>Cuando hacemos nuestro administrador desde cero no hay problemas pues controlamos todo el proceso de creación pero si se desea utilizar el <strong>administrador que DJANGO</strong> nos brinda por cuestiones de agilizar tiempos o cualquier otra razón, este por defecto <strong>nos da la opción de eliminar los registros de los modelos que tenemos.</strong><figure class="wp-block-image"></figure></p>
+
+<p><img src="http://localhost/~h3dx0/wordpress/wp-content/uploads/2019/04/Firefox_Screenshot_2019-04-25T02-20-59.578Z.png" alt="Listado Django por defecto" class="wp-image-146" srcset="http://localhost/~h3dx0/wordpress/wp-content/uploads/2019/04/Firefox_Screenshot_2019-04-25T02-20-59.578Z.png 466w, http://localhost/~h3dx0/wordpress/wp-content/uploads/2019/04/Firefox_Screenshot_2019-04-25T02-20-59.578Z-300x115.png 300w" sizes="(max-width: 466px) 100vw, 466px" /> &lt;figcaption&gt;Listado Django&lt;/figcaption&gt;&lt;/figure&gt;</p>
+
+<p>Como nos muestra la imagen anterior <strong>podemos borrar los datos</strong> usando el ckeckbox y el select de acciones.</p>
+
+<h2 id="solución">Solución</h2>
+
+<p>En el <strong>archivo admin.py</strong> de nuestro proyecto donde tenemos registrado el modelo debemos agregar lo siguiente:</p>
+
+<p><strong>from miproyecto.admin import NonDeleteAdmin<br />
+admin.site.register(MiModelo, NonDeleteAdmin)</strong></p>
+
+<p>Quedando así el administrador donde se eliminan los checkbox y el select para la acción de borrar.<figure class="wp-block-image"></figure></p>
+
+<p><img src="http://localhost/~h3dx0/wordpress/wp-content/uploads/2019/04/Firefox_Screenshot_2019-04-25T02-25-53.747Z.png" alt="evitar borrar datos administrador django" class="wp-image-147" srcset="http://localhost/~h3dx0/wordpress/wp-content/uploads/2019/04/Firefox_Screenshot_2019-04-25T02-25-53.747Z.png 468w, http://localhost/~h3dx0/wordpress/wp-content/uploads/2019/04/Firefox_Screenshot_2019-04-25T02-25-53.747Z-300x110.png 300w" sizes="(max-width: 468px) 100vw, 468px" /> &lt;figcaption&gt;Listado sin opción de eliminar.&lt;/figcaption&gt;&lt;/figure&gt;</p>
+
+<p>Espero les sea útil y cualquier comentario es bienvenido. 🙂</p>
+
+        </aside>
+    </article>
+</section>
+                <aside id="side-bar">
+                  <div class="card suscribe-form">
+                    <h3 class="text-verde">Suscríbete</h3>
+                    <p class="fs12">Constantemente aprendo cosas interesantes que quisiera compartir contigo. Deja tu correo y no te arrepentirás.</p>
+                    <input type="email" name="email" placeholder="Aprende algo nuevo">
+                    <button class="btn-verde mt10">Quiero aprender</button>
+                </div> 
+                <div class="card personal-info">
+                    <img
+                    class="yo-img image-responsive img-circle dsp-block"
+                    src="/assets/img/yo_web_developer.JPG"
+                    width="150"
+                    height="150"
+                    alt="RobertoNuñez">
+                    <h3 class="text-center">Roberto Nuñez Corrales</h2>
+                        <div class="separator bg-verde-oscuro centered"></div>
+                        <p class="text-center text-verde">Desarrollador Web Full-stack  </p>
+                        <p>
+                          Me apasiona desarrollar para la web. Llevo más de 10 años creando soluciones con estas tecnologías. 
+                          Creo que internet debe ser recurso al alcance de todos así como el conocimiento. He creado este blog 
+                          para compartir todo aquello que voy aprendiendo en mis proyectos y espero les sea útil.              
+                      </p>
+                      <div class="flex">
+                        <div class="col-xs-3">
+                            <a href="#" class="fa fa-facebook"></a>
+                        </div>
+                        <div class="col-xs-3">
+                            <a href="#" class="fa fa-twitter"></a>
+
+                        </div>
+                        <div class="col-xs-3">
+                         <a href="#" class="fa fa-linkedin"></a>
+                     </div>
+                     <div class="col-xs-3">
+                        <a href="#" class="fa fa-youtube"></a>
+                    </div>
+                </div>
+            </div>           
+        </aside>              
+    </main>
+
+</div>
+<script src="/assets/js/vendor/modernizr-3.5.0.min.js"></script>
+
+<!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-53521755-4"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-53521755-4');
+</script>
+</body>
+</html>

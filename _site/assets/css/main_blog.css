@@ -1,0 +1,157 @@
+
+html {
+    color: #222;
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+body {
+    font-family: "Open Sans", Helvetica, Arial, sans-serif;
+    background-color: #e7e7e7;
+}
+
+@media (min-width: 768px) {
+    .container {
+        width: 750px;
+    }
+}
+@media (min-width: 992px) {
+    .container {
+        width: 970px;
+    }
+}
+@media (min-width: 1200px) {
+    .container {
+        width: 1170px;
+    }
+}
+
+.container {
+    display: block;
+    margin: 0 auto;
+}
+
+header {
+    width: 100%;
+    position: fixed;
+    z-index: 1000000;
+    height: 62px;
+    box-shadow: 0 0 10px #000;
+    background: #fff;
+    border-bottom: none;
+    margin-bottom: 15px;
+}
+
+header .container {
+    display: flex;
+    flex-direction: row;
+}
+
+.colored-logo {
+    color: #fff;
+    font-size: 30px;
+    line-height: 10px;
+    padding: 0 5px 4px;
+    background-color: #0E5C66;
+}
+
+a.link-logo-header {
+    height: 60px;
+    line-height: 60px;
+    padding-bottom: 0px;
+    padding-top: 0px;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+nav.nav-top > ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+}
+
+nav.nav-top > ul > li > a {
+    padding: 5px 15px;
+    color: #5c5a5a;
+}
+
+nav.nav-top > ul > li > a:hover {
+    background-color: #0E5C66;
+    color: #fff;
+}
+
+.flex{
+    display: flex;  
+}
+.direction-column{
+    flex-direction: column;
+}
+#personal-info{
+    flex:1;
+    margin-top: 60px;
+    padding: 0 15px;
+}
+main{
+    display: flex;
+}
+#list-post{
+    flex: 1;
+}
+#side-bar {
+    /*en pantallas grandes 30vh*/
+    /*celulares 100% */
+      flex: 0 1 0;
+}
+.article{
+  color:black;
+  height: 80px;
+}
+.card {
+    padding: 15px;
+    background-color: #fff;
+    box-shadow: 0 2px 10px #ccc8c8;
+    color:#000;
+    margin: 15px;
+}
+
+.tags-list{
+    display: flex;
+    flex-direction: row;
+    padding:0;
+    margin: 0;
+}
+.tag-item a{
+    font-size: 12px;
+    background-color: #0E5C66;
+    color: #fff;
+    padding:0 4px;
+}
+.btn-verde{
+    background-color: #0E5C66;
+    color: #fff;
+    border: none;
+    padding: 3px 10px;
+}
+.personal-info .fa{
+    width: 30px;
+    margin:5px;
+}
+/*detalle articulos*/
+.container-articulos{
+    display: flex;
+    flex-direction: column;
+    flex: 3 1 0;
+}
+.detalle-articulo{
+    min-width: 93%;
+}
+.article-data{
+    align-items: baseline;
+    justify-content: flex-start;
+    margin-bottom: 10px
+}
+.article-data .fa{
+    font-size: 20px;
+    width: 20px;
+}

@@ -1,0 +1,247 @@
+<!doctype html>
+<html class="no-js" lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Alinear elementos en el contenedor con flexbox</title>
+    <meta name="description" content="Artículos sobre desarrollo web, python, django, html, css y todo lo que voy aprendiendo sobre la web en mi día a día">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="manifest" href="site.webmanifest">
+    <link rel="apple-touch-icon" href="icon.png">
+    <!-- Place favicon.ico in the root directory -->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/assets/css/normalize.css">
+    <link rel="stylesheet" href="/assets/css/animate.css">
+    <link rel="stylesheet" href="/assets/css/main_blog.css">
+    <link rel="stylesheet" href="/assets/css/animations.css">
+    <link rel="stylesheet" href="/assets/css/utils.css">
+    <link rel="stylesheet" href="/assets/css/icons.css">
+    <link rel="stylesheet" href="/assets/css/tech-fonts.css">
+    <!-- Begin Jekyll SEO tag v2.6.1 -->
+<title>Alinear elementos en el contenedor con flexbox | Roberto Nuñez Corrales Blog de desarrollo web, Django, HTML, CSS ;VUEJS</title>
+<meta name="generator" content="Jekyll v3.8.5" />
+<meta property="og:title" content="Alinear elementos en el contenedor con flexbox" />
+<meta name="author" content="robert" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Continuando con la serie de artículos sobre como maquetar en css con flexbox, hoy tendremos como objetivo el aprender a alinear elementos dentro de un contenedor." />
+<meta property="og:description" content="Continuando con la serie de artículos sobre como maquetar en css con flexbox, hoy tendremos como objetivo el aprender a alinear elementos dentro de un contenedor." />
+<link rel="canonical" href="http://localhost:4000/alinear-elementos-flexbox/" />
+<meta property="og:url" content="http://localhost:4000/alinear-elementos-flexbox/" />
+<meta property="og:site_name" content="Roberto Nuñez Corrales Blog de desarrollo web, Django, HTML, CSS ;VUEJS" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2018-02-15T22:26:14-06:00" />
+<script type="application/ld+json">
+{"description":"Continuando con la serie de artículos sobre como maquetar en css con flexbox, hoy tendremos como objetivo el aprender a alinear elementos dentro de un contenedor.","@type":"BlogPosting","headline":"Alinear elementos en el contenedor con flexbox","dateModified":"2018-02-15T22:26:14-06:00","datePublished":"2018-02-15T22:26:14-06:00","url":"http://localhost:4000/alinear-elementos-flexbox/","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/alinear-elementos-flexbox/"},"author":{"@type":"Person","name":"robert"},"@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+<body>
+    <header>
+        <div class="container">
+            <a class="link-logo-header text-verde" href="/">Roberto <span class="colored-logo">NUÑEZ</span></a>
+            <nav class="nav-top flr">
+                <ul>
+                    <li>
+                        <a href="/">Inicio</a>
+                    </li>                    
+                    <li>
+                        <a href="quien-soy.html">Quien soy</a>
+                    </li>
+                    <li>
+                        <a href="quien-soy.html#services">Servicios</a>
+                    </li>
+                    <li>
+                        <a href="quien-soy.html#portafolio">Donde he trabajado</a>
+                    </li>
+                    <li>
+                        <a href="quien-soy.html#experiencia">Experiencia</a>
+                    </li>
+                    <li>
+                        <a href="quien-soy.html" style="color:white" class="bold bg-verde-oscuro">Contáctame</a>
+                    </li>
+                    <li class="clearfix"></li>
+                </ul>
+            </nav>
+            <div class="clearfix">
+            </div>
+        </div>
+    </header>
+    <div class="flex direction-column container">
+        <section id="personal-info">
+            <h1 class="text-verde text-center">Mi Blog Personal</h4>
+                <h4 class="text-center">
+                    <em>Aquí podrás encontrar todo lo que he voy aprendiendo en mis proyectos como desarrollador web.</em>
+                </h2>
+            </section>
+            <main class="flex container">
+                <section class="container-articulos">
+    <article class="detalle-articulo card">
+        <h2 class="text-verde">Alinear elementos en el contenedor con flexbox</h2>
+        <hr/>
+        <aside class="article-data flex">
+            <span class="fs12 mr15">
+                <i class="fa fa-calendar-plus-o text-verde" aria-hidden="true"></i>
+                February 15, 2018
+            </span>
+            <!-- 
+                TODO revisar como hacer esto dinamico 
+                <ul class="tags-list">
+                <li class="tag-item mr5">
+                    <a href="">
+                        <em> javascript</em>
+                    </a>
+                </li>
+                <li class="tag-item">
+                    <a href="">
+                        <em>javascript</em>
+                    </a>
+                </li>
+            </ul> -->
+        </aside>
+        <aside>
+            <p>Continuando con la serie de artículos sobre como <strong>maquetar en css</strong> con flexbox, hoy tendremos como objetivo el <strong>aprender a alinear elementos</strong> dentro de un contenedor.</p>
+
+<p>Una de las funciones o posibiliades que más me llamó la antención al comenzar a trabajar con flexbox fue la facilidad para poder acomodar o alinear elementos, tanto horizontalmente, verticalmente como cada elemento por separado.</p>
+
+<p>Para alinear los elementos nuestro contenedor acepta 4 propiedades fundamentales</p>
+
+<ul>
+  <li>justify-content</li>
+  <li>align-items</li>
+  <li>align-self</li>
+</ul>
+
+<p>Estas propiedades colocarán los elementos dependiendo  de como se hubiese definido nuestro main-axis, <a href="http://localhost/~h3dx0/wordpress/conceptos-basicos-en-flexbox/">aquí</a> puedes darle una revisada a este tema.<br />
+<img class="aligncenter wp-image-75 size-full" title="AxisFlexbox" src="http://localhost/~h3dx0/wordpress/wp-content/uploads/2018/02/AxisFlexbox.png" alt="AxisFlexbox" width="640" height="400" srcset="http://localhost/~h3dx0/wordpress/wp-content/uploads/2018/02/AxisFlexbox.png 640w, http://localhost/~h3dx0/wordpress/wp-content/uploads/2018/02/AxisFlexbox-300x188.png 300w" sizes="(max-width: 640px) 100vw, 640px" /></p>
+
+<p> </p>
+
+<h2 id="justify-content">justify-content:</h2>
+
+<p>Esta propiedad será la encargada de organizar los elementos dentro de nuestro contenedor a través del main-axis (de forma horizontal en el caso de la imagen).</p>
+
+<p>Valores aceptados:</p>
+
+<h3 id="justify-content-flex-start"><strong>justify-content: flex-start;</strong></h3>
+
+<p>[codepen_embed height=”265″ theme_id=”0″ slug_hash=”PRemLd” default_tab=”result” user=”h3dx0″]See the Pen &lt;a href=’https://codepen.io/h3dx0/pen/PRemLd/’&gt;ju-co:flsart&lt;/a&gt; by Robert (&lt;a href=’https://codepen.io/h3dx0′&gt;@h3dx0&lt;/a&gt;) on &lt;a href=’https://codepen.io’&gt;CodePen&lt;/a&gt;.[/codepen_embed]</p>
+
+<p>Al aplicar esta propiedad puede que no se vea ningún efecto de inicio dado que nuestro menú en el ejemplo ya tiene asignada la propiedad <strong>flex-direction: row</strong> desde un inicio acomodando los elementos uno al lado del otro,  lo que se quiere lograr es que los elementos se acomoden donde comienza el contenedor que en este caso es de izquierda a derecha.</p>
+
+<h3 id="justify-content-center"><strong>justify-content: center;</strong></h3>
+
+<p>[codepen_embed height=”265″ theme_id=”0″ slug_hash=”ZxoKNb” default_tab=”result” user=”h3dx0″]See the Pen &lt;a href=’https://codepen.io/h3dx0/pen/ZxoKNb/’&gt;justcont:center&lt;/a&gt; by Robert (&lt;a href=’https://codepen.io/h3dx0′&gt;@h3dx0&lt;/a&gt;) on &lt;a href=’https://codepen.io’&gt;CodePen&lt;/a&gt;.[/codepen_embed]</p>
+
+<p>Aplicando esta propiedad vemos como todos los elementos se centran teniendo en cuenta el main-axis que en este caso es en forma horizontal.</p>
+
+<h3 id="justify-content-flex-end"><strong>justify-content: flex-end;</strong></h3>
+
+<p>[codepen_embed height=”265″ theme_id=”0″ slug_hash=”gezWJd” default_tab=”result” user=”h3dx0″]See the Pen &lt;a href=’https://codepen.io/h3dx0/pen/gezWJd/’&gt;justcont:flexend&lt;/a&gt; by Robert (&lt;a href=’https://codepen.io/h3dx0′&gt;@h3dx0&lt;/a&gt;) on &lt;a href=’https://codepen.io’&gt;CodePen&lt;/a&gt;.[/codepen_embed]</p>
+
+<p>Flex-end nos ayuda a alinear nuestros elementos al final de nuestro contenedor en este caso hacia la derecha. Lo que anteriormente lograríamos usando floats.</p>
+
+<p> </p>
+
+<h3 id="justify-content-space-between"><strong>justify-content: space-between;</strong></h3>
+
+<p>[codepen_embed height=”265″ theme_id=”0″ slug_hash=”JLvNQN” default_tab=”result” user=”h3dx0″]See the Pen &lt;a href=’https://codepen.io/h3dx0/pen/JLvNQN/’&gt;jcspace-btween&lt;/a&gt; by Robert (&lt;a href=’https://codepen.io/h3dx0′&gt;@h3dx0&lt;/a&gt;) on &lt;a href=’https://codepen.io’&gt;CodePen&lt;/a&gt;.[/codepen_embed]</p>
+
+<p>Space-between es una de las propiedades que más me gustan, dada la facilidad con que se pueden dar espacios exactos (ayudándonos con el diseño responsivo en muchos casos) entre los elementos que estamos colocando. Esta propiedad coloca los elementos hacia los extremos de nuestro contenedor y el espacio restante los distribuye con los demás elementos.</p>
+
+<h3 id="justify-content-space-around"><strong>justify-content: space-around;</strong></h3>
+
+<p>[codepen_embed height=”265″ theme_id=”0″ slug_hash=”xWjdvq” default_tab=”result” user=”h3dx0″]See the Pen &lt;a href=’https://codepen.io/h3dx0/pen/xWjdvq/’&gt;jc:space-around&lt;/a&gt; by Robert (&lt;a href=’https://codepen.io/h3dx0′&gt;@h3dx0&lt;/a&gt;) on &lt;a href=’https://codepen.io’&gt;CodePen&lt;/a&gt;.[/codepen_embed]</p>
+
+<p>Space-around así como space-between nos ayuda a distribuir de forma equitativa el espacio entre nuestros elementos, a diferencia de de la propiedad anterior , crea espacios iguales entre todos los elementos así como con los límites de nuestro contenedor.</p>
+
+<h2 id="alinear-elementos-según-cross-axis">Alinear elementos según cross-axis</h2>
+
+<h3 id="align-items">align-items:</h3>
+
+<p>Esta propiedad será la encargada de organizar los elementos dentro de nuestro contenedor a través del cross-axis (de forma vertical en el caso de la imagen).</p>
+
+<h3 id="valores-aceptados">Valores aceptados:``</h3>
+
+<h3 id="align-items-flex-start">align-items: flex-start:</h3>
+
+<p>###<img class="alignnone size-full wp-image-89" src="http://localhost/~h3dx0/wordpress/wp-content/uploads/2018/02/ag-start.png" alt="" width="640" height="400" srcset="http://localhost/~h3dx0/wordpress/wp-content/uploads/2018/02/ag-start.png 640w, http://localhost/~h3dx0/wordpress/wp-content/uploads/2018/02/ag-start-300x188.png 300w" sizes="(max-width: 640px) 100vw, 640px" /></p>
+
+<h3 id="align-items-flex-end">align-items: flex-end;</h3>
+
+<p><img class="alignnone size-full wp-image-92" src="http://localhost/~h3dx0/wordpress/wp-content/uploads/2018/02/ag-end-1.png" alt="" width="640" height="400" srcset="http://localhost/~h3dx0/wordpress/wp-content/uploads/2018/02/ag-end-1.png 640w, http://localhost/~h3dx0/wordpress/wp-content/uploads/2018/02/ag-end-1-300x188.png 300w" sizes="(max-width: 640px) 100vw, 640px" /></p>
+
+<h3 id="align-items-center">align-items: center;</h3>
+
+<p><img class="alignnone wp-image-93 size-full" src="http://localhost/~h3dx0/wordpress/wp-content/uploads/2018/02/ag-center.png" alt="alinear elementos" width="640" height="400" srcset="http://localhost/~h3dx0/wordpress/wp-content/uploads/2018/02/ag-center.png 640w, http://localhost/~h3dx0/wordpress/wp-content/uploads/2018/02/ag-center-300x188.png 300w" sizes="(max-width: 640px) 100vw, 640px" /></p>
+
+<h3 id="align-items-strech">align-items: strech;</h3>
+
+<p><img class="alignnone wp-image-95 size-full" src="http://localhost/~h3dx0/wordpress/wp-content/uploads/2018/02/ag-strech-1.png" alt="alinear elementos" width="640" height="400" srcset="http://localhost/~h3dx0/wordpress/wp-content/uploads/2018/02/ag-strech-1.png 640w, http://localhost/~h3dx0/wordpress/wp-content/uploads/2018/02/ag-strech-1-300x188.png 300w" sizes="(max-width: 640px) 100vw, 640px" /></p>
+
+<p>Estas son las principales propiedades para poder controlar la ubicación de todos los elementos dentro de nuestro contenedor. Muchas de estas propiedades están sujetas a como orientemos nuestros main-axis y cross-axis. Estas son algunos de los resultados que ahora con flexbox se puede lograr de forma mas sencilla.</p>
+
+<p>Muchas gracias por su lectura. Espero que les sirva este artículo para que puedan comenzar a usar estas fantásticas propiedades y atributos.</p>
+
+<p>No lo dudes y regálame un simple GRACIAS.</p>
+
+        </aside>
+    </article>
+</section>
+                <aside id="side-bar">
+                  <div class="card suscribe-form">
+                    <h3 class="text-verde">Suscríbete</h3>
+                    <p class="fs12">Constantemente aprendo cosas interesantes que quisiera compartir contigo. Deja tu correo y no te arrepentirás.</p>
+                    <input type="email" name="email" placeholder="Aprende algo nuevo">
+                    <button class="btn-verde mt10">Quiero aprender</button>
+                </div> 
+                <div class="card personal-info">
+                    <img
+                    class="yo-img image-responsive img-circle dsp-block"
+                    src="/assets/img/yo_web_developer.JPG"
+                    width="150"
+                    height="150"
+                    alt="RobertoNuñez">
+                    <h3 class="text-center">Roberto Nuñez Corrales</h2>
+                        <div class="separator bg-verde-oscuro centered"></div>
+                        <p class="text-center text-verde">Desarrollador Web Full-stack  </p>
+                        <p>
+                          Me apasiona desarrollar para la web. Llevo más de 10 años creando soluciones con estas tecnologías. 
+                          Creo que internet debe ser recurso al alcance de todos así como el conocimiento. He creado este blog 
+                          para compartir todo aquello que voy aprendiendo en mis proyectos y espero les sea útil.              
+                      </p>
+                      <div class="flex">
+                        <div class="col-xs-3">
+                            <a href="#" class="fa fa-facebook"></a>
+                        </div>
+                        <div class="col-xs-3">
+                            <a href="#" class="fa fa-twitter"></a>
+
+                        </div>
+                        <div class="col-xs-3">
+                         <a href="#" class="fa fa-linkedin"></a>
+                     </div>
+                     <div class="col-xs-3">
+                        <a href="#" class="fa fa-youtube"></a>
+                    </div>
+                </div>
+            </div>           
+        </aside>              
+    </main>
+
+</div>
+<script src="/assets/js/vendor/modernizr-3.5.0.min.js"></script>
+
+<!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-53521755-4"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-53521755-4');
+</script>
+</body>
+</html>

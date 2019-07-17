@@ -1,0 +1,247 @@
+<!doctype html>
+<html class="no-js" lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Comenzando con CSS Flexbox layout</title>
+    <meta name="description" content="Artículos sobre desarrollo web, python, django, html, css y todo lo que voy aprendiendo sobre la web en mi día a día">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="manifest" href="site.webmanifest">
+    <link rel="apple-touch-icon" href="icon.png">
+    <!-- Place favicon.ico in the root directory -->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/assets/css/normalize.css">
+    <link rel="stylesheet" href="/assets/css/animate.css">
+    <link rel="stylesheet" href="/assets/css/main_blog.css">
+    <link rel="stylesheet" href="/assets/css/animations.css">
+    <link rel="stylesheet" href="/assets/css/utils.css">
+    <link rel="stylesheet" href="/assets/css/icons.css">
+    <link rel="stylesheet" href="/assets/css/tech-fonts.css">
+    <!-- Begin Jekyll SEO tag v2.6.1 -->
+<title>Comenzando con CSS Flexbox layout | Roberto Nuñez Corrales Blog de desarrollo web, Django, HTML, CSS ;VUEJS</title>
+<meta name="generator" content="Jekyll v3.8.5" />
+<meta property="og:title" content="Comenzando con CSS Flexbox layout" />
+<meta name="author" content="robert" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Hola a todos, muchas gracias por darte una vuelta a este artículo en el cual aprenderás como iniciar el maquetado con flexbox y así darle un impulso a tus conocimientos de frontend web para dejar atrás viejas e inútiles técnicas de maquetado con CSS3. Comenzamos…" />
+<meta property="og:description" content="Hola a todos, muchas gracias por darte una vuelta a este artículo en el cual aprenderás como iniciar el maquetado con flexbox y así darle un impulso a tus conocimientos de frontend web para dejar atrás viejas e inútiles técnicas de maquetado con CSS3. Comenzamos…" />
+<link rel="canonical" href="http://localhost:4000/comenzando-con-flexbox-css/" />
+<meta property="og:url" content="http://localhost:4000/comenzando-con-flexbox-css/" />
+<meta property="og:site_name" content="Roberto Nuñez Corrales Blog de desarrollo web, Django, HTML, CSS ;VUEJS" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2018-01-25T17:37:28-06:00" />
+<script type="application/ld+json">
+{"description":"Hola a todos, muchas gracias por darte una vuelta a este artículo en el cual aprenderás como iniciar el maquetado con flexbox y así darle un impulso a tus conocimientos de frontend web para dejar atrás viejas e inútiles técnicas de maquetado con CSS3. Comenzamos…","@type":"BlogPosting","headline":"Comenzando con CSS Flexbox layout","dateModified":"2018-01-25T17:37:28-06:00","datePublished":"2018-01-25T17:37:28-06:00","url":"http://localhost:4000/comenzando-con-flexbox-css/","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/comenzando-con-flexbox-css/"},"author":{"@type":"Person","name":"robert"},"@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+<body>
+    <header>
+        <div class="container">
+            <a class="link-logo-header text-verde" href="/">Roberto <span class="colored-logo">NUÑEZ</span></a>
+            <nav class="nav-top flr">
+                <ul>
+                    <li>
+                        <a href="/">Inicio</a>
+                    </li>                    
+                    <li>
+                        <a href="quien-soy.html">Quien soy</a>
+                    </li>
+                    <li>
+                        <a href="quien-soy.html#services">Servicios</a>
+                    </li>
+                    <li>
+                        <a href="quien-soy.html#portafolio">Donde he trabajado</a>
+                    </li>
+                    <li>
+                        <a href="quien-soy.html#experiencia">Experiencia</a>
+                    </li>
+                    <li>
+                        <a href="quien-soy.html" style="color:white" class="bold bg-verde-oscuro">Contáctame</a>
+                    </li>
+                    <li class="clearfix"></li>
+                </ul>
+            </nav>
+            <div class="clearfix">
+            </div>
+        </div>
+    </header>
+    <div class="flex direction-column container">
+        <section id="personal-info">
+            <h1 class="text-verde text-center">Mi Blog Personal</h4>
+                <h4 class="text-center">
+                    <em>Aquí podrás encontrar todo lo que he voy aprendiendo en mis proyectos como desarrollador web.</em>
+                </h2>
+            </section>
+            <main class="flex container">
+                <section class="container-articulos">
+    <article class="detalle-articulo card">
+        <h2 class="text-verde">Comenzando con CSS Flexbox layout</h2>
+        <hr/>
+        <aside class="article-data flex">
+            <span class="fs12 mr15">
+                <i class="fa fa-calendar-plus-o text-verde" aria-hidden="true"></i>
+                January 25, 2018
+            </span>
+            <!-- 
+                TODO revisar como hacer esto dinamico 
+                <ul class="tags-list">
+                <li class="tag-item mr5">
+                    <a href="">
+                        <em> javascript</em>
+                    </a>
+                </li>
+                <li class="tag-item">
+                    <a href="">
+                        <em>javascript</em>
+                    </a>
+                </li>
+            </ul> -->
+        </aside>
+        <aside>
+            <p>Hola a todos, muchas gracias por darte una vuelta a este artículo en el cual aprenderás como iniciar el <strong>maquetado con flexbox</strong> y así darle un impulso a tus conocimientos de frontend web para dejar atrás viejas e inútiles técnicas de maquetado con <strong>CSS3.</strong> Comenzamos…</p>
+
+<h2 id="que-es">¿Que es?</h2>
+
+<p><strong>CSS flexbox layout</strong> es una tecnología o modelo de CSS3 implementada por los navegadores actuales. Tiene como objetivo ayudar a los desarrolladores a crear layouts de sitios web de manera más fácil, reutilizable y eficiente.</p>
+
+<h2 id="por-qué-usarlo">¿Por qué usarlo?</h2>
+
+<p>Porque la vida serás mas sencilla a la hora de maquetar  Viene a resolver muchos problemas que anteriormente se tenían que solucionar de forma poco ortodoxa, creando hacks y código poco legible. Con flexbox muchos problemas de posicionamiento de elementos, ordenamiento de los mismo se puede lograr de manera muy sencilla.</p>
+
+<h2 id="como-usarlo">¿Como usarlo?</h2>
+
+<p>Vamos a crear un menú para nuestro sitio con los enlaces de comunes</p>
+
+<p>Nuestro código HTML se vería así:</p>
+
+<pre class="lang:xhtml decode:true" title="Menu">&lt;nav&gt;
+  &lt;ul&gt;
+    &lt;li&gt;&lt;a href="#"&gt;Inicio&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="#"&gt;Quienes somos&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="#"&gt;Servicios&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="#"&gt;Contacto&lt;/a&gt;&lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/nav&gt;</pre>
+
+<p>Nuestro CSS de inicio para dar un poco de estilos sería algo así:</p>
+
+<pre class="lang:css decode:true" title="CSS Inicio">nav {
+  background: #008492;  
+}
+ul &gt; li &gt; a {
+  color:#fff;
+  text-decoration: none;
+}
+li {
+  list-style:none;
+}</pre>
+
+<p>El resultado sería algo como esto</p>
+
+<p><img class="size-full wp-image-47" src="http://localhost/~h3dx0/wordpress/wp-content/uploads/2018/01/Firefox_Screenshot_2018-01-30T02-51-28.619Z.png" alt="ResultadoSinFlexbox" width="317" height="97" srcset="http://localhost/~h3dx0/wordpress/wp-content/uploads/2018/01/Firefox_Screenshot_2018-01-30T02-51-28.619Z.png 317w, http://localhost/~h3dx0/wordpress/wp-content/uploads/2018/01/Firefox_Screenshot_2018-01-30T02-51-28.619Z-300x92.png 300w" sizes="(max-width: 317px) 100vw, 317px" /></p>
+
+<p>Aquí es donde entra <strong>flexbox</strong> al rescate <strong>evitando</strong> el uso de <strong>floats</strong> y <strong>clearfix.</strong></p>
+
+<p>Agregando solamente esta línea  a nuestro ejemplo tenemos un resultado mucho mejor</p>
+
+<pre class="lang:css decode:true " title="DisplayFlex">ul {
+  display:flex;
+}</pre>
+
+<p><img class="wp-image-46 size-full" title="ResultadoConFlexbox" src="http://localhost/~h3dx0/wordpress/wp-content/uploads/2018/01/Firefox_Screenshot_2018-01-30T02-49-38.166Z.png" alt="ResultadoConFlexbox" width="743" height="62" srcset="http://localhost/~h3dx0/wordpress/wp-content/uploads/2018/01/Firefox_Screenshot_2018-01-30T02-49-38.166Z.png 743w, http://localhost/~h3dx0/wordpress/wp-content/uploads/2018/01/Firefox_Screenshot_2018-01-30T02-49-38.166Z-300x25.png 300w, http://localhost/~h3dx0/wordpress/wp-content/uploads/2018/01/Firefox_Screenshot_2018-01-30T02-49-38.166Z-740x62.png 740w" sizes="(max-width: 743px) 100vw, 743px" /></p>
+
+<p>Al agregar esta simple línea  al contenedor de los elementos que se quieren acomodar aplicando <strong>FLEXBOX</strong>,  el contenedor reorganizará sus elementos hijos colocándolos uno al lado del otro, como si usáramos los incómodos <strong>float.</strong> Este comportamiento se ejecutará de forma similar en cualquier caso que se aplique el display:flex;</p>
+
+<p>Este es el primer paso para comenzar a utilizar FLEXBOX, debemos detectar nuestro <strong>elemento padre o contenedor</strong> y <strong>agregar</strong> la propiedad <strong>display:flex.</strong></p>
+
+<p>A continuación el código completo del ejemplo CSS. Donde la parte fundamental y objetivo es la línea 6.</p>
+
+<pre class="lang:css decode:true" title="Final">nav{
+  background: #008492;  
+}
+
+ul{
+  display:flex;// Contenedor que usa FLEXBOX
+}
+
+ul &gt; li {
+    margin:10px;
+}
+ul &gt; li &gt; a{
+  color:#fff;
+  text-decoration: none;
+}
+li {
+  list-style:none;
+}</pre>
+
+<p>Acá les dejo otro ejemplo que ilustra muy bien el uso sencillo de FLEXBOX. Imaginen que estamos creando un sitio de ecommerce y estamos desarrollando la vista donde se muestran los productos.</p>
+
+<p>Le dejo el CODEPEN para no hacer más extenso el artículo. Prueben quitando el display:flex y verán la difrencia.</p>
+
+<p>Espero les sea de utilidad este artículo, es simplemente el inicio ya que flexbox tiene muchas más aplicaciones que veremos en otros artículos proximamente.</p>
+
+<p>No dudes en dejar un comentario. Un gracias o feedback siempre es bienvenido y dá mucho ánimo.</p>
+
+        </aside>
+    </article>
+</section>
+                <aside id="side-bar">
+                  <div class="card suscribe-form">
+                    <h3 class="text-verde">Suscríbete</h3>
+                    <p class="fs12">Constantemente aprendo cosas interesantes que quisiera compartir contigo. Deja tu correo y no te arrepentirás.</p>
+                    <input type="email" name="email" placeholder="Aprende algo nuevo">
+                    <button class="btn-verde mt10">Quiero aprender</button>
+                </div> 
+                <div class="card personal-info">
+                    <img
+                    class="yo-img image-responsive img-circle dsp-block"
+                    src="/assets/img/yo_web_developer.JPG"
+                    width="150"
+                    height="150"
+                    alt="RobertoNuñez">
+                    <h3 class="text-center">Roberto Nuñez Corrales</h2>
+                        <div class="separator bg-verde-oscuro centered"></div>
+                        <p class="text-center text-verde">Desarrollador Web Full-stack  </p>
+                        <p>
+                          Me apasiona desarrollar para la web. Llevo más de 10 años creando soluciones con estas tecnologías. 
+                          Creo que internet debe ser recurso al alcance de todos así como el conocimiento. He creado este blog 
+                          para compartir todo aquello que voy aprendiendo en mis proyectos y espero les sea útil.              
+                      </p>
+                      <div class="flex">
+                        <div class="col-xs-3">
+                            <a href="#" class="fa fa-facebook"></a>
+                        </div>
+                        <div class="col-xs-3">
+                            <a href="#" class="fa fa-twitter"></a>
+
+                        </div>
+                        <div class="col-xs-3">
+                         <a href="#" class="fa fa-linkedin"></a>
+                     </div>
+                     <div class="col-xs-3">
+                        <a href="#" class="fa fa-youtube"></a>
+                    </div>
+                </div>
+            </div>           
+        </aside>              
+    </main>
+
+</div>
+<script src="/assets/js/vendor/modernizr-3.5.0.min.js"></script>
+
+<!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-53521755-4"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-53521755-4');
+</script>
+</body>
+</html>

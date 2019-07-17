@@ -1,0 +1,370 @@
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2019-07-17T07:08:03-05:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Roberto Nuñez Corrales Blog de desarrollo web, Django, HTML, CSS ;VUEJS</title><subtitle>Este es mi blog personal, aqui voy escribiendo todo lo que voy aprendiendo sobre  desarrollo web, especificamente DJANGO, VueJs, HTML5, CSS3 y todo aquello que  creo puede serle útil a alguien más.</subtitle><entry><title type="html">Como agregar un logo al administador de DJANGO</title><link href="http://localhost:4000/como-agregar-un-logo-al-administador-de-django/" rel="alternate" type="text/html" title="Como agregar un logo al administador de DJANGO" /><published>2019-06-11T23:58:01-05:00</published><updated>2019-06-11T23:58:01-05:00</updated><id>http://localhost:4000/como-agregar-un-logo-al-administador-de-django</id><content type="html" xml:base="http://localhost:4000/como-agregar-un-logo-al-administador-de-django/">&lt;p&gt;Con este artículo quiero enseñarte &lt;strong&gt;como agregar un logo al adminstrador de django&lt;/strong&gt;, un requerimiento que muchas veces es útil para darle un toque personal a esta sección tan importante .&lt;/p&gt;
+
+&lt;p&gt;La mayoría de los proyectos web en la actualidad necesitan que su información sea dinámica y facilemente modificable por el cliente o los encargados de realizar esta tarea. Aquí es donde entra en juego el &lt;strong&gt;administrador de DJANGO&lt;/strong&gt; y casi siempre hay que hacerle las &lt;strong&gt;modificaciones visuales&lt;/strong&gt; para que se adapte a nuestro cliente.&lt;/p&gt;
+
+&lt;p&gt;Una de estas adecuaciones es &lt;a href=&quot;http://localhost/~h3dx0/wordpress/como-cambiar-el-titulo-del-adminsitrador-de-django/&quot;&gt;cambiar el título del mismo&lt;/a&gt; por uno personalizado o simplemente agregar el logo de nuestro cliente. &lt;strong&gt;¿Como cambiamos el título por nuestro logo?&lt;/strong&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;solución&quot;&gt;SOLUCIÓN&lt;/h2&gt;
+
+&lt;p&gt;1- En la raíz de nuestro proyecto debemos &lt;strong&gt;crear una estructura de carpetas  TEMPLATES/ADMIN.&lt;/strong&gt;
+&lt;!-- 
+&lt;img class=&quot;aligncenter size-full wp-image-194&quot; src=&quot;http://localhost/~h3dx0/wordpress/wp-content/uploads/2019/06/estructura_carpetas.png&quot; alt=&quot;estructura_carpetas&quot; width=&quot;339&quot; height=&quot;160&quot; srcset=&quot;http://localhost/~h3dx0/wordpress/wp-content/uploads/2019/06/estructura_carpetas.png 339w, http://localhost/~h3dx0/wordpress/wp-content/uploads/2019/06/estructura_carpetas-300x142.png 300w&quot; sizes=&quot;(max-width: 339px) 100vw, 339px&quot; /&gt;  --&gt;&lt;/p&gt;
+
+&lt;p&gt;2- En esta carpeta admin el &lt;strong&gt;copiar el archivo base_site.html.&lt;/strong&gt; Este archivo se encuentra en el directorio donde &lt;strong&gt;se instaló DJANGO como librería,&lt;/strong&gt; acá les dejo una captura de mi proyecto, donde uso un virtual enviroment para que puedan tener como referencia donde encontrar este archivo. En ese directorio están todas las vistas usadas por el administrador.
+&lt;!-- img class=&quot;aligncenter size-full wp-image-195&quot; src=&quot;http://localhost/~h3dx0/wordpress/wp-content/uploads/2019/06/django_admin_dir.png&quot; alt=&quot;django_admin_dir&quot; width=&quot;357&quot; height=&quot;891&quot; srcset=&quot;http://localhost/~h3dx0/wordpress/wp-content/uploads/2019/06/django_admin_dir.png 357w, http://localhost/~h3dx0/wordpress/wp-content/uploads/2019/06/django_admin_dir-120x300.png 120w, http://localhost/~h3dx0/wordpress/wp-content/uploads/2019/06/django_admin_dir-300x749.png 300w&quot; sizes=&quot;(max-width: 357px) 100vw, 357px&quot;  --&gt;&lt;/p&gt;
+
+&lt;p&gt;3- &lt;strong&gt;Editar el base_site.html&lt;/strong&gt; copiado en la estructura de &lt;strong&gt;TEMPLATES/ADMIN&lt;/strong&gt; creada y agregar los&lt;/p&gt;
+
+&lt;pre class=&quot;&quot;&gt;*load staticfiles *&lt;/pre&gt;
+
+&lt;p&gt;y en el bloque ** block branding ** hacer las modificaciones que querramos para dejar el header como nos guste.&lt;/p&gt;
+
+&lt;p&gt;Acá les dejo como agregar una imagen previante &lt;strong&gt;coipada a nuestro directorio de statics/images/&lt;/strong&gt;
+&lt;!-- 
+&lt;img class=&quot;aligncenter size-full wp-image-198&quot; src=&quot;http://localhost/~h3dx0/wordpress/wp-content/uploads/2019/06/Screenshot_20190611_222243.png&quot; alt=&quot;&quot; width=&quot;1064&quot; height=&quot;271&quot; srcset=&quot;http://localhost/~h3dx0/wordpress/wp-content/uploads/2019/06/Screenshot_20190611_222243.png 1064w, http://localhost/~h3dx0/wordpress/wp-content/uploads/2019/06/Screenshot_20190611_222243-300x76.png 300w, http://localhost/~h3dx0/wordpress/wp-content/uploads/2019/06/Screenshot_20190611_222243-768x196.png 768w, http://localhost/~h3dx0/wordpress/wp-content/uploads/2019/06/Screenshot_20190611_222243-1024x261.png 1024w&quot; sizes=&quot;(max-width: 1064px) 100vw, 1064px&quot; /&gt;  --&gt;&lt;/p&gt;
+
+&lt;p&gt; &lt;/p&gt;
+
+&lt;p&gt;La imagen anterior muestra el código del archivo base_site.html después de &lt;strong&gt;cambiar el texto que viene por defecto y agregar nuestro logo.&lt;/strong&gt; En la imagen que sigue se ve eol resultado después de haber agregado un logo(imagen que se desee ) al administrador.
+&lt;!-- 
+&lt;img class=&quot;aligncenter size-full wp-image-199&quot; src=&quot;http://localhost/~h3dx0/wordpress/wp-content/uploads/2019/06/Screenshot_2019-06-11-Bienvenidos-al-portal-de-administración-Portal.png&quot; alt=&quot;&quot; width=&quot;1904&quot; height=&quot;60&quot; srcset=&quot;http://localhost/~h3dx0/wordpress/wp-content/uploads/2019/06/Screenshot_2019-06-11-Bienvenidos-al-portal-de-administración-Portal.png 1904w, http://localhost/~h3dx0/wordpress/wp-content/uploads/2019/06/Screenshot_2019-06-11-Bienvenidos-al-portal-de-administración-Portal-300x9.png 300w, http://localhost/~h3dx0/wordpress/wp-content/uploads/2019/06/Screenshot_2019-06-11-Bienvenidos-al-portal-de-administración-Portal-768x24.png 768w, http://localhost/~h3dx0/wordpress/wp-content/uploads/2019/06/Screenshot_2019-06-11-Bienvenidos-al-portal-de-administración-Portal-1024x32.png 1024w&quot; sizes=&quot;(max-width: 1904px) 100vw, 1904px&quot; /&gt;  --&gt;&lt;/p&gt;
+
+&lt;p&gt;Este es el principio para hacer cualquier modificación al administrador, el proceso es sobreescribir los archivos .html o .css que tiene el core de DJANGO con nuestras modificaciones. Proximamente estaré escribiendo más artículos sobre esta poderoza herramienta que DJANGO nos brinda.&lt;/p&gt;
+
+&lt;p&gt;No dudes en &lt;strong&gt;dejar cualquier comentario&lt;/strong&gt; que tengas sobre los artículos, son mis primeros y debo pulir muchos detalles pero que mejor &lt;strong&gt;si cuento con tu ayuda.&lt;/strong&gt; Espero tu comentario.&lt;/p&gt;
+
+&lt;p&gt;Happy coding. 🙂&lt;/p&gt;</content><author><name>robert</name></author><summary type="html">Con este artículo quiero enseñarte como agregar un logo al adminstrador de django, un requerimiento que muchas veces es útil para darle un toque personal a esta sección tan importante .</summary></entry><entry><title type="html">Como cambiar el nombre a los modelos en el admin de DJANGO</title><link href="http://localhost:4000/como-cambiar-el-nombre-a-los-modelos-en-el-admin-de-django/" rel="alternate" type="text/html" title="Como cambiar el nombre a los modelos en el admin de DJANGO" /><published>2019-06-01T18:39:30-05:00</published><updated>2019-06-01T18:39:30-05:00</updated><id>http://localhost:4000/como-cambiar-el-nombre-a-los-modelos-en-el-admin-de-django</id><content type="html" xml:base="http://localhost:4000/como-cambiar-el-nombre-a-los-modelos-en-el-admin-de-django/">&lt;p&gt;En numerosas ocaciones debemos &lt;strong&gt;mostrar los nombres de nuestros modelos en español&lt;/strong&gt;, si el cliente final hará interacción con el administrador de DJANGO. Esto puede ser un problema si nos gusta definir y hacer la programación de nuestro &lt;strong&gt;sistema en inglés, para mantener estándares&lt;/strong&gt; o simplemente el &lt;strong&gt;nombre del modelo es algo más abastracto&lt;/strong&gt; que su homólogo en la vida real o su &lt;strong&gt;terminación plural no es la correcta&lt;/strong&gt; como la imagen que muestro a continuación, por lo que necesitamos &lt;strong&gt;cambiar sus nombre de los modelos&lt;/strong&gt; para que &lt;strong&gt;se vean correctamente&lt;/strong&gt; en el administrador.&lt;/p&gt;
+
+&lt;p&gt;&lt;img class=&quot;size-full wp-image-185 aligncenter&quot; src=&quot;http://localhost/~h3dx0/wordpress/wp-content/uploads/2019/06/Firefox_Screenshot_2019-06-01T23-22-24.607Z.png&quot; alt=&quot;Cambiar Nombre Modelo Django&quot; width=&quot;413&quot; height=&quot;81&quot; srcset=&quot;http://localhost/~h3dx0/wordpress/wp-content/uploads/2019/06/Firefox_Screenshot_2019-06-01T23-22-24.607Z.png 413w, http://localhost/~h3dx0/wordpress/wp-content/uploads/2019/06/Firefox_Screenshot_2019-06-01T23-22-24.607Z-300x59.png 300w&quot; sizes=&quot;(max-width: 413px) 100vw, 413px&quot; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;solución&quot;&gt;Solución&lt;/h2&gt;
+
+&lt;p&gt; &lt;/p&gt;
+
+&lt;p&gt;Para resolver esta situación y poder mostrar en el adminsitrador de DJANGO los nombres que nosotros querramos simplemente basta con &lt;strong&gt;definir 1 propiedad a nuestro modelo.&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Esta propiedad es &lt;strong&gt;verbose_name_plural = “NOMBRE EN PLURAL”&lt;img class=&quot;aligncenter size-full wp-image-186&quot; src=&quot;http://localhost/~h3dx0/wordpress/wp-content/uploads/2019/06/Screenshot_20190601_182644.png&quot; alt=&quot;Propiedad Verbose&quot; width=&quot;738&quot; height=&quot;165&quot; srcset=&quot;http://localhost/~h3dx0/wordpress/wp-content/uploads/2019/06/Screenshot_20190601_182644.png 738w, http://localhost/~h3dx0/wordpress/wp-content/uploads/2019/06/Screenshot_20190601_182644-300x67.png 300w&quot; sizes=&quot;(max-width: 738px) 100vw, 738px&quot; /&gt;&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Como muestra la imagen, vamos a nuestro modelo y definimos en la &lt;strong&gt;subclase Meta: la propiedad verbose_name_plural&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img class=&quot;aligncenter size-full wp-image-187&quot; src=&quot;http://localhost/~h3dx0/wordpress/wp-content/uploads/2019/06/Firefox_Screenshot_2019-06-01T23-31-27.993Z.png&quot; alt=&quot;Estado de cuenta&quot; width=&quot;615&quot; height=&quot;47&quot; srcset=&quot;http://localhost/~h3dx0/wordpress/wp-content/uploads/2019/06/Firefox_Screenshot_2019-06-01T23-31-27.993Z.png 615w, http://localhost/~h3dx0/wordpress/wp-content/uploads/2019/06/Firefox_Screenshot_2019-06-01T23-31-27.993Z-300x23.png 300w&quot; sizes=&quot;(max-width: 615px) 100vw, 615px&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Teniendo como resultado en nuestro administrador la imagen anterior.&lt;/p&gt;
+
+&lt;p&gt; &lt;/p&gt;
+
+&lt;p&gt;Espero les sirva este artículo y no dude en dejar un comentario o cualquier duda sobre DJANGO.&lt;/p&gt;
+
+&lt;p&gt;Dando &lt;a href=&quot;http://localhost/~h3dx0/wordpress/category/django/&quot;&gt;clic aquí&lt;/a&gt; podrás ver otros tips interesantes sobre &lt;strong&gt;DJANGO&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;También pudes suscribirte a &lt;strong&gt;mi boletín(sección derecha de la web)&lt;/strong&gt; y te enterarás primero que nadie cuando publique un nuevo artículo.&lt;/p&gt;
+
+&lt;p&gt; &lt;/p&gt;
+
+&lt;p&gt; &lt;/p&gt;
+
+&lt;p&gt; &lt;/p&gt;</content><author><name>robert</name></author><category term="admindjango" /><category term="django" /><category term="python" /><summary type="html">En numerosas ocaciones debemos mostrar los nombres de nuestros modelos en español, si el cliente final hará interacción con el administrador de DJANGO. Esto puede ser un problema si nos gusta definir y hacer la programación de nuestro sistema en inglés, para mantener estándares o simplemente el nombre del modelo es algo más abastracto que su homólogo en la vida real o su terminación plural no es la correcta como la imagen que muestro a continuación, por lo que necesitamos cambiar sus nombre de los modelos para que se vean correctamente en el administrador.</summary></entry><entry><title type="html">Como personalizar el título del admin de Django</title><link href="http://localhost:4000/django/python/2019/05/23/como-agregar-titulo-admin-django.html" rel="alternate" type="text/html" title="Como personalizar el título del admin de Django" /><published>2019-05-23T22:35:39-05:00</published><updated>2019-05-23T22:35:39-05:00</updated><id>http://localhost:4000/django/python/2019/05/23/como-agregar-titulo-admin-django</id><content type="html" xml:base="http://localhost:4000/django/python/2019/05/23/como-agregar-titulo-admin-django.html">&lt;p&gt;Este es el contendio y mas cosas&lt;/p&gt;</content><author><name></name></author><category term="django" /><category term="python" /><summary type="html">Este es el contendio y mas cosas</summary></entry><entry><title type="html">Como cambiar el título del adminsitrador de DJANGO</title><link href="http://localhost:4000/como-cambiar-el-titulo-del-adminsitrador-de-django/" rel="alternate" type="text/html" title="Como cambiar el título del adminsitrador de DJANGO" /><published>2019-05-23T22:23:35-05:00</published><updated>2019-05-23T22:23:35-05:00</updated><id>http://localhost:4000/como-cambiar-el-titulo-del-adminsitrador-de-django</id><content type="html" xml:base="http://localhost:4000/como-cambiar-el-titulo-del-adminsitrador-de-django/">&lt;p&gt;Siguiendo la serie sobre como sacar mejor provecho al administrador de DJANGO , hoy les dejo un pequeño cambio pero importante.&lt;/p&gt;
+
+&lt;p&gt;En la mayoría de los casos cuando comenzamos a utilizar el administrador de DJANGO que viene ya listo, es necesario &lt;strong&gt;cambiar los títulos&lt;/strong&gt; que aparece de inicio tanto en el formulario de inicio de sesión, en la barra de título y en el listado principal, &lt;strong&gt;“Django administration” o “Administración de Django”.&lt;/strong&gt;&lt;figure class=&quot;wp-block-image&quot;&gt;&lt;/figure&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img class=&quot;wp-image-168&quot; src=&quot;http://localhost/~h3dx0/wordpress/wp-content/uploads/2019/05/image.png&quot; alt=&quot;&quot; srcset=&quot;http://localhost/~h3dx0/wordpress/wp-content/uploads/2019/05/image.png 337w, http://localhost/~h3dx0/wordpress/wp-content/uploads/2019/05/image-300x53.png 300w&quot; sizes=&quot;(max-width: 337px) 100vw, 337px&quot; /&gt; &amp;lt;figcaption&amp;gt;Titulo de la barra superior del administrador&amp;lt;/figcaption&amp;gt;&amp;lt;/figure&amp;gt;&lt;/p&gt;
+
+&lt;h4 id=&quot;como-cambiar-el-texto-administración-de-django&quot;&gt;Como cambiar el texto “Administración de Django”&lt;/h4&gt;
+
+&lt;p&gt;1 – En un admin.py del proyecto agregar las siguientes líneas.&lt;/p&gt;
+
+&lt;pre class=&quot;lang:python decode:true &quot;&gt;admin.site.site_header = &quot;Sitio web de inventarios&quot;
+admin.site.site_title = &quot;Portal de inventarios&quot;
+admin.site.index_title = &quot;Bienvenidos al portal de administración&quot;&lt;/pre&gt;
+
+&lt;p&gt; &lt;/p&gt;
+
+&lt;p&gt;Obteniendo los siguientes resultados :&lt;figure class=&quot;wp-block-image&quot;&gt;&lt;/figure&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img class=&quot;wp-image-169&quot; src=&quot;http://localhost/~h3dx0/wordpress/wp-content/uploads/2019/05/image-1.png&quot; alt=&quot;&quot; srcset=&quot;http://localhost/~h3dx0/wordpress/wp-content/uploads/2019/05/image-1.png 489w, http://localhost/~h3dx0/wordpress/wp-content/uploads/2019/05/image-1-300x96.png 300w&quot; sizes=&quot;(max-width: 489px) 100vw, 489px&quot; /&gt; &amp;lt;/figure&amp;gt; &lt;figure class=&quot;wp-block-image&quot;&gt;&lt;strong&gt;admin.site.site_header = “Sitio web de inventarios”&lt;/strong&gt;&lt;/figure&gt;&lt;/p&gt;
+
+&lt;p&gt; &lt;/p&gt;
+
+&lt;h4 id=&quot;cabecera-y-bienvenida&quot;&gt;Cabecera y bienvenida&lt;figure class=&quot;wp-block-image&quot;&gt;&lt;/figure&gt;&lt;/h4&gt;
+
+&lt;p&gt;&lt;img class=&quot;wp-image-170&quot; src=&quot;http://localhost/~h3dx0/wordpress/wp-content/uploads/2019/05/image-2.png&quot; alt=&quot;&quot; srcset=&quot;http://localhost/~h3dx0/wordpress/wp-content/uploads/2019/05/image-2.png 441w, http://localhost/~h3dx0/wordpress/wp-content/uploads/2019/05/image-2-300x83.png 300w&quot; sizes=&quot;(max-width: 441px) 100vw, 441px&quot; /&gt; &amp;lt;/figure&amp;gt; &lt;figure class=&quot;wp-block-image&quot;&gt;&lt;strong&gt;admin.site.site_header = “Sitio web de inventarios”&lt;/strong&gt; y &lt;strong&gt;admin.site.index_title = “Bienvenidos al portal de administración”&lt;/strong&gt;&lt;/figure&gt;&lt;/p&gt;
+
+&lt;h4 id=&quot;título-de-sitio&quot;&gt;&lt;strong&gt;Título de sitio&lt;/strong&gt;&lt;figure class=&quot;wp-block-image&quot;&gt;&lt;/figure&gt;&lt;/h4&gt;
+
+&lt;p&gt;&lt;img class=&quot;wp-image-171&quot; src=&quot;http://localhost/~h3dx0/wordpress/wp-content/uploads/2019/05/Screenshot_20190523_220722.png&quot; alt=&quot;&quot; /&gt; &amp;lt;/figure&amp;gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;admin.site.site_title = “Portal de inventarios”&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Espero les sirva y les agradecería sus comentarios.&lt;/p&gt;</content><author><name>robert</name></author><summary type="html">Siguiendo la serie sobre como sacar mejor provecho al administrador de DJANGO , hoy les dejo un pequeño cambio pero importante.</summary></entry><entry><title type="html">Como evitar borrar elementos en el administrador de Django</title><link href="http://localhost:4000/como-evitar-borrar-elementos-en-el-administrador-de-django/" rel="alternate" type="text/html" title="Como evitar borrar elementos en el administrador de Django" /><published>2019-04-24T21:45:30-05:00</published><updated>2019-04-24T21:45:30-05:00</updated><id>http://localhost:4000/como-evitar-borrar-elementos-en-el-administrador-de-django</id><content type="html" xml:base="http://localhost:4000/como-evitar-borrar-elementos-en-el-administrador-de-django/">&lt;p&gt;Hola a todos y muchas gracias por llegar a mi blog. Espero este artículo te sea de utilidad.&lt;/p&gt;
+
+&lt;p&gt;En varios proyectos por cuestiones de manejo de información histórica , nuestro cliente nos comenta que &lt;strong&gt;no se pueden borrar ciertos datos&lt;/strong&gt; una ves que ya están en el sistema.&lt;/p&gt;
+
+&lt;p&gt;Cuando hacemos nuestro administrador desde cero no hay problemas pues controlamos todo el proceso de creación pero si se desea utilizar el &lt;strong&gt;administrador que DJANGO&lt;/strong&gt; nos brinda por cuestiones de agilizar tiempos o cualquier otra razón, este por defecto &lt;strong&gt;nos da la opción de eliminar los registros de los modelos que tenemos.&lt;/strong&gt;&lt;figure class=&quot;wp-block-image&quot;&gt;&lt;/figure&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://localhost/~h3dx0/wordpress/wp-content/uploads/2019/04/Firefox_Screenshot_2019-04-25T02-20-59.578Z.png&quot; alt=&quot;Listado Django por defecto&quot; class=&quot;wp-image-146&quot; srcset=&quot;http://localhost/~h3dx0/wordpress/wp-content/uploads/2019/04/Firefox_Screenshot_2019-04-25T02-20-59.578Z.png 466w, http://localhost/~h3dx0/wordpress/wp-content/uploads/2019/04/Firefox_Screenshot_2019-04-25T02-20-59.578Z-300x115.png 300w&quot; sizes=&quot;(max-width: 466px) 100vw, 466px&quot; /&gt; &amp;lt;figcaption&amp;gt;Listado Django&amp;lt;/figcaption&amp;gt;&amp;lt;/figure&amp;gt;&lt;/p&gt;
+
+&lt;p&gt;Como nos muestra la imagen anterior &lt;strong&gt;podemos borrar los datos&lt;/strong&gt; usando el ckeckbox y el select de acciones.&lt;/p&gt;
+
+&lt;h2 id=&quot;solución&quot;&gt;Solución&lt;/h2&gt;
+
+&lt;p&gt;En el &lt;strong&gt;archivo admin.py&lt;/strong&gt; de nuestro proyecto donde tenemos registrado el modelo debemos agregar lo siguiente:&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;from miproyecto.admin import NonDeleteAdmin&lt;br /&gt;
+admin.site.register(MiModelo, NonDeleteAdmin)&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Quedando así el administrador donde se eliminan los checkbox y el select para la acción de borrar.&lt;figure class=&quot;wp-block-image&quot;&gt;&lt;/figure&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://localhost/~h3dx0/wordpress/wp-content/uploads/2019/04/Firefox_Screenshot_2019-04-25T02-25-53.747Z.png&quot; alt=&quot;evitar borrar datos administrador django&quot; class=&quot;wp-image-147&quot; srcset=&quot;http://localhost/~h3dx0/wordpress/wp-content/uploads/2019/04/Firefox_Screenshot_2019-04-25T02-25-53.747Z.png 468w, http://localhost/~h3dx0/wordpress/wp-content/uploads/2019/04/Firefox_Screenshot_2019-04-25T02-25-53.747Z-300x110.png 300w&quot; sizes=&quot;(max-width: 468px) 100vw, 468px&quot; /&gt; &amp;lt;figcaption&amp;gt;Listado sin opción de eliminar.&amp;lt;/figcaption&amp;gt;&amp;lt;/figure&amp;gt;&lt;/p&gt;
+
+&lt;p&gt;Espero les sea útil y cualquier comentario es bienvenido. 🙂&lt;/p&gt;</content><author><name>robert</name></author><category term="admindjango" /><category term="backend" /><category term="django" /><category term="howto" /><category term="python" /><summary type="html">Hola a todos y muchas gracias por llegar a mi blog. Espero este artículo te sea de utilidad.</summary></entry><entry><title type="html">Alinear elementos en el contenedor con flexbox</title><link href="http://localhost:4000/alinear-elementos-flexbox/" rel="alternate" type="text/html" title="Alinear elementos en el contenedor con flexbox" /><published>2018-02-15T22:26:14-06:00</published><updated>2018-02-15T22:26:14-06:00</updated><id>http://localhost:4000/alinear-elementos-flexbox</id><content type="html" xml:base="http://localhost:4000/alinear-elementos-flexbox/">&lt;p&gt;Continuando con la serie de artículos sobre como &lt;strong&gt;maquetar en css&lt;/strong&gt; con flexbox, hoy tendremos como objetivo el &lt;strong&gt;aprender a alinear elementos&lt;/strong&gt; dentro de un contenedor.&lt;/p&gt;
+
+&lt;p&gt;Una de las funciones o posibiliades que más me llamó la antención al comenzar a trabajar con flexbox fue la facilidad para poder acomodar o alinear elementos, tanto horizontalmente, verticalmente como cada elemento por separado.&lt;/p&gt;
+
+&lt;p&gt;Para alinear los elementos nuestro contenedor acepta 4 propiedades fundamentales&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;justify-content&lt;/li&gt;
+  &lt;li&gt;align-items&lt;/li&gt;
+  &lt;li&gt;align-self&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Estas propiedades colocarán los elementos dependiendo  de como se hubiese definido nuestro main-axis, &lt;a href=&quot;http://localhost/~h3dx0/wordpress/conceptos-basicos-en-flexbox/&quot;&gt;aquí&lt;/a&gt; puedes darle una revisada a este tema.&lt;br /&gt;
+&lt;img class=&quot;aligncenter wp-image-75 size-full&quot; title=&quot;AxisFlexbox&quot; src=&quot;http://localhost/~h3dx0/wordpress/wp-content/uploads/2018/02/AxisFlexbox.png&quot; alt=&quot;AxisFlexbox&quot; width=&quot;640&quot; height=&quot;400&quot; srcset=&quot;http://localhost/~h3dx0/wordpress/wp-content/uploads/2018/02/AxisFlexbox.png 640w, http://localhost/~h3dx0/wordpress/wp-content/uploads/2018/02/AxisFlexbox-300x188.png 300w&quot; sizes=&quot;(max-width: 640px) 100vw, 640px&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt; &lt;/p&gt;
+
+&lt;h2 id=&quot;justify-content&quot;&gt;justify-content:&lt;/h2&gt;
+
+&lt;p&gt;Esta propiedad será la encargada de organizar los elementos dentro de nuestro contenedor a través del main-axis (de forma horizontal en el caso de la imagen).&lt;/p&gt;
+
+&lt;p&gt;Valores aceptados:&lt;/p&gt;
+
+&lt;h3 id=&quot;justify-content-flex-start&quot;&gt;&lt;strong&gt;justify-content: flex-start;&lt;/strong&gt;&lt;/h3&gt;
+
+&lt;p&gt;[codepen_embed height=”265″ theme_id=”0″ slug_hash=”PRemLd” default_tab=”result” user=”h3dx0″]See the Pen &amp;lt;a href=’https://codepen.io/h3dx0/pen/PRemLd/’&amp;gt;ju-co:flsart&amp;lt;/a&amp;gt; by Robert (&amp;lt;a href=’https://codepen.io/h3dx0′&amp;gt;@h3dx0&amp;lt;/a&amp;gt;) on &amp;lt;a href=’https://codepen.io’&amp;gt;CodePen&amp;lt;/a&amp;gt;.[/codepen_embed]&lt;/p&gt;
+
+&lt;p&gt;Al aplicar esta propiedad puede que no se vea ningún efecto de inicio dado que nuestro menú en el ejemplo ya tiene asignada la propiedad &lt;strong&gt;flex-direction: row&lt;/strong&gt; desde un inicio acomodando los elementos uno al lado del otro,  lo que se quiere lograr es que los elementos se acomoden donde comienza el contenedor que en este caso es de izquierda a derecha.&lt;/p&gt;
+
+&lt;h3 id=&quot;justify-content-center&quot;&gt;&lt;strong&gt;justify-content: center;&lt;/strong&gt;&lt;/h3&gt;
+
+&lt;p&gt;[codepen_embed height=”265″ theme_id=”0″ slug_hash=”ZxoKNb” default_tab=”result” user=”h3dx0″]See the Pen &amp;lt;a href=’https://codepen.io/h3dx0/pen/ZxoKNb/’&amp;gt;justcont:center&amp;lt;/a&amp;gt; by Robert (&amp;lt;a href=’https://codepen.io/h3dx0′&amp;gt;@h3dx0&amp;lt;/a&amp;gt;) on &amp;lt;a href=’https://codepen.io’&amp;gt;CodePen&amp;lt;/a&amp;gt;.[/codepen_embed]&lt;/p&gt;
+
+&lt;p&gt;Aplicando esta propiedad vemos como todos los elementos se centran teniendo en cuenta el main-axis que en este caso es en forma horizontal.&lt;/p&gt;
+
+&lt;h3 id=&quot;justify-content-flex-end&quot;&gt;&lt;strong&gt;justify-content: flex-end;&lt;/strong&gt;&lt;/h3&gt;
+
+&lt;p&gt;[codepen_embed height=”265″ theme_id=”0″ slug_hash=”gezWJd” default_tab=”result” user=”h3dx0″]See the Pen &amp;lt;a href=’https://codepen.io/h3dx0/pen/gezWJd/’&amp;gt;justcont:flexend&amp;lt;/a&amp;gt; by Robert (&amp;lt;a href=’https://codepen.io/h3dx0′&amp;gt;@h3dx0&amp;lt;/a&amp;gt;) on &amp;lt;a href=’https://codepen.io’&amp;gt;CodePen&amp;lt;/a&amp;gt;.[/codepen_embed]&lt;/p&gt;
+
+&lt;p&gt;Flex-end nos ayuda a alinear nuestros elementos al final de nuestro contenedor en este caso hacia la derecha. Lo que anteriormente lograríamos usando floats.&lt;/p&gt;
+
+&lt;p&gt; &lt;/p&gt;
+
+&lt;h3 id=&quot;justify-content-space-between&quot;&gt;&lt;strong&gt;justify-content: space-between;&lt;/strong&gt;&lt;/h3&gt;
+
+&lt;p&gt;[codepen_embed height=”265″ theme_id=”0″ slug_hash=”JLvNQN” default_tab=”result” user=”h3dx0″]See the Pen &amp;lt;a href=’https://codepen.io/h3dx0/pen/JLvNQN/’&amp;gt;jcspace-btween&amp;lt;/a&amp;gt; by Robert (&amp;lt;a href=’https://codepen.io/h3dx0′&amp;gt;@h3dx0&amp;lt;/a&amp;gt;) on &amp;lt;a href=’https://codepen.io’&amp;gt;CodePen&amp;lt;/a&amp;gt;.[/codepen_embed]&lt;/p&gt;
+
+&lt;p&gt;Space-between es una de las propiedades que más me gustan, dada la facilidad con que se pueden dar espacios exactos (ayudándonos con el diseño responsivo en muchos casos) entre los elementos que estamos colocando. Esta propiedad coloca los elementos hacia los extremos de nuestro contenedor y el espacio restante los distribuye con los demás elementos.&lt;/p&gt;
+
+&lt;h3 id=&quot;justify-content-space-around&quot;&gt;&lt;strong&gt;justify-content: space-around;&lt;/strong&gt;&lt;/h3&gt;
+
+&lt;p&gt;[codepen_embed height=”265″ theme_id=”0″ slug_hash=”xWjdvq” default_tab=”result” user=”h3dx0″]See the Pen &amp;lt;a href=’https://codepen.io/h3dx0/pen/xWjdvq/’&amp;gt;jc:space-around&amp;lt;/a&amp;gt; by Robert (&amp;lt;a href=’https://codepen.io/h3dx0′&amp;gt;@h3dx0&amp;lt;/a&amp;gt;) on &amp;lt;a href=’https://codepen.io’&amp;gt;CodePen&amp;lt;/a&amp;gt;.[/codepen_embed]&lt;/p&gt;
+
+&lt;p&gt;Space-around así como space-between nos ayuda a distribuir de forma equitativa el espacio entre nuestros elementos, a diferencia de de la propiedad anterior , crea espacios iguales entre todos los elementos así como con los límites de nuestro contenedor.&lt;/p&gt;
+
+&lt;h2 id=&quot;alinear-elementos-según-cross-axis&quot;&gt;Alinear elementos según cross-axis&lt;/h2&gt;
+
+&lt;h3 id=&quot;align-items&quot;&gt;align-items:&lt;/h3&gt;
+
+&lt;p&gt;Esta propiedad será la encargada de organizar los elementos dentro de nuestro contenedor a través del cross-axis (de forma vertical en el caso de la imagen).&lt;/p&gt;
+
+&lt;h3 id=&quot;valores-aceptados&quot;&gt;Valores aceptados:``&lt;/h3&gt;
+
+&lt;h3 id=&quot;align-items-flex-start&quot;&gt;align-items: flex-start:&lt;/h3&gt;
+
+&lt;p&gt;###&lt;img class=&quot;alignnone size-full wp-image-89&quot; src=&quot;http://localhost/~h3dx0/wordpress/wp-content/uploads/2018/02/ag-start.png&quot; alt=&quot;&quot; width=&quot;640&quot; height=&quot;400&quot; srcset=&quot;http://localhost/~h3dx0/wordpress/wp-content/uploads/2018/02/ag-start.png 640w, http://localhost/~h3dx0/wordpress/wp-content/uploads/2018/02/ag-start-300x188.png 300w&quot; sizes=&quot;(max-width: 640px) 100vw, 640px&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;align-items-flex-end&quot;&gt;align-items: flex-end;&lt;/h3&gt;
+
+&lt;p&gt;&lt;img class=&quot;alignnone size-full wp-image-92&quot; src=&quot;http://localhost/~h3dx0/wordpress/wp-content/uploads/2018/02/ag-end-1.png&quot; alt=&quot;&quot; width=&quot;640&quot; height=&quot;400&quot; srcset=&quot;http://localhost/~h3dx0/wordpress/wp-content/uploads/2018/02/ag-end-1.png 640w, http://localhost/~h3dx0/wordpress/wp-content/uploads/2018/02/ag-end-1-300x188.png 300w&quot; sizes=&quot;(max-width: 640px) 100vw, 640px&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;align-items-center&quot;&gt;align-items: center;&lt;/h3&gt;
+
+&lt;p&gt;&lt;img class=&quot;alignnone wp-image-93 size-full&quot; src=&quot;http://localhost/~h3dx0/wordpress/wp-content/uploads/2018/02/ag-center.png&quot; alt=&quot;alinear elementos&quot; width=&quot;640&quot; height=&quot;400&quot; srcset=&quot;http://localhost/~h3dx0/wordpress/wp-content/uploads/2018/02/ag-center.png 640w, http://localhost/~h3dx0/wordpress/wp-content/uploads/2018/02/ag-center-300x188.png 300w&quot; sizes=&quot;(max-width: 640px) 100vw, 640px&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;align-items-strech&quot;&gt;align-items: strech;&lt;/h3&gt;
+
+&lt;p&gt;&lt;img class=&quot;alignnone wp-image-95 size-full&quot; src=&quot;http://localhost/~h3dx0/wordpress/wp-content/uploads/2018/02/ag-strech-1.png&quot; alt=&quot;alinear elementos&quot; width=&quot;640&quot; height=&quot;400&quot; srcset=&quot;http://localhost/~h3dx0/wordpress/wp-content/uploads/2018/02/ag-strech-1.png 640w, http://localhost/~h3dx0/wordpress/wp-content/uploads/2018/02/ag-strech-1-300x188.png 300w&quot; sizes=&quot;(max-width: 640px) 100vw, 640px&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Estas son las principales propiedades para poder controlar la ubicación de todos los elementos dentro de nuestro contenedor. Muchas de estas propiedades están sujetas a como orientemos nuestros main-axis y cross-axis. Estas son algunos de los resultados que ahora con flexbox se puede lograr de forma mas sencilla.&lt;/p&gt;
+
+&lt;p&gt;Muchas gracias por su lectura. Espero que les sirva este artículo para que puedan comenzar a usar estas fantásticas propiedades y atributos.&lt;/p&gt;
+
+&lt;p&gt;No lo dudes y regálame un simple GRACIAS.&lt;/p&gt;</content><author><name>robert</name></author><category term="flexbox" /><category term="maquetado" /><category term="web" /><summary type="html">Continuando con la serie de artículos sobre como maquetar en css con flexbox, hoy tendremos como objetivo el aprender a alinear elementos dentro de un contenedor.</summary></entry><entry><title type="html">Flexbox, conceptos básicos (flex-direction)</title><link href="http://localhost:4000/conceptos-basicos-en-flexbox/" rel="alternate" type="text/html" title="Flexbox, conceptos básicos (flex-direction)" /><published>2018-02-12T22:10:54-06:00</published><updated>2018-02-12T22:10:54-06:00</updated><id>http://localhost:4000/conceptos-basicos-en-flexbox</id><content type="html" xml:base="http://localhost:4000/conceptos-basicos-en-flexbox/">&lt;p&gt;Continuando con la serie de este artículo sobre &lt;strong&gt;Flexbox&lt;/strong&gt; estaremos viendo los conceptos principales que debemos tener en cuenta a la hora de maquetar nuestros layouts con esta técnica en especial la propiedad &lt;strong&gt;flex-direction&lt;/strong&gt; y los axis. Sino lo leíste  &lt;a href=&quot;http://localhost/~h3dx0/wordpress/comenzando-con-flexbox-css/&quot;&gt;aquí hay una introducción&lt;/a&gt; para comenzar a usar esta técnica de forma muy fácil.&lt;/p&gt;
+
+&lt;h2 id=&quot;los-dos-ejes-o-axis-de-flexbox&quot;&gt;Los dos ejes o axis de Flexbox:&lt;/h2&gt;
+
+&lt;p&gt;Para comenzar a trabajar con flexbox se debe tener en cuenta que para acomodar los elementos se hace en base a los  2 ejes o axis que existen, el &lt;strong&gt;main axis&lt;/strong&gt; y el &lt;strong&gt;cross axis .&lt;/strong&gt; Siendo el main axis la principal y que es definida por la propiedad &lt;strong&gt;flex-direction.&lt;/strong&gt;&lt;/p&gt;
+
+&lt;figure id=&quot;attachment_57&quot; aria-describedby=&quot;caption-attachment-57&quot; style=&quot;width: 501px&quot; class=&quot;wp-caption alignnone&quot;&gt;&lt;img class=&quot;wp-image-57 size-full&quot; title=&quot;main axis&quot; src=&quot;http://localhost/~h3dx0/wordpress/wp-content/uploads/2018/02/main_axis.png&quot; alt=&quot;Flex-direction main axis&quot; width=&quot;501&quot; height=&quot;77&quot; srcset=&quot;http://localhost/~h3dx0/wordpress/wp-content/uploads/2018/02/main_axis.png 501w, http://localhost/~h3dx0/wordpress/wp-content/uploads/2018/02/main_axis-300x46.png 300w&quot; sizes=&quot;(max-width: 501px) 100vw, 501px&quot; /&gt;&lt;figcaption id=&quot;caption-attachment-57&quot; class=&quot;wp-caption-text&quot;&gt;main axis&lt;/figcaption&gt;&lt;/figure&gt;
+
+&lt;p&gt;Al definir la propiedad &lt;strong&gt;flex-direction: row,&lt;/strong&gt; estamos diciéndole a nuestro contenedor que acomode los elementos uno al lado del otro, es decir nuestro &lt;strong&gt;main-axis será ubicado horizontalmente&lt;/strong&gt; lo cual debemos tener en cuenta porque muchas &lt;strong&gt;otras propiedades dependen de la definición de los axis.&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Este es el contenedor de los elementos del menú.&lt;/p&gt;
+
+&lt;pre class=&quot;lang:default decode:true&quot; title=&quot;flex-direction html&quot;&gt;&amp;lt;nav&amp;gt;
+  &amp;lt;ul&amp;gt;
+    &amp;lt;li&amp;gt;&amp;lt;a href=&quot;#&quot;&amp;gt;Inicio&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;
+    &amp;lt;li&amp;gt;&amp;lt;a href=&quot;#&quot;&amp;gt;Quienes somos&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;
+    &amp;lt;li&amp;gt;&amp;lt;a href=&quot;#&quot;&amp;gt;Servicios&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;
+    &amp;lt;li&amp;gt;&amp;lt;a href=&quot;#&quot;&amp;gt;Contacto&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;
+  &amp;lt;/ul&amp;gt;
+&amp;lt;/nav&amp;gt;&lt;/pre&gt;
+
+&lt;p&gt;CSS aplicado.&lt;/p&gt;
+
+&lt;pre class=&quot;lang:css decode:true&quot; title=&quot;css&quot;&gt;nav{
+  background: #008492;  
+}
+
+ul{
+  display:flex;
+  flex-direction:row;
+
+}
+
+ul &amp;gt; li {
+    margin:10px;
+}
+ul &amp;gt; li &amp;gt; a{
+  color:#fff;
+  text-decoration: none;
+}
+li {
+  list-style:none;
+}&lt;/pre&gt;
+
+&lt;p&gt;Si ya leyeron el &lt;a href=&quot;http://localhost/~h3dx0/wordpress/comenzando-con-flexbox-css/&quot;&gt;artículo anterior&lt;/a&gt; pueden notar que no hay cambios en cuanto al resultado que esperamos, en este caso cada elemento del menú se coloca uno al lado del otro. Esto sucede pues al definir en el &lt;strong&gt;ul la propiedad display:flex,&lt;/strong&gt; el comportamiento de los elementos hijos por &lt;strong&gt;default es flex-direction:row,&lt;/strong&gt; por lo que no es necesario definir la propiedad si queremos que su comportamiento sea el establecido.&lt;/p&gt;
+
+&lt;h2 id=&quot;valores-de-aceptados-por-flex-direction&quot;&gt;Valores de aceptados por flex-direction&lt;/h2&gt;
+
+&lt;p&gt;Para manipular los axis de nuestro contenedor  flex-direction acepta los siguientes valores:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;row&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;row-reverse&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;column&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;column-reverse&lt;/code&gt;``&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p class=&quot;&quot;&gt;
+  Así se vería nuestro menú aplicando los distintos valores a esta propiedad
+&lt;/p&gt;
+
+&lt;h3 id=&quot;row-reverse&quot;&gt; row-reverse&lt;/h3&gt;
+
+&lt;p&gt;&lt;img class=&quot;size-full wp-image-66&quot; src=&quot;http://localhost/~h3dx0/wordpress/wp-content/uploads/2018/02/Firefox_Screenshot_2018-02-14T03-28-45.768Z.png&quot; alt=&quot;flex-direction:row-reverse&quot; width=&quot;808&quot; height=&quot;62&quot; srcset=&quot;http://localhost/~h3dx0/wordpress/wp-content/uploads/2018/02/Firefox_Screenshot_2018-02-14T03-28-45.768Z.png 808w, http://localhost/~h3dx0/wordpress/wp-content/uploads/2018/02/Firefox_Screenshot_2018-02-14T03-28-45.768Z-300x23.png 300w, http://localhost/~h3dx0/wordpress/wp-content/uploads/2018/02/Firefox_Screenshot_2018-02-14T03-28-45.768Z-768x59.png 768w&quot; sizes=&quot;(max-width: 808px) 100vw, 808px&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;column&quot;&gt; column&lt;/h3&gt;
+
+&lt;p&gt;&lt;img class=&quot;size-full wp-image-64&quot; src=&quot;http://localhost/~h3dx0/wordpress/wp-content/uploads/2018/02/columns.png&quot; alt=&quot;flex-direction:column&quot; width=&quot;428&quot; height=&quot;237&quot; srcset=&quot;http://localhost/~h3dx0/wordpress/wp-content/uploads/2018/02/columns.png 428w, http://localhost/~h3dx0/wordpress/wp-content/uploads/2018/02/columns-300x166.png 300w&quot; sizes=&quot;(max-width: 428px) 100vw, 428px&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;column-reverse&quot;&gt; column-reverse&lt;/h3&gt;
+
+&lt;p&gt;&lt;img class=&quot;alignnone size-full wp-image-67&quot; src=&quot;http://localhost/~h3dx0/wordpress/wp-content/uploads/2018/02/Firefox_Screenshot_2018-02-14T03-31-29.538Z.png&quot; alt=&quot;&quot; width=&quot;251&quot; height=&quot;183&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;En las imágenes anteriores se puede ver claramente como afecta el orden de los elementos al aplicar los distintos valores a  &lt;strong&gt;flex-direction.&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt; &lt;/p&gt;
+
+&lt;h2 id=&quot;cross-axis&quot;&gt;Cross axis&lt;/h2&gt;
+
+&lt;p&gt;El cross axis es el eje encargado de acomodar los elementos perpendicularmente al main axis, por lo que tenemos que tener en cuenta la orientación del mismo dado que dependen uno de otro.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Si el main axis está orientado a column o column-reverse el cross axis estará afectando los elementos horizontalmente.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Acá les dejo un codepen para que puedan practicar los conceptos y valores aprendidos.&lt;/p&gt;</content><author><name>robert</name></author><category term="flex-direction" /><category term="flexbox" /><category term="main-axis" /><summary type="html">Continuando con la serie de este artículo sobre Flexbox estaremos viendo los conceptos principales que debemos tener en cuenta a la hora de maquetar nuestros layouts con esta técnica en especial la propiedad flex-direction y los axis. Sino lo leíste  aquí hay una introducción para comenzar a usar esta técnica de forma muy fácil.</summary></entry><entry><title type="html">Comenzando con CSS Flexbox layout</title><link href="http://localhost:4000/comenzando-con-flexbox-css/" rel="alternate" type="text/html" title="Comenzando con CSS Flexbox layout" /><published>2018-01-25T17:37:28-06:00</published><updated>2018-01-25T17:37:28-06:00</updated><id>http://localhost:4000/comenzando-con-flexbox-css</id><content type="html" xml:base="http://localhost:4000/comenzando-con-flexbox-css/">&lt;p&gt;Hola a todos, muchas gracias por darte una vuelta a este artículo en el cual aprenderás como iniciar el &lt;strong&gt;maquetado con flexbox&lt;/strong&gt; y así darle un impulso a tus conocimientos de frontend web para dejar atrás viejas e inútiles técnicas de maquetado con &lt;strong&gt;CSS3.&lt;/strong&gt; Comenzamos…&lt;/p&gt;
+
+&lt;h2 id=&quot;que-es&quot;&gt;¿Que es?&lt;/h2&gt;
+
+&lt;p&gt;&lt;strong&gt;CSS flexbox layout&lt;/strong&gt; es una tecnología o modelo de CSS3 implementada por los navegadores actuales. Tiene como objetivo ayudar a los desarrolladores a crear layouts de sitios web de manera más fácil, reutilizable y eficiente.&lt;/p&gt;
+
+&lt;h2 id=&quot;por-qué-usarlo&quot;&gt;¿Por qué usarlo?&lt;/h2&gt;
+
+&lt;p&gt;Porque la vida serás mas sencilla a la hora de maquetar  Viene a resolver muchos problemas que anteriormente se tenían que solucionar de forma poco ortodoxa, creando hacks y código poco legible. Con flexbox muchos problemas de posicionamiento de elementos, ordenamiento de los mismo se puede lograr de manera muy sencilla.&lt;/p&gt;
+
+&lt;h2 id=&quot;como-usarlo&quot;&gt;¿Como usarlo?&lt;/h2&gt;
+
+&lt;p&gt;Vamos a crear un menú para nuestro sitio con los enlaces de comunes&lt;/p&gt;
+
+&lt;p&gt;Nuestro código HTML se vería así:&lt;/p&gt;
+
+&lt;pre class=&quot;lang:xhtml decode:true&quot; title=&quot;Menu&quot;&gt;&amp;lt;nav&amp;gt;
+  &amp;lt;ul&amp;gt;
+    &amp;lt;li&amp;gt;&amp;lt;a href=&quot;#&quot;&amp;gt;Inicio&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;
+    &amp;lt;li&amp;gt;&amp;lt;a href=&quot;#&quot;&amp;gt;Quienes somos&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;
+    &amp;lt;li&amp;gt;&amp;lt;a href=&quot;#&quot;&amp;gt;Servicios&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;
+    &amp;lt;li&amp;gt;&amp;lt;a href=&quot;#&quot;&amp;gt;Contacto&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;
+  &amp;lt;/ul&amp;gt;
+&amp;lt;/nav&amp;gt;&lt;/pre&gt;
+
+&lt;p&gt;Nuestro CSS de inicio para dar un poco de estilos sería algo así:&lt;/p&gt;
+
+&lt;pre class=&quot;lang:css decode:true&quot; title=&quot;CSS Inicio&quot;&gt;nav {
+  background: #008492;  
+}
+ul &amp;gt; li &amp;gt; a {
+  color:#fff;
+  text-decoration: none;
+}
+li {
+  list-style:none;
+}&lt;/pre&gt;
+
+&lt;p&gt;El resultado sería algo como esto&lt;/p&gt;
+
+&lt;p&gt;&lt;img class=&quot;size-full wp-image-47&quot; src=&quot;http://localhost/~h3dx0/wordpress/wp-content/uploads/2018/01/Firefox_Screenshot_2018-01-30T02-51-28.619Z.png&quot; alt=&quot;ResultadoSinFlexbox&quot; width=&quot;317&quot; height=&quot;97&quot; srcset=&quot;http://localhost/~h3dx0/wordpress/wp-content/uploads/2018/01/Firefox_Screenshot_2018-01-30T02-51-28.619Z.png 317w, http://localhost/~h3dx0/wordpress/wp-content/uploads/2018/01/Firefox_Screenshot_2018-01-30T02-51-28.619Z-300x92.png 300w&quot; sizes=&quot;(max-width: 317px) 100vw, 317px&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Aquí es donde entra &lt;strong&gt;flexbox&lt;/strong&gt; al rescate &lt;strong&gt;evitando&lt;/strong&gt; el uso de &lt;strong&gt;floats&lt;/strong&gt; y &lt;strong&gt;clearfix.&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Agregando solamente esta línea  a nuestro ejemplo tenemos un resultado mucho mejor&lt;/p&gt;
+
+&lt;pre class=&quot;lang:css decode:true &quot; title=&quot;DisplayFlex&quot;&gt;ul {
+  display:flex;
+}&lt;/pre&gt;
+
+&lt;p&gt;&lt;img class=&quot;wp-image-46 size-full&quot; title=&quot;ResultadoConFlexbox&quot; src=&quot;http://localhost/~h3dx0/wordpress/wp-content/uploads/2018/01/Firefox_Screenshot_2018-01-30T02-49-38.166Z.png&quot; alt=&quot;ResultadoConFlexbox&quot; width=&quot;743&quot; height=&quot;62&quot; srcset=&quot;http://localhost/~h3dx0/wordpress/wp-content/uploads/2018/01/Firefox_Screenshot_2018-01-30T02-49-38.166Z.png 743w, http://localhost/~h3dx0/wordpress/wp-content/uploads/2018/01/Firefox_Screenshot_2018-01-30T02-49-38.166Z-300x25.png 300w, http://localhost/~h3dx0/wordpress/wp-content/uploads/2018/01/Firefox_Screenshot_2018-01-30T02-49-38.166Z-740x62.png 740w&quot; sizes=&quot;(max-width: 743px) 100vw, 743px&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Al agregar esta simple línea  al contenedor de los elementos que se quieren acomodar aplicando &lt;strong&gt;FLEXBOX&lt;/strong&gt;,  el contenedor reorganizará sus elementos hijos colocándolos uno al lado del otro, como si usáramos los incómodos &lt;strong&gt;float.&lt;/strong&gt; Este comportamiento se ejecutará de forma similar en cualquier caso que se aplique el display:flex;&lt;/p&gt;
+
+&lt;p&gt;Este es el primer paso para comenzar a utilizar FLEXBOX, debemos detectar nuestro &lt;strong&gt;elemento padre o contenedor&lt;/strong&gt; y &lt;strong&gt;agregar&lt;/strong&gt; la propiedad &lt;strong&gt;display:flex.&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;A continuación el código completo del ejemplo CSS. Donde la parte fundamental y objetivo es la línea 6.&lt;/p&gt;
+
+&lt;pre class=&quot;lang:css decode:true&quot; title=&quot;Final&quot;&gt;nav{
+  background: #008492;  
+}
+
+ul{
+  display:flex;// Contenedor que usa FLEXBOX
+}
+
+ul &amp;gt; li {
+    margin:10px;
+}
+ul &amp;gt; li &amp;gt; a{
+  color:#fff;
+  text-decoration: none;
+}
+li {
+  list-style:none;
+}&lt;/pre&gt;
+
+&lt;p&gt;Acá les dejo otro ejemplo que ilustra muy bien el uso sencillo de FLEXBOX. Imaginen que estamos creando un sitio de ecommerce y estamos desarrollando la vista donde se muestran los productos.&lt;/p&gt;
+
+&lt;p&gt;Le dejo el CODEPEN para no hacer más extenso el artículo. Prueben quitando el display:flex y verán la difrencia.&lt;/p&gt;
+
+&lt;p&gt;Espero les sea de utilidad este artículo, es simplemente el inicio ya que flexbox tiene muchas más aplicaciones que veremos en otros artículos proximamente.&lt;/p&gt;
+
+&lt;p&gt;No dudes en dejar un comentario. Un gracias o feedback siempre es bienvenido y dá mucho ánimo.&lt;/p&gt;</content><author><name>robert</name></author><category term="css3" /><category term="flexbox" /><category term="grid" /><category term="layout" /><category term="maquetado" /><category term="tutorial" /><summary type="html">Hola a todos, muchas gracias por darte una vuelta a este artículo en el cual aprenderás como iniciar el maquetado con flexbox y así darle un impulso a tus conocimientos de frontend web para dejar atrás viejas e inútiles técnicas de maquetado con CSS3. Comenzamos…</summary></entry></feed>
