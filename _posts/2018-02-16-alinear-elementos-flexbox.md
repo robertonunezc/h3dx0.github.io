@@ -5,13 +5,13 @@ date: 2018-02-16T04:26:14+00:00
 author: robert
 layout: post
 permalink: /alinear-elementos-flexbox/
-# categories:
-#   - CSS3
-#   - HTML5
-# tags:
-#   - flexbox
-#   - maquetado
-#   - web
+categories:
+  - CSS3
+  - HTML5
+tags:
+  - flexbox
+  - maquetado
+  - web
 ---
 Continuando con la serie de artículos sobre como **maquetar en css** con flexbox, hoy tendremos como objetivo el **aprender a alinear elementos** dentro de un contenedor.
 

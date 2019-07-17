@@ -8,10 +8,10 @@ permalink: /conceptos-basicos-en-flexbox/
 categories:
   - CSS3
   - HTML5
-# tags:
-#   - flex-direction
-#   - flexbox
-#   - main-axis
+tags:
+  - flex-direction
+  - flexbox
+  - main-axis
 ---
 Continuando con la serie de este artículo sobre **Flexbox** estaremos viendo los conceptos principales que debemos tener en cuenta a la hora de maquetar nuestros layouts con esta técnica en especial la propiedad **flex-direction** y los axis. Sino lo leíste  [aquí hay una introducción](http://localhost/~h3dx0/wordpress/comenzando-con-flexbox-css/) para comenzar a usar esta técnica de forma muy fácil.
 

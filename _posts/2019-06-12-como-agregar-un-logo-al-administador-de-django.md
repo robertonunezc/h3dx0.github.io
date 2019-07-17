@@ -4,13 +4,12 @@ title: Como agregar un logo al administador de DJANGO
 date: 2019-06-12T04:58:01+00:00
 author: robert
 layout: post
-guid: http://localhost/~h3dx0/wordpress/?p=193
 permalink: /como-agregar-un-logo-al-administador-de-django/
-# categories:
-#   - Admin
-#   - Django
-#   - How To
-#   - python
+categories:
+  - Admin
+  - Django
+  - How To
+  - python
 ---
 
 Con este artículo quiero enseñarte **como agregar un logo al adminstrador de django**, un requerimiento que muchas veces es útil para darle un toque personal a esta sección tan importante .

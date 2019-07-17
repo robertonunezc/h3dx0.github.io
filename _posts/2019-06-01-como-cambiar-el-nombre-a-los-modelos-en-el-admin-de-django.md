@@ -5,14 +5,14 @@ date: 2019-06-01T23:39:30+00:00
 author: robert
 layout: post
 permalink: /como-cambiar-el-nombre-a-los-modelos-en-el-admin-de-django/
-# categories:
-#   - Django
-#   - How To
-#   - python
-# tags:
-#   - admindjango
-#   - django
-#   - python
+categories:
+  - Django
+  - How To
+  - python
+tags:
+  - admindjango
+  - django
+  - python
 ---
 En numerosas ocaciones debemos **mostrar los nombres de nuestros modelos en español**, si el cliente final hará interacción con el administrador de DJANGO. Esto puede ser un problema si nos gusta definir y hacer la programación de nuestro **sistema en inglés, para mantener estándares** o simplemente el **nombre del modelo es algo más abastracto** que su homólogo en la vida real o su **terminación plural no es la correcta** como la imagen que muestro a continuación, por lo que necesitamos **cambiar sus nombre de los modelos** para que **se vean correctamente** en el administrador.
 

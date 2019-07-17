@@ -4,20 +4,17 @@ title: Comenzando con CSS Flexbox layout
 date: 2018-01-25T23:37:28+00:00
 author: robert
 layout: post
-guid: http://localhost/~h3dx0/wordpress/?p=34
 permalink: /comenzando-con-flexbox-css/
-switch_like_status:
-  - "1"
 categories:
   - CSS3
   - HTML5
-# tags:
-#   - css3
-#   - flexbox
-#   - grid
-#   - layout
-#   - maquetado
-#   - tutorial
+tags:
+  - css3
+  - flexbox
+  - grid
+  - layout
+  - maquetado
+  - tutorial
 ---
 Hola a todos, muchas gracias por darte una vuelta a este artículo en el cual aprenderás como iniciar el **maquetado con flexbox** y así darle un impulso a tus conocimientos de frontend web para dejar atrás viejas e inútiles técnicas de maquetado con **CSS3.** Comenzamos&#8230;
 

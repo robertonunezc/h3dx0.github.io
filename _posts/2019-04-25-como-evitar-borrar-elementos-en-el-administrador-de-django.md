@@ -5,15 +5,15 @@ date: 2019-04-25T02:45:30+00:00
 author: robert
 layout: post
 permalink: /como-evitar-borrar-elementos-en-el-administrador-de-django/
-# categories:
-#   - Django
-#   - How To
-# tags:
-#   - admindjango
-#   - backend
-#   - django
-#   - howto
-#   - python
+categories:
+  - Django
+  - How To
+tags:
+  - admindjango
+  - backend
+  - django
+  - howto
+  - python
 ---
 Hola a todos y muchas gracias por llegar a mi blog. Espero este artículo te sea de utilidad.
 

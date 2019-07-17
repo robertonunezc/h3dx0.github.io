@@ -5,10 +5,10 @@ date: 2019-05-24T03:23:35+00:00
 author: robert
 layout: post
 permalink: /como-cambiar-el-titulo-del-adminsitrador-de-django/
-# categories:
-#   - Django
-#   - How To
-#   - python
+categories:
+  - Django
+  - How To
+  - python
 ---
 Siguiendo la serie sobre como sacar mejor provecho al administrador de DJANGO , hoy les dejo un pequeño cambio pero importante.
 
