@@ -16,35 +16,35 @@ hr {
 /*
  * Hide visually and from screen readers
  */
-li{
-    list-style: none;
+ li{
+  list-style: none;
 }
 a{
-    text-decoration: none;
+  text-decoration: none;
 }
 a:hover{
-    text-decoration: none;
+  text-decoration: none;
 }
- .dsp-block{
-   display: block;
-   margin: 0 auto;
- }
- .fll{
-   float: left;
- }
- .flr{
-   float: right;
- }
- .text-verde{
-   color:#0E5C66;
- }
+.dsp-block{
+ display: block;
+ margin: 0 auto;
+}
+.fll{
+ float: left;
+}
+.flr{
+ float: right;
+}
+.text-verde{
+ color:#0E5C66;
+}
 
- .text-white{
-   color:#fff;
- }
- .bold{
-   font-weight: bold;
- }
+.text-white{
+ color:#fff;
+}
+.bold{
+ font-weight: bold;
+}
 .m0{
   margin:0;
 }
@@ -81,26 +81,29 @@ a:hover{
 .mt40{
   margin-top: 40px;
 }
+.mt30{
+  margin-top: 30px;
+}
 .mt90{
   margin-top: 90px;
 }
 .hidden {
-    display: none !important;
+  display: none !important;
 }
 .img-circle{
-    border-radius: 60%;
+  border-radius: 60%;
 }
 .text-center{
   text-align: center;
 }
 .separator {
-    position: relative;
-    width: 90px;
-    height: 3px;
-    margin: 5px 0;
+  position: relative;
+  width: 90px;
+  height: 3px;
+  margin: 5px 0;
 }
 .centered {
-    margin: 10px auto;
+  margin: 10px auto;
 }
 .bg-verde-oscuro{
   background-color: #0E5C66;
@@ -128,18 +131,18 @@ a:hover{
  *    https://medium.com/@jessebeach/beware-smushed-off-screen-accessible-text-5952a4c2cbfe
  */
 
-.visuallyhidden {
-    border: 0;
-    clip: rect(0 0 0 0);
-    -webkit-clip-path: inset(50%);
-    clip-path: inset(50%);
-    height: 1px;
-    margin: -1px;
-    overflow: hidden;
-    padding: 0;
-    position: absolute;
-    width: 1px;
-    white-space: nowrap; /* 1 */
+ .visuallyhidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  -webkit-clip-path: inset(50%);
+  clip-path: inset(50%);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+  white-space: nowrap; /* 1 */
 }
 
 /*
@@ -148,25 +151,25 @@ a:hover{
  * https://www.drupal.org/node/897638
  */
 
-.visuallyhidden.focusable:active,
-.visuallyhidden.focusable:focus {
-    clip: auto;
-    -webkit-clip-path: none;
-    clip-path: none;
-    height: auto;
-    margin: 0;
-    overflow: visible;
-    position: static;
-    width: auto;
-    white-space: inherit;
+ .visuallyhidden.focusable:active,
+ .visuallyhidden.focusable:focus {
+  clip: auto;
+  -webkit-clip-path: none;
+  clip-path: none;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  position: static;
+  width: auto;
+  white-space: inherit;
 }
 
 /*
  * Hide visually and from screen readers, but maintain layout
  */
 
-.invisible {
-    visibility: hidden;
+ .invisible {
+  visibility: hidden;
 }
 
 /*
@@ -181,14 +184,14 @@ a:hover{
  *    `:before` to contain the top-margins of child elements.
  */
 
-.clearfix:before,
-.clearfix:after {
-    content: " "; /* 1 */
-    display: table; /* 2 */
+ .clearfix:before,
+ .clearfix:after {
+  content: " "; /* 1 */
+  display: table; /* 2 */
 }
 
 .clearfix:after {
-    clear: both;
+  clear: both;
 }
 
 /* ==========================================================================
@@ -197,16 +200,16 @@ a:hover{
    Modify as content requires.
    ========================================================================== */
 
-@media only screen and (min-width: 35em) {
+   @media only screen and (min-width: 35em) {
     /* Style adjustments for viewports that meet the condition */
-}
+  }
 
-@media print,
-       (-webkit-min-device-pixel-ratio: 1.25),
-       (min-resolution: 1.25dppx),
-       (min-resolution: 120dpi) {
+  @media print,
+  (-webkit-min-device-pixel-ratio: 1.25),
+  (min-resolution: 1.25dppx),
+  (min-resolution: 120dpi) {
     /* Style adjustments for high resolution devices */
-}
+  }
 
 /* ==========================================================================
    Print styles.
@@ -214,47 +217,47 @@ a:hover{
    http://www.phpied.com/delay-loading-your-print-css/
    ========================================================================== */
 
-@media print {
+   @media print {
     *,
     *:before,
     *:after {
-        background: transparent !important;
+      background: transparent !important;
         color: #000 !important; /* Black prints faster:
-                                   http://www.sanbeiji.com/archives/953 */
+        http://www.sanbeiji.com/archives/953 */
         box-shadow: none !important;
         text-shadow: none !important;
-    }
+      }
 
-    a,
-    a:visited {
+      a,
+      a:visited {
         text-decoration: underline;
-    }
+      }
 
-    a[href]:after {
+      a[href]:after {
         content: " (" attr(href) ")";
-    }
+      }
 
-    abbr[title]:after {
+      abbr[title]:after {
         content: " (" attr(title) ")";
-    }
+      }
 
     /*
      * Don't show links that are fragment identifiers,
      * or use the `javascript:` pseudo protocol
      */
 
-    a[href^="#"]:after,
-    a[href^="javascript:"]:after {
-        content: "";
+     a[href^="#"]:after,
+     a[href^="javascript:"]:after {
+      content: "";
     }
 
     pre {
-        white-space: pre-wrap !important;
+      white-space: pre-wrap !important;
     }
     pre,
     blockquote {
-        border: 1px solid #999;
-        page-break-inside: avoid;
+      border: 1px solid #999;
+      page-break-inside: avoid;
     }
 
     /*
@@ -262,24 +265,24 @@ a:hover{
      * http://css-discuss.incutio.com/wiki/Printing_Tables
      */
 
-    thead {
-        display: table-header-group;
+     thead {
+      display: table-header-group;
     }
 
     tr,
     img {
-        page-break-inside: avoid;
+      page-break-inside: avoid;
     }
 
     p,
     h2,
     h3 {
-        orphans: 3;
-        widows: 3;
+      orphans: 3;
+      widows: 3;
     }
 
     h2,
     h3 {
-        page-break-after: avoid;
+      page-break-after: avoid;
     }
-}
+  }

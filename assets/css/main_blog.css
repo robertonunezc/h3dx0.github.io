@@ -6,13 +6,19 @@ html {
 }
 
 body {
-    font-family: "Open Sans", Helvetica, Arial, sans-serif;
+    font-family: "Arial", sans-serif;
     background-color: #e7e7e7;
 }
 
 @media (min-width: 768px) {
     .container {
         width: 750px;
+    }    
+}
+
+@media (max-width: 768px) {   
+    main {
+        flex-direction: column;
     }
 }
 @media (min-width: 992px) {
@@ -101,7 +107,7 @@ main{
 #side-bar {
     /*en pantallas grandes 30vh*/
     /*celulares 100% */
-      flex: 0 1 0;
+    flex: 0 1 0;
 }
 .article{
   color:black;
@@ -144,7 +150,7 @@ main{
     flex: 3 1 0;
 }
 .detalle-articulo{
-    min-width: 93%;
+    max-width: 95%;
 }
 .article-data{
     align-items: baseline;
