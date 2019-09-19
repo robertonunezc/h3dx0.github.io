@@ -86,7 +86,9 @@ nav.nav-top > ul > li > a:hover {
     background-color: #0E5C66;
     color: #fff;
 }
-
+nav.nav-top > ul > li {
+    list-style: none;
+}
 .flex{
     display: flex;  
 }
