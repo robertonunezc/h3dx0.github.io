@@ -16,8 +16,9 @@ hr {
 /*
  * Hide visually and from screen readers
  */
- li{
-  list-style: none;
+ 
+ ol{
+  padding-left: 25px;
 }
 a{
   text-decoration: none;

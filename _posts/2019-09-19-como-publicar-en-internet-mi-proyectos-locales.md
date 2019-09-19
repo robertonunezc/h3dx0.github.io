@@ -27,18 +27,18 @@ facilmente poder publicar nuestro proyecto local en Internet y así evitarnos ha
 ahorrando muchísimo tiempo y frustración.
 
 ## Como funciona
-Es tan sencillo como entrar a su sitio web <a href="https://ngrok.com/"  target="_blank">NGROK</a>.
-Registrarnos para que nos de un API_KEY que nos permitirá publicar nuestro localhost. 
-Descargar ngrok <a href="https://dashboard.ngrok.com/get-started" target="_blank">aquí</a>, está disponible para una amplia variedad de plataformas.
-Una ves descargado, nos movemos a la carpeta descargada de ngrok y ejecutamos el comando 
+1. Es tan sencillo como entrar a su sitio web <a href="https://ngrok.com/"  target="_blank">NGROK</a>.
+2. Registrarnos para que nos de un API_KEY que nos permitirá publicar nuestro localhost. 
+3. Descargar ngrok <a href="https://dashboard.ngrok.com/get-started" target="_blank">aquí</a>, está disponible para una amplia variedad de plataformas.
+4. Una ves descargado, nos movemos a la carpeta descargada de ngrok y ejecutamos el comando 
 ```bash
 $ ./ngrok authtoken NUESTRO_API_KEY
 ``` 
-Suponiendo que tengamos un proyecto de nodejs que queremos probar en internet, el cual ejecutamos con :
+5. Suponiendo que tengamos un proyecto de nodejs que queremos probar en internet, el cual ejecutamos con :
 ```bash
 $ npm run dev o node app.js
 ```
-El siguiente paso es publicar en internet el puerto por el cual está corriendo nuestra aplicación. Esto lo podemos 
+6. El siguiente paso es publicar en internet el puerto por el cual está corriendo nuestra aplicación. Esto lo podemos 
 verificar en nuestra consola, ExpressJS por defecto sale en el 3000, Django Python en el 8000.
 Ejecutamos
 ```bash

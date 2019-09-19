@@ -104,25 +104,30 @@ facilmente poder publicar nuestro proyecto local en Internet y así evitarnos ha
 ahorrando muchísimo tiempo y frustración.</p>
 
 <h2 id="como-funciona">Como funciona</h2>
-<p>Es tan sencillo como entrar a su sitio web <a href="https://ngrok.com/" target="_blank">NGROK</a>.
-Registrarnos para que nos de un API_KEY que nos permitirá publicar nuestro localhost. 
-Descargar ngrok <a href="https://dashboard.ngrok.com/get-started" target="_blank">aquí</a>, está disponible para una amplia variedad de plataformas.
-Una ves descargado, nos movemos a la carpeta descargada de ngrok y ejecutamos el comando</p>
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>./ngrok authtoken NUESTRO_API_KEY
-</code></pre></div></div>
-<p>Suponiendo que tengamos un proyecto de nodejs que queremos probar en internet, el cual ejecutamos con :</p>
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>npm run dev o node app.js
-</code></pre></div></div>
-<p>El siguiente paso es publicar en internet el puerto por el cual está corriendo nuestra aplicación. Esto lo podemos 
+<ol>
+  <li>Es tan sencillo como entrar a su sitio web <a href="https://ngrok.com/" target="_blank">NGROK</a>.</li>
+  <li>Registrarnos para que nos de un API_KEY que nos permitirá publicar nuestro localhost.</li>
+  <li>Descargar ngrok <a href="https://dashboard.ngrok.com/get-started" target="_blank">aquí</a>, está disponible para una amplia variedad de plataformas.</li>
+  <li>Una ves descargado, nos movemos a la carpeta descargada de ngrok y ejecutamos el comando
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>./ngrok authtoken NUESTRO_API_KEY
+</code></pre></div>    </div>
+  </li>
+  <li>Suponiendo que tengamos un proyecto de nodejs que queremos probar en internet, el cual ejecutamos con :
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>npm run dev o node app.js
+</code></pre></div>    </div>
+  </li>
+  <li>El siguiente paso es publicar en internet el puerto por el cual está corriendo nuestra aplicación. Esto lo podemos 
 verificar en nuestra consola, ExpressJS por defecto sale en el 3000, Django Python en el 8000.
-Ejecutamos</p>
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>./ngrok http PUERTO 
-</code></pre></div></div>
-<p>Ejemplo concreto</p>
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>./ngrok http 80
-</code></pre></div></div>
-<p>Esto nos genera una dirección temporal para probar nuestro servidor en internet.
+Ejecutamos
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>./ngrok http PUERTO 
+</code></pre></div>    </div>
+    <p>Ejemplo concreto</p>
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>./ngrok http 80
+</code></pre></div>    </div>
+    <p>Esto nos genera una dirección temporal para probar nuestro servidor en internet.
 <img src="/assets/img/posts/ngrok-howto.png" alt="NGROK" /></p>
+  </li>
+</ol>
 
 <p>Además de esta dirección en internet, nos permite monitorear los request, tiempos de ejecución todo esto
 accediendo a la <em>http://localhost:4040/</em></p>
