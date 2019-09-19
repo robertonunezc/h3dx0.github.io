@@ -1,4 +1,47 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2019-08-31T12:12:12-05:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Roberto Nuñez Corrales Blog de desarrollo web, Django, HTML, CSS ;VUEJS</title><subtitle>Este es mi blog personal, aqui voy escribiendo todo lo que voy aprendiendo sobre  desarrollo web, especificamente DJANGO, VueJs, HTML5, CSS3 y todo aquello que  creo puede serle útil a alguien más.</subtitle><entry><title type="html">Como agregar un logo al administador de DJANGO</title><link href="http://localhost:4000/como-agregar-un-logo-al-administador-de-django/" rel="alternate" type="text/html" title="Como agregar un logo al administador de DJANGO" /><published>2019-06-11T23:58:01-05:00</published><updated>2019-06-11T23:58:01-05:00</updated><id>http://localhost:4000/como-agregar-un-logo-al-administador-de-django</id><content type="html" xml:base="http://localhost:4000/como-agregar-un-logo-al-administador-de-django/">&lt;p&gt;Con este artículo quiero enseñarte &lt;strong&gt;como agregar un logo al adminstrador de django&lt;/strong&gt;, un requerimiento que muchas veces es útil para darle un toque personal a esta sección tan importante .&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2019-09-19T08:28:09-05:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Roberto Nuñez Corrales Blog de desarrollo web, Django, HTML, CSS ;VUEJS</title><subtitle>Este es mi blog personal, aqui voy escribiendo todo lo que voy aprendiendo sobre  desarrollo web, especificamente DJANGO, VueJs, HTML5, CSS3 y todo aquello que  creo puede serle útil a alguien más.</subtitle><entry><title type="html">Como publicar en internet mis proyectos locales</title><link href="http://localhost:4000/como-publicar-en-internet-mi-proyectos-locales/" rel="alternate" type="text/html" title="Como publicar en internet mis proyectos locales" /><published>2019-09-18T21:45:30-05:00</published><updated>2019-09-18T21:45:30-05:00</updated><id>http://localhost:4000/como-publicar-en-internet-mi-proyectos-locales</id><content type="html" xml:base="http://localhost:4000/como-publicar-en-internet-mi-proyectos-locales/">&lt;p&gt;Me pregunté en muchas ocaciones como podría desde mi localhost poder hacerlo visible en internet, para no tener que estar haciendo deploys que en muchos casos son complejos y nos hacen perder mucho tiempo y más cuando el proyecto está en pleno desarrollo.&lt;/p&gt;
+
+&lt;p&gt;He trabajado en proyectos donde necesito hacer demos para ir presentando los avances,o simplemente tener el proyecto disponible en Internet para que un amigo haga algunas pruebas.&lt;/p&gt;
+
+&lt;p&gt;Después de varios intentos de configuraciones y no encontrar una vía fácil leí en un grupo de Telegram un solución 
+muy cómoda a mi manera de ver.&lt;/p&gt;
+
+&lt;h2 id=&quot;solución&quot;&gt;Solución&lt;/h2&gt;
+&lt;p&gt;Existe una herramienta llamada &lt;a href=&quot;https://ngrok.com/&quot; target=&quot;_blank&quot;&gt;NGROK&lt;/a&gt;. Esta útil plataforma nos da la opción de 
+facilmente poder publicar nuestro proyecto local en Internet y así evitarnos hacer despliegues en VPS, webhosting 
+ahorrando muchísimo tiempo y frustración.&lt;/p&gt;
+
+&lt;h2 id=&quot;como-funciona&quot;&gt;Como funciona&lt;/h2&gt;
+&lt;p&gt;Es tan sencillo como entrar a su sitio web &lt;a href=&quot;https://ngrok.com/&quot; target=&quot;_blank&quot;&gt;NGROK&lt;/a&gt;.
+Registrarnos para que nos de un API_KEY que nos permitirá publicar nuestro localhost. 
+Descargar ngrok &lt;a href=&quot;https://dashboard.ngrok.com/get-started&quot; target=&quot;_blank&quot;&gt;aquí&lt;/a&gt;, está disponible para una amplia variedad de plataformas.
+Una ves descargado, nos movemos a la carpeta descargada de ngrok y ejecutamos el comando&lt;/p&gt;
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;./ngrok authtoken NUESTRO_API_KEY
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;Suponiendo que tengamos un proyecto de nodejs que queremos probar en internet, el cual ejecutamos con :&lt;/p&gt;
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;npm run dev o node app.js
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;El siguiente paso es publicar en internet el puerto por el cual está corriendo nuestra aplicación. Esto lo podemos 
+verificar en nuestra consola, ExpressJS por defecto sale en el 3000, Django Python en el 8000.
+Ejecutamos&lt;/p&gt;
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;./ngrok http PUERTO 
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;Ejemplo concreto&lt;/p&gt;
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;./ngrok http 80
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;Esto nos genera una dirección temporal para probar nuestro servidor en internet.
+&lt;img src=&quot;/assets/img/posts/ngrok-howto.png&quot; alt=&quot;NGROK&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Además de esta dirección en internet, nos permite monitorear los request, tiempos de ejecución todo esto
+accediendo a la &lt;em&gt;http://localhost:4040/&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/img/posts/ngrok-inspect.png&quot; alt=&quot;NGROK&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Esto ha sido una breve introducción a esta gran herramienta, su sitio web tiene muchísima documentación que 
+los ayudará con más detalle a descubrir todo su pontencial.&lt;/p&gt;
+
+&lt;p&gt;Espero les sea útil y cualquier comentario es bienvenido. 🙂&lt;/p&gt;
+
+&lt;h6 id=&quot;las-imágenes-fueron-tomadas-del-sitio-oficial-de-ngrok&quot;&gt;Las imágenes fueron tomadas del sitio oficial de NGROK&lt;/h6&gt;</content><author><name>robert</name></author><category term="ngork" /><category term="backend" /><category term="devops" /><category term="deploy" /><summary type="html">Me pregunté en muchas ocaciones como podría desde mi localhost poder hacerlo visible en internet, para no tener que estar haciendo deploys que en muchos casos son complejos y nos hacen perder mucho tiempo y más cuando el proyecto está en pleno desarrollo.</summary></entry><entry><title type="html">Como agregar un logo al administador de DJANGO</title><link href="http://localhost:4000/como-agregar-un-logo-al-administador-de-django/" rel="alternate" type="text/html" title="Como agregar un logo al administador de DJANGO" /><published>2019-06-11T23:58:01-05:00</published><updated>2019-06-11T23:58:01-05:00</updated><id>http://localhost:4000/como-agregar-un-logo-al-administador-de-django</id><content type="html" xml:base="http://localhost:4000/como-agregar-un-logo-al-administador-de-django/">&lt;p&gt;Con este artículo quiero enseñarte &lt;strong&gt;como agregar un logo al adminstrador de django&lt;/strong&gt;, un requerimiento que muchas veces es útil para darle un toque personal a esta sección tan importante .&lt;/p&gt;
 
 &lt;p&gt;La mayoría de los proyectos web en la actualidad necesitan que su información sea dinámica y facilemente modificable por el cliente o los encargados de realizar esta tarea. Aquí es donde entra en juego el &lt;strong&gt;administrador de DJANGO&lt;/strong&gt; y casi siempre hay que hacerle las &lt;strong&gt;modificaciones visuales&lt;/strong&gt; para que se adapte a nuestro cliente.&lt;/p&gt;
 
