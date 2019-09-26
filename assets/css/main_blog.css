@@ -168,3 +168,20 @@ pre.highlight {
     color:white;
     padding: 10px;
 }
+.link-logo-header-mobile {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+@media screen and (max-width: 900px){
+    main {
+        width: 100vw;
+    }
+    .link-logo-header {
+        display: none;
+    }
+    .link-logo-header-mobile {
+        display: flex;        
+    }
+}

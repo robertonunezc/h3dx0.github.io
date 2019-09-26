@@ -1,9 +1,9 @@
 .fa {
-    padding: 10px;
-    font-size: 30px;
-    width: 50px;
-    text-align: center;
-    text-decoration: none;
+  padding: 10px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
 }
 .fa-facebook {
   border: solid 1px #3B5998;
@@ -16,8 +16,8 @@
 }
 /* Twitter */
 .fa-twitter {
-    border: solid 1px #55ACEE;
-    color: #55ACEE;
+  border: solid 1px #55ACEE;
+  color: #55ACEE;
 }
 .fa-twitter:hover{
   background: #55ACEE;
@@ -40,5 +40,15 @@
 
 .fa-youtube:hover {
   background: #bb0000;
+  color: #fff;
+}
+
+/* Gihub */
+.fa-github {
+  border: solid 1px #000;
+  color: #000;
+}
+.fa-github:hover{
+  background: black;
   color: #fff;
 }
