@@ -103,7 +103,19 @@ console.log(persona, persona3)
 Object { nombre: "Juan", edad: 25 }
 Object { nombre: "Pedro", edad: 25 }
 ````
-Hay otras soluciones pero para mi esta es la que mejor me ha funcionado.
 
+## Solución2
+
+```javascript
+
+const persona =  { nombre : "Juan", edad: 25}
+const persona2 = Object.assign({}, persona)
+persona2.nombre = "Pedro"
+console.log(persona, persona2)
+
+//Resultado
+Object { nombre: "Juan", edad: 25 }
+Object { nombre: "Pedro", edad: 25 }
+````
 Espero les sea útil y cualquier comentario es bienvenido. 🙂
 

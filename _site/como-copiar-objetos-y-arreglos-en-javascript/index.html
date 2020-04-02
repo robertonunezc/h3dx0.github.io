@@ -26,13 +26,13 @@
 <meta property="og:locale" content="en_US" />
 <meta name="description" content="Hace unos días trabajando en un proyecto con VueJS tuve la necesidad de ver como copiar un arreglo para modificarlo en el componente hijo.(Si no conoces VueJS, date una vuelta por su web, es una librería increible para Javascript)." />
 <meta property="og:description" content="Hace unos días trabajando en un proyecto con VueJS tuve la necesidad de ver como copiar un arreglo para modificarlo en el componente hijo.(Si no conoces VueJS, date una vuelta por su web, es una librería increible para Javascript)." />
-<link rel="canonical" href="http://localhost:4000/como-copiar-objetos-y-arreglos-en-javascript/" />
-<meta property="og:url" content="http://localhost:4000/como-copiar-objetos-y-arreglos-en-javascript/" />
+<link rel="canonical" href="/como-copiar-objetos-y-arreglos-en-javascript/" />
+<meta property="og:url" content="/como-copiar-objetos-y-arreglos-en-javascript/" />
 <meta property="og:site_name" content="Roberto Nuñez Corrales Blog de desarrollo web, Django, HTML, CSS ;VUEJS" />
 <meta property="og:type" content="article" />
 <meta property="article:published_time" content="2019-09-18T21:45:30-05:00" />
 <script type="application/ld+json">
-{"description":"Hace unos días trabajando en un proyecto con VueJS tuve la necesidad de ver como copiar un arreglo para modificarlo en el componente hijo.(Si no conoces VueJS, date una vuelta por su web, es una librería increible para Javascript).","@type":"BlogPosting","headline":"Como copiar objetos y arreglos en javascript","dateModified":"2019-09-18T21:45:30-05:00","datePublished":"2019-09-18T21:45:30-05:00","url":"http://localhost:4000/como-copiar-objetos-y-arreglos-en-javascript/","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/como-copiar-objetos-y-arreglos-en-javascript/"},"author":{"@type":"Person","name":"robert"},"@context":"https://schema.org"}</script>
+{"mainEntityOfPage":{"@type":"WebPage","@id":"/como-copiar-objetos-y-arreglos-en-javascript/"},"@type":"BlogPosting","author":{"@type":"Person","name":"robert"},"url":"/como-copiar-objetos-y-arreglos-en-javascript/","headline":"Como copiar objetos y arreglos en javascript","dateModified":"2019-09-18T21:45:30-05:00","description":"Hace unos días trabajando en un proyecto con VueJS tuve la necesidad de ver como copiar un arreglo para modificarlo en el componente hijo.(Si no conoces VueJS, date una vuelta por su web, es una librería increible para Javascript).","datePublished":"2019-09-18T21:45:30-05:00","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 </head>
@@ -175,8 +175,19 @@ los objetos creados.</p>
 <span class="nb">Object</span> <span class="p">{</span> <span class="nl">nombre</span><span class="p">:</span> <span class="s2">"Juan"</span><span class="p">,</span> <span class="nx">edad</span><span class="p">:</span> <span class="mi">25</span> <span class="p">}</span>
 <span class="nb">Object</span> <span class="p">{</span> <span class="nl">nombre</span><span class="p">:</span> <span class="s2">"Pedro"</span><span class="p">,</span> <span class="nx">edad</span><span class="p">:</span> <span class="mi">25</span> <span class="p">}</span>
 </code></pre></div></div>
-<p>Hay otras soluciones pero para mi esta es la que mejor me ha funcionado.</p>
 
+<h2 id="solución2">Solución2</h2>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+<span class="kd">const</span> <span class="nx">persona</span> <span class="o">=</span>  <span class="p">{</span> <span class="na">nombre</span> <span class="p">:</span> <span class="s2">"Juan"</span><span class="p">,</span> <span class="na">edad</span><span class="p">:</span> <span class="mi">25</span><span class="p">}</span>
+<span class="kd">const</span> <span class="nx">persona2</span> <span class="o">=</span> <span class="nb">Object</span><span class="p">.</span><span class="nx">assign</span><span class="p">({},</span> <span class="nx">persona</span><span class="p">)</span>
+<span class="nx">persona2</span><span class="p">.</span><span class="nx">nombre</span> <span class="o">=</span> <span class="s2">"Pedro"</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">persona</span><span class="p">,</span> <span class="nx">persona2</span><span class="p">)</span>
+
+<span class="c1">//Resultado</span>
+<span class="nb">Object</span> <span class="p">{</span> <span class="nl">nombre</span><span class="p">:</span> <span class="s2">"Juan"</span><span class="p">,</span> <span class="nx">edad</span><span class="p">:</span> <span class="mi">25</span> <span class="p">}</span>
+<span class="nb">Object</span> <span class="p">{</span> <span class="nl">nombre</span><span class="p">:</span> <span class="s2">"Pedro"</span><span class="p">,</span> <span class="nx">edad</span><span class="p">:</span> <span class="mi">25</span> <span class="p">}</span>
+</code></pre></div></div>
 <p>Espero les sea útil y cualquier comentario es bienvenido. 🙂</p>
 
 

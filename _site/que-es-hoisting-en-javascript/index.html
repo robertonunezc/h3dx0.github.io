@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>Como personalizar el título del admin de Django</title>
+    <title>Que es hoisting en javascript</title>
     <meta name="description" content="Artículos sobre desarrollo web, python, django, html, css y todo lo que voy aprendiendo sobre la web en mi día a día">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -19,19 +19,20 @@
     <link rel="stylesheet" href="/assets/css/utils.css">
     <link rel="stylesheet" href="/assets/css/icons.css">
     <!-- Begin Jekyll SEO tag v2.6.1 -->
-<title>Como personalizar el título del admin de Django | Roberto Nuñez Corrales Blog de desarrollo web, Django, HTML, CSS ;VUEJS</title>
+<title>Que es hoisting en javascript | Roberto Nuñez Corrales Blog de desarrollo web, Django, HTML, CSS ;VUEJS</title>
 <meta name="generator" content="Jekyll v3.8.5" />
-<meta property="og:title" content="Como personalizar el título del admin de Django" />
+<meta property="og:title" content="Que es hoisting en javascript" />
+<meta name="author" content="robert" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="Este es el contendio y mas cosas" />
-<meta property="og:description" content="Este es el contendio y mas cosas" />
-<link rel="canonical" href="http://localhost:4000/django/python/2019/05/23/como-agregar-titulo-admin-django.html" />
-<meta property="og:url" content="http://localhost:4000/django/python/2019/05/23/como-agregar-titulo-admin-django.html" />
+<meta name="description" content="Hola y bienvenidos a este rinconcito de internet donde comparto lo que voy aprendiendo en el día a día como desarrollador web. Hoy quisiera hacerles una breve introducción a uno de los conceptos que enfrentamos cuando comenzamos a aprender JAVASCRIPT y el es HOSTING." />
+<meta property="og:description" content="Hola y bienvenidos a este rinconcito de internet donde comparto lo que voy aprendiendo en el día a día como desarrollador web. Hoy quisiera hacerles una breve introducción a uno de los conceptos que enfrentamos cuando comenzamos a aprender JAVASCRIPT y el es HOSTING." />
+<link rel="canonical" href="/que-es-hoisting-en-javascript/" />
+<meta property="og:url" content="/que-es-hoisting-en-javascript/" />
 <meta property="og:site_name" content="Roberto Nuñez Corrales Blog de desarrollo web, Django, HTML, CSS ;VUEJS" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2019-05-23T22:35:39-05:00" />
+<meta property="article:published_time" content="2020-02-20T00:00:00-06:00" />
 <script type="application/ld+json">
-{"description":"Este es el contendio y mas cosas","@type":"BlogPosting","headline":"Como personalizar el título del admin de Django","dateModified":"2019-05-23T22:35:39-05:00","datePublished":"2019-05-23T22:35:39-05:00","url":"http://localhost:4000/django/python/2019/05/23/como-agregar-titulo-admin-django.html","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/django/python/2019/05/23/como-agregar-titulo-admin-django.html"},"@context":"https://schema.org"}</script>
+{"mainEntityOfPage":{"@type":"WebPage","@id":"/que-es-hoisting-en-javascript/"},"@type":"BlogPosting","author":{"@type":"Person","name":"robert"},"url":"/que-es-hoisting-en-javascript/","headline":"Que es hoisting en javascript","dateModified":"2020-02-20T00:00:00-06:00","description":"Hola y bienvenidos a este rinconcito de internet donde comparto lo que voy aprendiendo en el día a día como desarrollador web. Hoy quisiera hacerles una breve introducción a uno de los conceptos que enfrentamos cuando comenzamos a aprender JAVASCRIPT y el es HOSTING.","datePublished":"2020-02-20T00:00:00-06:00","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 </head>
@@ -71,12 +72,12 @@
         <main class="flex container">
             <section class="container-articulos">
     <article class="detalle-articulo card">
-        <h2 class="text-verde">Como personalizar el título del admin de Django</h2>
+        <h2 class="text-verde">Que es hoisting en javascript</h2>
         <hr/>
         <aside class="article-data flex">
             <span class="fs12 mr15">
                 <i class="fa fa-calendar-plus-o text-verde" aria-hidden="true"></i>
-                May 23, 2019
+                February 20, 2020
             </span>
             <!-- 
                 TODO revisar como hacer esto dinamico 
@@ -94,7 +95,35 @@
             </ul> -->
         </aside>
         <aside>
-            <p>Este es el contendio y mas cosas</p>
+            <p>Hola y bienvenidos a este rinconcito de internet donde comparto lo que voy aprendiendo en el día a día como desarrollador web.
+Hoy quisiera hacerles una breve introducción a uno de los conceptos que enfrentamos cuando comenzamos a aprender JAVASCRIPT y el es HOSTING.</p>
+
+<h2 id="que-es-hoisting">¿Que es HOISTING?</h2>
+
+<p>Hoisting es un problema que ocurre cuando se declaran variables después de usarlas, me dirán muchos eso es imposible no tiene sentido, pero si puede ocurrir y el motor de JS lo permite, pongo un ejemplo:</p>
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">mensaje</span><span class="p">);</span>
+<span class="kd">var</span> <span class="nx">mensaje</span> <span class="o">=</span> <span class="err">“</span><span class="nx">Hola</span> <span class="nx">a</span> <span class="nx">todos</span><span class="err">”</span><span class="p">;</span>
+</code></pre></div></div>
+
+<p>Este código no arroja error,  esto se debe a que la declaración de la variable se hace primero en el motor de JS y posteriormente se ejecuta la asignación de los valores a la misma.</p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">var</span> <span class="nx">mensaje</span><span class="p">;</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">mensaje</span><span class="p">);</span>
+<span class="nx">mensaje</span> <span class="o">=</span> <span class="err">“</span><span class="nx">Hola</span> <span class="nx">a</span> <span class="nx">todos</span><span class="err">”</span><span class="p">;</span>
+</code></pre></div></div>
+<p>En esa secuencia es  como  se ejecuta el código y a ese comportamiento se le llama HOISTING.</p>
+
+<h3 id="como-evitar-el-hoisting">Como evitar el HOISTING?</h3>
+
+<p>La principal medida es usar <strong>let</strong> y <strong>const</strong> para crear nuestras variables a la hora de programar en JS.
+Otra regla general que podemos optar es siempre declarar nuestras variables al inicio de nuestro scope, esto nos va a ayudar a evitar el hoisting en caso que usemos var para declarar las variables.</p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">let</span> <span class="nx">libreria</span> <span class="o">=</span> <span class="err">“</span><span class="nx">Alamos</span><span class="err">”</span><span class="p">;</span>
+<span class="kd">let</span> <span class="nx">cantidadLibros</span> <span class="o">=</span> <span class="mi">50</span><span class="p">;</span>
+<span class="kd">const</span> <span class="nx">descuento</span> <span class="o">=</span> <span class="mi">10</span><span class="p">;</span>
+</code></pre></div></div>
+
+<p>Es una muy breve explicación pero espero les sirva como introducción al tema.</p>
 
 
         </aside>

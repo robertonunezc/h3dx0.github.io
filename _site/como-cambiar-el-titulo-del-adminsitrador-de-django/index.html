@@ -26,13 +26,13 @@
 <meta property="og:locale" content="en_US" />
 <meta name="description" content="Siguiendo la serie sobre como sacar mejor provecho al administrador de DJANGO , hoy les dejo un pequeño cambio pero importante." />
 <meta property="og:description" content="Siguiendo la serie sobre como sacar mejor provecho al administrador de DJANGO , hoy les dejo un pequeño cambio pero importante." />
-<link rel="canonical" href="http://localhost:4000/como-cambiar-el-titulo-del-adminsitrador-de-django/" />
-<meta property="og:url" content="http://localhost:4000/como-cambiar-el-titulo-del-adminsitrador-de-django/" />
+<link rel="canonical" href="/como-cambiar-el-titulo-del-adminsitrador-de-django/" />
+<meta property="og:url" content="/como-cambiar-el-titulo-del-adminsitrador-de-django/" />
 <meta property="og:site_name" content="Roberto Nuñez Corrales Blog de desarrollo web, Django, HTML, CSS ;VUEJS" />
 <meta property="og:type" content="article" />
 <meta property="article:published_time" content="2019-05-23T22:23:35-05:00" />
 <script type="application/ld+json">
-{"description":"Siguiendo la serie sobre como sacar mejor provecho al administrador de DJANGO , hoy les dejo un pequeño cambio pero importante.","@type":"BlogPosting","headline":"Como cambiar el título del adminsitrador de DJANGO","dateModified":"2019-05-23T22:23:35-05:00","datePublished":"2019-05-23T22:23:35-05:00","url":"http://localhost:4000/como-cambiar-el-titulo-del-adminsitrador-de-django/","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/como-cambiar-el-titulo-del-adminsitrador-de-django/"},"author":{"@type":"Person","name":"robert"},"@context":"https://schema.org"}</script>
+{"mainEntityOfPage":{"@type":"WebPage","@id":"/como-cambiar-el-titulo-del-adminsitrador-de-django/"},"@type":"BlogPosting","author":{"@type":"Person","name":"robert"},"url":"/como-cambiar-el-titulo-del-adminsitrador-de-django/","headline":"Como cambiar el título del adminsitrador de DJANGO","dateModified":"2019-05-23T22:23:35-05:00","description":"Siguiendo la serie sobre como sacar mejor provecho al administrador de DJANGO , hoy les dejo un pequeño cambio pero importante.","datePublished":"2019-05-23T22:23:35-05:00","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 </head>
@@ -97,37 +97,17 @@
         <aside>
             <p>Siguiendo la serie sobre como sacar mejor provecho al administrador de DJANGO , hoy les dejo un pequeño cambio pero importante.</p>
 
-<p>En la mayoría de los casos cuando comenzamos a utilizar el administrador de DJANGO que viene ya listo, es necesario <strong>cambiar los títulos</strong> que aparece de inicio tanto en el formulario de inicio de sesión, en la barra de título y en el listado principal, <strong>“Django administration” o “Administración de Django”.</strong><figure class="wp-block-image"></figure></p>
-
-<p><img class="wp-image-168" src="http://localhost/~h3dx0/wordpress/wp-content/uploads/2019/05/image.png" alt="" srcset="http://localhost/~h3dx0/wordpress/wp-content/uploads/2019/05/image.png 337w, http://localhost/~h3dx0/wordpress/wp-content/uploads/2019/05/image-300x53.png 300w" sizes="(max-width: 337px) 100vw, 337px" /> &lt;figcaption&gt;Titulo de la barra superior del administrador&lt;/figcaption&gt;&lt;/figure&gt;</p>
+<p>En la mayoría de los casos cuando comenzamos a utilizar el administrador de DJANGO que viene ya listo, es necesario <strong>cambiar los títulos</strong> que aparece de inicio tanto en el formulario de inicio de sesión, en la barra de título y en el listado principal.</p>
 
 <h4 id="como-cambiar-el-texto-administración-de-django">Como cambiar el texto “Administración de Django”</h4>
-
 <p>1 – En un admin.py del proyecto agregar las siguientes líneas.</p>
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">admin</span><span class="o">.</span><span class="n">site</span><span class="o">.</span><span class="n">site_header</span> <span class="o">=</span> <span class="s">"Sitio web de inventarios"</span>
+<span class="n">admin</span><span class="o">.</span><span class="n">site</span><span class="o">.</span><span class="n">site_title</span> <span class="o">=</span> <span class="s">"Portal de inventarios"</span>
+<span class="n">admin</span><span class="o">.</span><span class="n">site</span><span class="o">.</span><span class="n">index_title</span> <span class="o">=</span> <span class="s">"Bienvenidos al portal de administración"</span>
+</code></pre></div></div>
+<p>Esos son títulos de ejemplo obviamente usted debe agregar los que quiere que aparezcan.</p>
 
-<pre class="lang:python decode:true ">admin.site.site_header = "Sitio web de inventarios"
-admin.site.site_title = "Portal de inventarios"
-admin.site.index_title = "Bienvenidos al portal de administración"</pre>
-
-<p> </p>
-
-<p>Obteniendo los siguientes resultados :<figure class="wp-block-image"></figure></p>
-
-<p><img class="wp-image-169" src="http://localhost/~h3dx0/wordpress/wp-content/uploads/2019/05/image-1.png" alt="" srcset="http://localhost/~h3dx0/wordpress/wp-content/uploads/2019/05/image-1.png 489w, http://localhost/~h3dx0/wordpress/wp-content/uploads/2019/05/image-1-300x96.png 300w" sizes="(max-width: 489px) 100vw, 489px" /> &lt;/figure&gt; <figure class="wp-block-image"><strong>admin.site.site_header = “Sitio web de inventarios”</strong></figure></p>
-
-<p> </p>
-
-<h4 id="cabecera-y-bienvenida">Cabecera y bienvenida<figure class="wp-block-image"></figure></h4>
-
-<p><img class="wp-image-170" src="http://localhost/~h3dx0/wordpress/wp-content/uploads/2019/05/image-2.png" alt="" srcset="http://localhost/~h3dx0/wordpress/wp-content/uploads/2019/05/image-2.png 441w, http://localhost/~h3dx0/wordpress/wp-content/uploads/2019/05/image-2-300x83.png 300w" sizes="(max-width: 441px) 100vw, 441px" /> &lt;/figure&gt; <figure class="wp-block-image"><strong>admin.site.site_header = “Sitio web de inventarios”</strong> y <strong>admin.site.index_title = “Bienvenidos al portal de administración”</strong></figure></p>
-
-<h4 id="título-de-sitio"><strong>Título de sitio</strong><figure class="wp-block-image"></figure></h4>
-
-<p><img class="wp-image-171" src="http://localhost/~h3dx0/wordpress/wp-content/uploads/2019/05/Screenshot_20190523_220722.png" alt="" /> &lt;/figure&gt;</p>
-
-<p><strong>admin.site.site_title = “Portal de inventarios”</strong></p>
-
-<p>Espero les sirva y les agradecería sus comentarios.</p>
+<p>Espero les sirva.</p>
 
         </aside>
     </article>
