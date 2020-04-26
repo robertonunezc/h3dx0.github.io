@@ -16,32 +16,30 @@ tags:
 ---
 En numerosas ocaciones debemos **mostrar los nombres de nuestros modelos en español**, si el cliente final hará interacción con el administrador de DJANGO. Esto puede ser un problema si nos gusta definir y hacer la programación de nuestro **sistema en inglés, para mantener estándares** o simplemente el **nombre del modelo es algo más abastracto** que su homólogo en la vida real o su **terminación plural no es la correcta** como la imagen que muestro a continuación, por lo que necesitamos **cambiar sus nombre de los modelos** para que **se vean correctamente** en el administrador.
 
-<img class="size-full wp-image-185 aligncenter" src="http://localhost/~h3dx0/wordpress/wp-content/uploads/2019/06/Firefox_Screenshot_2019-06-01T23-22-24.607Z.png" alt="Cambiar Nombre Modelo Django" width="413" height="81" srcset="http://localhost/~h3dx0/wordpress/wp-content/uploads/2019/06/Firefox_Screenshot_2019-06-01T23-22-24.607Z.png 413w, http://localhost/~h3dx0/wordpress/wp-content/uploads/2019/06/Firefox_Screenshot_2019-06-01T23-22-24.607Z-300x59.png 300w" sizes="(max-width: 413px) 100vw, 413px" /> 
+![TITULO](/assets/img/posts/cambiar-nombre-modelos/ModeloOriginal.png)
+<p class="text-center fs12">Modelo Products</p>
+En nuestra apliación tenemos un modelo llamado Products y queremos que aparezca en el administrador el nombre como Productos.
 
 ## Solución
 
-&nbsp;
-
 Para resolver esta situación y poder mostrar en el adminsitrador de DJANGO los nombres que nosotros querramos simplemente basta con **definir 1 propiedad a nuestro modelo.**
 
-Esta propiedad es **verbose\_name\_plural = &#8220;NOMBRE EN PLURAL&#8221;<img class="aligncenter size-full wp-image-186" src="http://localhost/~h3dx0/wordpress/wp-content/uploads/2019/06/Screenshot_20190601_182644.png" alt="Propiedad Verbose" width="738" height="165" srcset="http://localhost/~h3dx0/wordpress/wp-content/uploads/2019/06/Screenshot_20190601_182644.png 738w, http://localhost/~h3dx0/wordpress/wp-content/uploads/2019/06/Screenshot_20190601_182644-300x67.png 300w" sizes="(max-width: 738px) 100vw, 738px" />**
+Esta propiedad es **verbose\_name\_plural = &#8220;NOMBRE EN PLURAL&#8221;**
 
 Como muestra la imagen, vamos a nuestro modelo y definimos en la **subclase Meta: la propiedad verbose\_name\_plural**
 
-<img class="aligncenter size-full wp-image-187" src="http://localhost/~h3dx0/wordpress/wp-content/uploads/2019/06/Firefox_Screenshot_2019-06-01T23-31-27.993Z.png" alt="Estado de cuenta" width="615" height="47" srcset="http://localhost/~h3dx0/wordpress/wp-content/uploads/2019/06/Firefox_Screenshot_2019-06-01T23-31-27.993Z.png 615w, http://localhost/~h3dx0/wordpress/wp-content/uploads/2019/06/Firefox_Screenshot_2019-06-01T23-31-27.993Z-300x23.png 300w" sizes="(max-width: 615px) 100vw, 615px" /> 
+![MODELO_PLURAL](/assets/img/posts/cambiar-nombre-modelos/ModeloPlural.png)
 
 Teniendo como resultado en nuestro administrador la imagen anterior.
 
-&nbsp;
+![MODELO_PLURAL](/assets/img/posts/cambiar-nombre-modelos/ModeloFinal.png)
 
 Espero les sirva este artículo y no dude en dejar un comentario o cualquier duda sobre DJANGO.
 
-Dando [clic aquí](http://localhost/~h3dx0/wordpress/category/django/) podrás ver otros tips interesantes sobre **DJANGO**.
+Dando [clic aquí](https://www.youtube.com/channel/UCDbGgmXz39F1tkF2rThehlQ) podrás ver otros tips interesantes sobre **DJANGO**.
 
-También pudes suscribirte a **mi boletín(sección derecha de la web)** y te enterarás primero que nadie cuando publique un nuevo artículo.
+Puedes ver un video del paso a paso para hacer este cambio en tu proyecto
 
-&nbsp;
+[![PASO A PASO](http://img.youtube.com/vi/mHcUXQ2M2ko/0.jpg)](http://www.youtube.com/watch?v=mHcUXQ2M2ko)
 
-&nbsp;
-
-&nbsp;
+Espero les sirva.
