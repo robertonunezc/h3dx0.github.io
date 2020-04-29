@@ -1,10 +1,12 @@
 <!doctype html>
 <html class="no-js" lang="es">
+
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <title>Comenzando con CSS Flexbox layout</title>
-    <meta name="description" content="Artículos sobre desarrollo web, python, django, html, css y todo lo que voy aprendiendo sobre la web en mi día a día">
+    <meta name="description"
+        content="Artículos sobre desarrollo web, python, django, html, css y todo lo que voy aprendiendo sobre la web en mi día a día">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <link rel="manifest" href="site.webmanifest">
@@ -26,16 +28,17 @@
 <meta property="og:locale" content="en_US" />
 <meta name="description" content="Hola a todos, muchas gracias por darte una vuelta a este artículo en el cual aprenderás como iniciar el maquetado con flexbox y así darle un impulso a tus conocimientos de frontend web para dejar atrás viejas e inútiles técnicas de maquetado con CSS3. Comenzamos…" />
 <meta property="og:description" content="Hola a todos, muchas gracias por darte una vuelta a este artículo en el cual aprenderás como iniciar el maquetado con flexbox y así darle un impulso a tus conocimientos de frontend web para dejar atrás viejas e inútiles técnicas de maquetado con CSS3. Comenzamos…" />
-<link rel="canonical" href="http://localhost:4000/comenzando-con-flexbox-css/" />
-<meta property="og:url" content="http://localhost:4000/comenzando-con-flexbox-css/" />
+<link rel="canonical" href="/comenzando-con-flexbox-css/" />
+<meta property="og:url" content="/comenzando-con-flexbox-css/" />
 <meta property="og:site_name" content="Roberto Nuñez Corrales Blog de desarrollo web, Django, HTML, CSS ;VUEJS" />
 <meta property="og:type" content="article" />
 <meta property="article:published_time" content="2018-01-25T17:37:28-06:00" />
 <script type="application/ld+json">
-{"mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/comenzando-con-flexbox-css/"},"@type":"BlogPosting","author":{"@type":"Person","name":"robert"},"url":"http://localhost:4000/comenzando-con-flexbox-css/","headline":"Comenzando con CSS Flexbox layout","dateModified":"2018-01-25T17:37:28-06:00","description":"Hola a todos, muchas gracias por darte una vuelta a este artículo en el cual aprenderás como iniciar el maquetado con flexbox y así darle un impulso a tus conocimientos de frontend web para dejar atrás viejas e inútiles técnicas de maquetado con CSS3. Comenzamos…","datePublished":"2018-01-25T17:37:28-06:00","@context":"https://schema.org"}</script>
+{"mainEntityOfPage":{"@type":"WebPage","@id":"/comenzando-con-flexbox-css/"},"@type":"BlogPosting","author":{"@type":"Person","name":"robert"},"url":"/comenzando-con-flexbox-css/","headline":"Comenzando con CSS Flexbox layout","dateModified":"2018-01-25T17:37:28-06:00","description":"Hola a todos, muchas gracias por darte una vuelta a este artículo en el cual aprenderás como iniciar el maquetado con flexbox y así darle un impulso a tus conocimientos de frontend web para dejar atrás viejas e inútiles técnicas de maquetado con CSS3. Comenzamos…","datePublished":"2018-01-25T17:37:28-06:00","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 </head>
+
 <body>
     <header>
         <div class="container">
@@ -48,10 +51,10 @@
                 <ul>
                     <li>
                         <a href="/">Inicio</a>
-                    </li>                    
+                    </li>
                     <li>
                         <a href="#">Quien soy</a>
-                    </li>                    
+                    </li>
                     <li>
                         <a href="#" style="color:white" class="bold bg-verde-oscuro">Contáctame</a>
                     </li>
@@ -183,47 +186,45 @@ li {
         </aside>
     </article>
 </section>
-            <aside id="side-bar">                  
+            <aside id="side-bar">
                 <div class="card personal-info">
-                    <img
-                    class="yo-img image-responsive img-circle dsp-block"
-                    src="/assets/img/yo_web_developer.JPG"
-                    width="150"
-                    height="150"
-                    alt="RobertoNuñez">
+                    <img class="yo-img image-responsive img-circle dsp-block" src="/assets/img/yo_web_developer.JPG"
+                        width="150" height="150" alt="RobertoNuñez">
                     <h3 class="text-center">Roberto Nuñez Corrales</h2>
                         <div class="separator bg-verde-oscuro centered"></div>
-                        <p class="text-center text-verde">Desarrollador Web Full-stack  </p>
+                        <p class="text-center text-verde">Desarrollador Web Full-stack </p>
                         <p>
-                          Me apasiona desarrollar para la web. Llevo más de 10 años creando soluciones con estas tecnologías. 
-                          Creo que internet debe ser recurso al alcance de todos así como el conocimiento. He creado este blog 
-                          para compartir todo aquello que voy aprendiendo en mis proyectos y espero les sea útil.              
-                      </p>
-                      <div class="flex">
-                        <div class="col-xs-3">
-                            <a href="https://github.com/h3dx0" class="fa fa-github"></a>
-                        </div>
-                        <div class="col-xs-3">
-                            <a href="#" class="fa fa-twitter"></a>
+                            Me apasiona desarrollar para la web. Llevo más de 10 años creando soluciones con estas
+                            tecnologías.
+                            Creo que internet debe ser recurso al alcance de todos así como el conocimiento. He creado
+                            este blog
+                            para compartir todo aquello que voy aprendiendo en mis proyectos y espero les sea útil.
+                        </p>
+                        <div class="flex">
+                            <div class="col-xs-3">
+                                <a href="https://github.com/h3dx0" class="fa fa-github"></a>
+                            </div>
+                            <div class="col-xs-3">
+                                <a href="#" class="fa fa-twitter"></a>
 
+                            </div>
+                            <div class="col-xs-3">
+                                <a href="https://www.linkedin.com/in/roberto-corrales-16225995/"
+                                    class="fa fa-linkedin"></a>
+                            </div>
+                            <div class="col-xs-3">
+                                <a href="#" class="fa fa-youtube"></a>
+                            </div>
                         </div>
-                        <div class="col-xs-3">
-                            <a href="https://www.linkedin.com/in/roberto-corrales-16225995/"
-                            class="fa fa-linkedin"></a>
-                        </div>
-                        <div class="col-xs-3">
-                            <a href="#" class="fa fa-youtube"></a>
-                        </div>
-                    </div>
-                </div>           
-            </aside>              
+                </div>
+            </aside>
         </main>
 
     </div>
-    <script src="/assets/js/vendor/modernizr-3.5.0.min.js"></script>
+    <!-- <script src="/assets/js/vendor/modernizr-3.5.0.min.js"></script>
 
-    <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
-    <!-- Global site tag (gtag.js) - Google Analytics -->
+  Google Analytics: change UA-XXXXX-Y to be your site's ID. 
+     Global site tag (gtag.js) - Google Analytics 
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-53521755-4"></script>
     <script>
     window.dataLayer = window.dataLayer || [];
@@ -231,6 +232,7 @@ li {
     gtag('js', new Date());
 
     gtag('config', 'UA-53521755-4');
-    </script>
+    </script> -->
 </body>
+
 </html>
