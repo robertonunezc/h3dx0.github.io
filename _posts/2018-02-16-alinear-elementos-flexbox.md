@@ -23,6 +23,12 @@ Para alinear los elementos nuestro contenedor acepta 4 propiedades fundamentales
   * align-items
   * align-self
 
+
+Puedes ver el video demostrativo en este enlace.
+
+[![PASO A PASO](http://img.youtube.com/vi/PRbfXcKxR8M/0.jpg)](https://youtu.be/PRbfXcKxR8M)
+
+
 Estas propiedades colocarán los elementos dependiendo  de como se hubiese definido nuestro main-axis, [aquí](/conceptos-basicos-en-flexbox/) puedes darle una revisada a este tema.  
 <img class="aligncenter wp-image-75 size-full" title="AxisFlexbox" src="/assets/img/posts/alinear-flexbox/AxisFlexbox.png" alt="AxisFlexbox" width="640" height="400" sizes="(max-width: 640px) 100vw, 640px" /> 
 
