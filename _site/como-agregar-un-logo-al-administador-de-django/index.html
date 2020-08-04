@@ -102,13 +102,17 @@
 
 <p>La mayoría de los proyectos web en la actualidad necesitan que su información sea dinámica y facilemente modificable por el cliente o los encargados de realizar esta tarea. Aquí es donde entra en juego el <strong>administrador de DJANGO</strong> y casi siempre hay que hacerle las <strong>modificaciones visuales</strong> para que se adapte a nuestro cliente.</p>
 
-<p>Una de estas adecuaciones es <a href="http://localhost/~h3dx0/wordpress/como-cambiar-el-titulo-del-adminsitrador-de-django/">cambiar el título del mismo</a> por uno personalizado o simplemente agregar el logo de nuestro cliente. <strong>¿Como cambiamos el título por nuestro logo?</strong></p>
+<p>Una de estas adecuaciones es <a href="/como-cambiar-el-titulo-del-adminsitrador-de-django/">cambiar el título del mismo</a> por uno personalizado o simplemente agregar el logo de nuestro cliente. <strong>¿Como cambiamos el título por nuestro logo?</strong></p>
 
 <h2 id="solución">SOLUCIÓN</h2>
 
 <p>1- En la raíz de nuestro proyecto debemos <strong>crear una estructura de carpetas  TEMPLATES/ADMIN.</strong></p>
 
-<p>2- En esta carpeta admin el <strong>copiar el archivo base_site.html.</strong> Este archivo se encuentra en el directorio donde <strong>se instaló DJANGO como librería,</strong> acá les dejo una captura de mi proyecto, donde uso un virtual enviroment para que puedan tener como referencia donde encontrar este archivo. En ese directorio están todas las vistas usadas por el administrador.</p>
+<p><img class="aligncenter" title="EstructuraProyecto" src="/assets/img/posts/agregar-logo/estructura_proyecto.png" alt="EstructuraProyecto" width="340" height="400" sizes="(max-width: 640px) 100vw, 640px" /></p>
+
+<p>2- En esta carpeta admin el <strong>copiar el archivo base_site.html.</strong> Este archivo se encuentra en el directorio donde <strong>se instaló DJANGO como librería,</strong> acá les dejo una captura de mi proyecto, donde uso un virtual enviroment para que puedan tener como referencia donde encontrar este archivo. Normalmente es dentro del virtual enviroment otra carpeta que se llama <strong>site-packages</strong> y después la estructura que muestro en la imagen. En ese directorio están todas las vistas usadas por el administrador.</p>
+
+<p><img class="aligncenter" title="ArchivosDjango" src="/assets/img/posts/agregar-logo/django.png" alt="ArchivosDjango" width="340" height="500" sizes="(max-width: 640px) 100vw, 640px" /></p>
 
 <p>3- <strong>Editar el base_site.html</strong> copiado en la estructura de <strong>TEMPLATES/ADMIN</strong> creada y agregar los</p>
 
@@ -118,6 +122,11 @@
 <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">block</span> <span class="n">branding</span>
 </code></pre></div></div>
 <p>hacer las modificaciones que querramos para dejar el header como nos guste.</p>
+
+<p><strong>RESULTADO</strong>
+<img class="aligncenter" title="ArchivosDjango" src="/assets/img/posts/agregar-logo/html_final.png" alt="ArchivosDjango" sizes="(max-width: 640px) 100vw, 640px" /></p>
+
+<p><img class="aligncenter" title="LogoAdministradorDjango" src="/assets/img/posts/agregar-logo/admin_logo.png" alt="LogoAdministradorDjango" sizes="(max-width: 640px) 100vw, 640px" /></p>
 
 <p>Este es el principio para hacer cualquier modificación al administrador, el proceso es sobreescribir los archivos .html o .css que tiene el core de DJANGO con nuestras modificaciones. Proximamente estaré escribiendo más artículos sobre esta poderoza herramienta que DJANGO nos brinda.</p>
 

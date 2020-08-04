@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2020-07-28T09:34:04-05:00</updated><id>/feed.xml</id><title type="html">Roberto Nuñez Corrales Blog de desarrollo web, Django, HTML, CSS ;VUEJS</title><subtitle>Este es mi blog personal, aqui voy escribiendo todo lo que voy aprendiendo sobre  desarrollo web, especificamente DJANGO, VueJs, HTML5, CSS3 y todo aquello que  creo puede serle útil a alguien más.</subtitle><entry><title type="html">Que es hoisting en javascript</title><link href="/que-es-hoisting-en-javascript/" rel="alternate" type="text/html" title="Que es hoisting en javascript" /><published>2020-02-20T00:00:00-06:00</published><updated>2020-02-20T00:00:00-06:00</updated><id>/que-es-hoisting-en-javacript</id><content type="html" xml:base="/que-es-hoisting-en-javascript/">&lt;p&gt;Hola y bienvenidos a este rinconcito de internet donde comparto lo que voy aprendiendo en el día a día como desarrollador web.
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2020-08-04T09:18:31-05:00</updated><id>/feed.xml</id><title type="html">Roberto Nuñez Corrales Blog de desarrollo web, Django, HTML, CSS ;VUEJS</title><subtitle>Este es mi blog personal, aqui voy escribiendo todo lo que voy aprendiendo sobre  desarrollo web, especificamente DJANGO, VueJs, HTML5, CSS3 y todo aquello que  creo puede serle útil a alguien más.</subtitle><entry><title type="html">Que es hoisting en javascript</title><link href="/que-es-hoisting-en-javascript/" rel="alternate" type="text/html" title="Que es hoisting en javascript" /><published>2020-02-20T00:00:00-06:00</published><updated>2020-02-20T00:00:00-06:00</updated><id>/que-es-hoisting-en-javacript</id><content type="html" xml:base="/que-es-hoisting-en-javascript/">&lt;p&gt;Hola y bienvenidos a este rinconcito de internet donde comparto lo que voy aprendiendo en el día a día como desarrollador web.
 Hoy quisiera hacerles una breve introducción a uno de los conceptos que enfrentamos cuando comenzamos a aprender JAVASCRIPT y el es HOSTING.&lt;/p&gt;
 
 &lt;h2 id=&quot;que-es-hoisting&quot;&gt;¿Que es HOISTING?&lt;/h2&gt;
@@ -171,13 +171,17 @@ los objetos creados.&lt;/p&gt;
 
 &lt;p&gt;La mayoría de los proyectos web en la actualidad necesitan que su información sea dinámica y facilemente modificable por el cliente o los encargados de realizar esta tarea. Aquí es donde entra en juego el &lt;strong&gt;administrador de DJANGO&lt;/strong&gt; y casi siempre hay que hacerle las &lt;strong&gt;modificaciones visuales&lt;/strong&gt; para que se adapte a nuestro cliente.&lt;/p&gt;
 
-&lt;p&gt;Una de estas adecuaciones es &lt;a href=&quot;http://localhost/~h3dx0/wordpress/como-cambiar-el-titulo-del-adminsitrador-de-django/&quot;&gt;cambiar el título del mismo&lt;/a&gt; por uno personalizado o simplemente agregar el logo de nuestro cliente. &lt;strong&gt;¿Como cambiamos el título por nuestro logo?&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Una de estas adecuaciones es &lt;a href=&quot;/como-cambiar-el-titulo-del-adminsitrador-de-django/&quot;&gt;cambiar el título del mismo&lt;/a&gt; por uno personalizado o simplemente agregar el logo de nuestro cliente. &lt;strong&gt;¿Como cambiamos el título por nuestro logo?&lt;/strong&gt;&lt;/p&gt;
 
 &lt;h2 id=&quot;solución&quot;&gt;SOLUCIÓN&lt;/h2&gt;
 
 &lt;p&gt;1- En la raíz de nuestro proyecto debemos &lt;strong&gt;crear una estructura de carpetas  TEMPLATES/ADMIN.&lt;/strong&gt;&lt;/p&gt;
 
-&lt;p&gt;2- En esta carpeta admin el &lt;strong&gt;copiar el archivo base_site.html.&lt;/strong&gt; Este archivo se encuentra en el directorio donde &lt;strong&gt;se instaló DJANGO como librería,&lt;/strong&gt; acá les dejo una captura de mi proyecto, donde uso un virtual enviroment para que puedan tener como referencia donde encontrar este archivo. En ese directorio están todas las vistas usadas por el administrador.&lt;/p&gt;
+&lt;p&gt;&lt;img class=&quot;aligncenter&quot; title=&quot;EstructuraProyecto&quot; src=&quot;/assets/img/posts/agregar-logo/estructura_proyecto.png&quot; alt=&quot;EstructuraProyecto&quot; width=&quot;340&quot; height=&quot;400&quot; sizes=&quot;(max-width: 640px) 100vw, 640px&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;2- En esta carpeta admin el &lt;strong&gt;copiar el archivo base_site.html.&lt;/strong&gt; Este archivo se encuentra en el directorio donde &lt;strong&gt;se instaló DJANGO como librería,&lt;/strong&gt; acá les dejo una captura de mi proyecto, donde uso un virtual enviroment para que puedan tener como referencia donde encontrar este archivo. Normalmente es dentro del virtual enviroment otra carpeta que se llama &lt;strong&gt;site-packages&lt;/strong&gt; y después la estructura que muestro en la imagen. En ese directorio están todas las vistas usadas por el administrador.&lt;/p&gt;
+
+&lt;p&gt;&lt;img class=&quot;aligncenter&quot; title=&quot;ArchivosDjango&quot; src=&quot;/assets/img/posts/agregar-logo/django.png&quot; alt=&quot;ArchivosDjango&quot; width=&quot;340&quot; height=&quot;500&quot; sizes=&quot;(max-width: 640px) 100vw, 640px&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;3- &lt;strong&gt;Editar el base_site.html&lt;/strong&gt; copiado en la estructura de &lt;strong&gt;TEMPLATES/ADMIN&lt;/strong&gt; creada y agregar los&lt;/p&gt;
 
@@ -187,6 +191,11 @@ los objetos creados.&lt;/p&gt;
 &lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;block&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;branding&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 &lt;p&gt;hacer las modificaciones que querramos para dejar el header como nos guste.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;RESULTADO&lt;/strong&gt;
+&lt;img class=&quot;aligncenter&quot; title=&quot;ArchivosDjango&quot; src=&quot;/assets/img/posts/agregar-logo/html_final.png&quot; alt=&quot;ArchivosDjango&quot; sizes=&quot;(max-width: 640px) 100vw, 640px&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img class=&quot;aligncenter&quot; title=&quot;LogoAdministradorDjango&quot; src=&quot;/assets/img/posts/agregar-logo/admin_logo.png&quot; alt=&quot;LogoAdministradorDjango&quot; sizes=&quot;(max-width: 640px) 100vw, 640px&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Este es el principio para hacer cualquier modificación al administrador, el proceso es sobreescribir los archivos .html o .css que tiene el core de DJANGO con nuestras modificaciones. Proximamente estaré escribiendo más artículos sobre esta poderoza herramienta que DJANGO nos brinda.&lt;/p&gt;
 
