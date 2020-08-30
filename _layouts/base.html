@@ -5,7 +5,8 @@
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <title>{{page.title}}</title>
-    <meta name="description" content="">
+    <meta name="description"
+        content="Artículos sobre desarrollo web, python, django, html, css y todo lo que voy aprendiendo sobre la web en mi día a día">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <link rel="manifest" href="site.webmanifest">
@@ -15,65 +16,42 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="/assets/css/normalize.css">
     <link rel="stylesheet" href="/assets/css/animate.css">
-    <link rel="stylesheet" href="/assets/css/main.css">
+    <link rel="stylesheet" href="/assets/css/main_blog.css">
     <link rel="stylesheet" href="/assets/css/animations.css">
     <link rel="stylesheet" href="/assets/css/utils.css">
     <link rel="stylesheet" href="/assets/css/icons.css">
-    <link rel="stylesheet" href="/assets/css/tech-fonts.css">
-
+    {% seo %}
 </head>
 
 <body>
-    <!--[if lte IE 9]>
-  <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
-<![endif]-->
+    <header>
+        <div class="container">
+            <a class="link-logo-header text-verde" href="/">Roberto <span class="colored-logo">NUÑEZ</span></a>
+            <a class="link-logo-header-mobile text-verde" href="/">
+                <h2>RNC</h2>
+            </a>
 
-<!-- Add your site or application content here -->
-<header>
-    <div class="">
-        <a class="link-logo-header text-verde" href="/">Roberto <span class="colored-logo">NUÑEZ</span></a>
-        <nav class="nav-top flr">
-            <ul>              
-                <li>
-                    <a href="/">Blog</a>
-                </li>
-                <li>
-                    <a href="#quien-soy">Quien soy</a>
-                </li>
-                <li>
-                    <a href="#services">Servicios</a>
-                </li>
-                <li>
-                    <a href="#portafolio">Donde he trabajado</a>
-                </li>
-                <li>
-                    <a href="#experiencia">Experiencia</a>
-                </li>
-                <li>
-                    <a href="#" style="color:white" class="bold bg-verde-oscuro">Contáctame</a>
-                </li>
-                <li class="clearfix"></li>
-            </ul>
-        </nav>
-        <div class="clearfix">
+            <nav class="nav-top flr">
+                <ul>
+                    <li>
+                        <a href="/">Inicio</a>
+                    </li>
+                    <li>
+                        <a href="quien-soy">Quien soy</a>
+                    </li>
+                    <li>
+                        <a href="#" style="color:white" class="bold bg-verde-oscuro">Contáctame</a>
+                    </li>
+                    <li class="clearfix"></li>
+                </ul>
+            </nav>
+            <div class="clearfix">
+            </div>
         </div>
-    </div>
-</header>
-<main class="container">
-    {{ content }}
-</main>
-<footer>
-    <div class="text-center">Derechos reservados por Roberto Nuñez Corrales. 2017</div>
-</footer>
-<script src="/assets/js/vendor/modernizr-3.5.0.min.js"></script>
-<script src="/assets/js/main.js"></script>
-
-<!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
-<script>
-    window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
-    ga('create', 'UA-XXXXX-Y', 'auto'); ga('send', 'pageview')
-</script>
-<script src="https://www.google-analytics.com/analytics.js" async defer></script>
+    </header>
+    <main class="flex container">
+        {{content}}
+    </main>
 </body>
 
 </html>

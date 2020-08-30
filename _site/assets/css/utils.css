@@ -1,14 +1,14 @@
-
-
 /*reset classes*/
 
-h2{
+h2 {
   margin: 0.1em 0;
 
 }
+
 hr {
   color: #efefef;
 }
+
 /* ==========================================================================
    Helper classes
    ========================================================================== */
@@ -16,113 +16,149 @@ hr {
 /*
  * Hide visually and from screen readers
  */
- 
- ol{
+
+ol {
   padding-left: 25px;
 }
-a{
+
+a {
   text-decoration: none;
-}
-a:hover{
-  text-decoration: none;
-}
-.dsp-block{
- display: block;
- margin: 0 auto;
-}
-.fll{
- float: left;
-}
-.flr{
- float: right;
-}
-.text-verde{
- color:#0E5C66;
 }
 
-.text-white{
- color:#fff;
+a:hover {
+  text-decoration: none;
 }
-.bold{
- font-weight: bold;
+
+.justify-center {
+  justify-content: center;
+  align-items: center;
 }
-.m0{
-  margin:0;
+
+.dsp-block {
+  display: block;
+  margin: 0 auto;
 }
-.mt10{
+
+.fll {
+  float: left;
+}
+
+.flr {
+  float: right;
+}
+
+.text-verde {
+  color: #0E5C66;
+}
+
+.text-white {
+  color: #fff;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.m0 {
+  margin: 0;
+}
+
+.mt10 {
   margin-top: 10px
 }
-.mr5{
+
+.mr5 {
   margin-right: 5px;
 }
-.mr10{
+
+.mr10 {
   margin-right: 10px;
 }
-.mr15{
+
+.mr15 {
   margin-right: 15px;
 }
-.mb5{
+
+.mb5 {
   margin-bottom: 5px;
 }
-.mb10{
+
+.mb10 {
   margin-bottom: 10px;
 }
-.mb15{
+
+.mb15 {
   margin-bottom: 15px;
 }
-.mb20{
+
+.mb20 {
   margin-bottom: 20px;
 }
-.pdt10{
+
+.pdt10 {
   padding-top: 10px;
 }
-.mr20{
+
+.mr20 {
   margin-right: 20px;
 }
-.mt40{
+
+.mt40 {
   margin-top: 40px;
 }
-.mt30{
+
+.mt30 {
   margin-top: 30px;
 }
-.mt90{
+
+.mt90 {
   margin-top: 90px;
 }
+
 .hidden {
   display: none !important;
 }
-.img-circle{
+
+.img-circle {
   border-radius: 60%;
 }
-.text-center{
+
+.text-center {
   text-align: center;
 }
+
 .separator {
   position: relative;
   width: 90px;
   height: 3px;
   margin: 5px 0;
 }
+
 .centered {
   margin: 10px auto;
 }
-.bg-verde-oscuro{
+
+.bg-verde-oscuro {
   background-color: #0E5C66;
 
 }
-.bg-verde-medio{
-  background-color:#008492 ;
+
+.bg-verde-medio {
+  background-color: #008492;
 }
-.icon-tech{
+
+.icon-tech {
   padding: 10px;
   font-size: 36px;
   width: 50px;
   text-align: center;
   text-decoration: none;
 }
-.fs12{
+
+.fs12 {
   font-size: 12px;
 }
+
 /*
  * Hide only visually, but have it available for screen readers:
  * https://snook.ca/archives/html_and_css/hiding-content-for-accessibility
@@ -132,7 +168,7 @@ a:hover{
  *    https://medium.com/@jessebeach/beware-smushed-off-screen-accessible-text-5952a4c2cbfe
  */
 
- .visuallyhidden {
+.visuallyhidden {
   border: 0;
   clip: rect(0 0 0 0);
   -webkit-clip-path: inset(50%);
@@ -143,7 +179,8 @@ a:hover{
   padding: 0;
   position: absolute;
   width: 1px;
-  white-space: nowrap; /* 1 */
+  white-space: nowrap;
+  /* 1 */
 }
 
 /*
@@ -152,8 +189,8 @@ a:hover{
  * https://www.drupal.org/node/897638
  */
 
- .visuallyhidden.focusable:active,
- .visuallyhidden.focusable:focus {
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
   clip: auto;
   -webkit-clip-path: none;
   clip-path: none;
@@ -169,7 +206,7 @@ a:hover{
  * Hide visually and from screen readers, but maintain layout
  */
 
- .invisible {
+.invisible {
   visibility: hidden;
 }
 
@@ -185,10 +222,12 @@ a:hover{
  *    `:before` to contain the top-margins of child elements.
  */
 
- .clearfix:before,
- .clearfix:after {
-  content: " "; /* 1 */
-  display: table; /* 2 */
+.clearfix:before,
+.clearfix:after {
+  content: " ";
+  /* 1 */
+  display: table;
+  /* 2 */
 }
 
 .clearfix:after {
@@ -201,16 +240,16 @@ a:hover{
    Modify as content requires.
    ========================================================================== */
 
-   @media only screen and (min-width: 35em) {
-    /* Style adjustments for viewports that meet the condition */
-  }
+@media only screen and (min-width: 35em) {
+  /* Style adjustments for viewports that meet the condition */
+}
 
-  @media print,
-  (-webkit-min-device-pixel-ratio: 1.25),
-  (min-resolution: 1.25dppx),
-  (min-resolution: 120dpi) {
-    /* Style adjustments for high resolution devices */
-  }
+@media print,
+(-webkit-min-device-pixel-ratio: 1.25),
+(min-resolution: 1.25dppx),
+(min-resolution: 120dpi) {
+  /* Style adjustments for high resolution devices */
+}
 
 /* ==========================================================================
    Print styles.
@@ -218,72 +257,75 @@ a:hover{
    http://www.phpied.com/delay-loading-your-print-css/
    ========================================================================== */
 
-   @media print {
-    *,
-    *:before,
-    *:after {
-      background: transparent !important;
-        color: #000 !important; /* Black prints faster:
+@media print {
+
+  *,
+  *:before,
+  *:after {
+    background: transparent !important;
+    color: #000 !important;
+    /* Black prints faster:
         http://www.sanbeiji.com/archives/953 */
-        box-shadow: none !important;
-        text-shadow: none !important;
-      }
+    box-shadow: none !important;
+    text-shadow: none !important;
+  }
 
-      a,
-      a:visited {
-        text-decoration: underline;
-      }
+  a,
+  a:visited {
+    text-decoration: underline;
+  }
 
-      a[href]:after {
-        content: " (" attr(href) ")";
-      }
+  a[href]:after {
+    content: " ("attr(href) ")";
+  }
 
-      abbr[title]:after {
-        content: " (" attr(title) ")";
-      }
+  abbr[title]:after {
+    content: " ("attr(title) ")";
+  }
 
-    /*
+  /*
      * Don't show links that are fragment identifiers,
      * or use the `javascript:` pseudo protocol
      */
 
-     a[href^="#"]:after,
-     a[href^="javascript:"]:after {
-      content: "";
-    }
+  a[href^="#"]:after,
+  a[href^="javascript:"]:after {
+    content: "";
+  }
 
-    pre {
-      white-space: pre-wrap !important;
-    }
-    pre,
-    blockquote {
-      border: 1px solid #999;
-      page-break-inside: avoid;
-    }
+  pre {
+    white-space: pre-wrap !important;
+  }
 
-    /*
+  pre,
+  blockquote {
+    border: 1px solid #999;
+    page-break-inside: avoid;
+  }
+
+  /*
      * Printing Tables:
      * http://css-discuss.incutio.com/wiki/Printing_Tables
      */
 
-     thead {
-      display: table-header-group;
-    }
-
-    tr,
-    img {
-      page-break-inside: avoid;
-    }
-
-    p,
-    h2,
-    h3 {
-      orphans: 3;
-      widows: 3;
-    }
-
-    h2,
-    h3 {
-      page-break-after: avoid;
-    }
+  thead {
+    display: table-header-group;
   }
+
+  tr,
+  img {
+    page-break-inside: avoid;
+  }
+
+  p,
+  h2,
+  h3 {
+    orphans: 3;
+    widows: 3;
+  }
+
+  h2,
+  h3 {
+    page-break-after: avoid;
+  }
+}
