@@ -216,6 +216,11 @@ pre.highlight {
     padding: 0 5px;
 }
 
+.border-primary {
+    border: solid 1px #008492;
+    padding: 1rem;
+}
+
 .btn-verproyecto:hover {
     color: #008492;
 
