@@ -26,22 +26,22 @@
 <meta property="og:title" content="Como cambiar el título del adminsitrador de DJANGO" />
 <meta name="author" content="robert" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="Hoy les traigo un forma muy sencilla de sacar mejor provecho al administrador de DJANGO, el poder cambiar los títulos principales de esta importante sección . Queremos modificar los textos tanto en el formulario de inicio de sesión, la barra de título y en el listado principal. Supongamos que tenemos un sistema de inventarios que al inicio se ve así:" />
-<meta property="og:description" content="Hoy les traigo un forma muy sencilla de sacar mejor provecho al administrador de DJANGO, el poder cambiar los títulos principales de esta importante sección . Queremos modificar los textos tanto en el formulario de inicio de sesión, la barra de título y en el listado principal. Supongamos que tenemos un sistema de inventarios que al inicio se ve así:" />
+<meta name="description" content="Hoy les traigo un forma muy sencilla de sacar mejor provecho al administrador de DJANGO, el poder cambiar los títulos principales de esta importante sección . Queremos modificar los textos tanto en el formulario de inicio de sesión, la barra de título y en el listado principal. Supongamos que tenemos un sistema de inventarios que al inicio se ve así: Textos originales Queremos que se vea de la siguiente manera: Textos después de hacer cambios Siguiendo unos simples pasos tendremos el resultado esperado que es agregar nuestros propios textos Como cambiar el texto “Administración de Django” 1 – Abrimos con nuestro editor favorito cualquier archivo admin.py del proyecto. 2 – Agregamos al inicio las siguientes líneas. admin.site.site_header = &quot;Sitio web de inventarios&quot; admin.site.site_title = &quot;Portal de inventarios&quot; admin.site.index_title = &quot;Bienvenidos al portal de administración&quot; Y tenemos el resultado esperado. Esos son títulos de ejemplo obviamente usted debe agregar los que su proyecto requiera. Textos después de hacer cambios Acá les dejo un video de los pasos a seguir y su resultado. Espero les sirva." />
+<meta property="og:description" content="Hoy les traigo un forma muy sencilla de sacar mejor provecho al administrador de DJANGO, el poder cambiar los títulos principales de esta importante sección . Queremos modificar los textos tanto en el formulario de inicio de sesión, la barra de título y en el listado principal. Supongamos que tenemos un sistema de inventarios que al inicio se ve así: Textos originales Queremos que se vea de la siguiente manera: Textos después de hacer cambios Siguiendo unos simples pasos tendremos el resultado esperado que es agregar nuestros propios textos Como cambiar el texto “Administración de Django” 1 – Abrimos con nuestro editor favorito cualquier archivo admin.py del proyecto. 2 – Agregamos al inicio las siguientes líneas. admin.site.site_header = &quot;Sitio web de inventarios&quot; admin.site.site_title = &quot;Portal de inventarios&quot; admin.site.index_title = &quot;Bienvenidos al portal de administración&quot; Y tenemos el resultado esperado. Esos son títulos de ejemplo obviamente usted debe agregar los que su proyecto requiera. Textos después de hacer cambios Acá les dejo un video de los pasos a seguir y su resultado. Espero les sirva." />
 <link rel="canonical" href="/como-cambiar-el-titulo-del-adminsitrador-de-django/" />
 <meta property="og:url" content="/como-cambiar-el-titulo-del-adminsitrador-de-django/" />
 <meta property="og:site_name" content="Roberto Nuñez Corrales Blog de desarrollo web, Django, HTML, CSS ;VUEJS" />
 <meta property="og:type" content="article" />
 <meta property="article:published_time" content="2019-05-23T22:23:35-05:00" />
 <script type="application/ld+json">
-{"mainEntityOfPage":{"@type":"WebPage","@id":"/como-cambiar-el-titulo-del-adminsitrador-de-django/"},"@type":"BlogPosting","author":{"@type":"Person","name":"robert"},"url":"/como-cambiar-el-titulo-del-adminsitrador-de-django/","headline":"Como cambiar el título del adminsitrador de DJANGO","dateModified":"2019-05-23T22:23:35-05:00","description":"Hoy les traigo un forma muy sencilla de sacar mejor provecho al administrador de DJANGO, el poder cambiar los títulos principales de esta importante sección . Queremos modificar los textos tanto en el formulario de inicio de sesión, la barra de título y en el listado principal. Supongamos que tenemos un sistema de inventarios que al inicio se ve así:","datePublished":"2019-05-23T22:23:35-05:00","@context":"https://schema.org"}</script>
+{"@type":"BlogPosting","headline":"Como cambiar el título del adminsitrador de DJANGO","dateModified":"2019-05-23T22:23:35-05:00","datePublished":"2019-05-23T22:23:35-05:00","mainEntityOfPage":{"@type":"WebPage","@id":"/como-cambiar-el-titulo-del-adminsitrador-de-django/"},"author":{"@type":"Person","name":"robert"},"url":"/como-cambiar-el-titulo-del-adminsitrador-de-django/","description":"Hoy les traigo un forma muy sencilla de sacar mejor provecho al administrador de DJANGO, el poder cambiar los títulos principales de esta importante sección . Queremos modificar los textos tanto en el formulario de inicio de sesión, la barra de título y en el listado principal. Supongamos que tenemos un sistema de inventarios que al inicio se ve así: Textos originales Queremos que se vea de la siguiente manera: Textos después de hacer cambios Siguiendo unos simples pasos tendremos el resultado esperado que es agregar nuestros propios textos Como cambiar el texto “Administración de Django” 1 – Abrimos con nuestro editor favorito cualquier archivo admin.py del proyecto. 2 – Agregamos al inicio las siguientes líneas. admin.site.site_header = &quot;Sitio web de inventarios&quot; admin.site.site_title = &quot;Portal de inventarios&quot; admin.site.index_title = &quot;Bienvenidos al portal de administración&quot; Y tenemos el resultado esperado. Esos son títulos de ejemplo obviamente usted debe agregar los que su proyecto requiera. Textos después de hacer cambios Acá les dejo un video de los pasos a seguir y su resultado. Espero les sirva.","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 </head>
 
 <body>
     <header>
-        <div class="container">
+        <div class="container header">
             <a class="link-logo-header text-verde" href="/">Roberto <span class="colored-logo">NUÑEZ</span></a>
             <a class="link-logo-header-mobile text-verde" href="/">
                 <h2>RNC</h2>
@@ -61,16 +61,15 @@
                     <li class="clearfix"></li>
                 </ul>
             </nav>
-            <div class="clearfix">
-            </div>
+
         </div>
     </header>
     <div class="flex direction-column container">
         <section id="personal-info">
-            <h1 class="text-verde text-center mt30">Mi Blog Personal</h1>
-            <h4 class="text-center m0">
-                <p>Aquí podrás encontrar todo lo que he voy aprendiendo en mis proyectos como desarrollador web.</p>
-            </h4>
+            <h1 class="text-verde text-center mt30">¿Estás buscando un programador Freelance?</h1>
+            <!-- <h4 class="text-center m0">
+                <p></p>
+            </h4> -->
         </section>
         <main class="flex container">
             <section class="container-articulos">
@@ -136,7 +135,7 @@ Queremos modificar los textos tanto en el formulario de inicio de sesión, la ba
         </aside>
     </article>
 </section>
-            <aside id="side-bar">
+            <!-- <aside id="side-bar">
                 <div class="card personal-info">
                     <img class="yo-img image-responsive img-circle dsp-block" src="/assets/img/yo_web_developer.JPG"
                         width="150" height="150" alt="RobertoNuñez">
@@ -167,7 +166,7 @@ Queremos modificar los textos tanto en el formulario de inicio de sesión, la ba
                             </div>
                         </div>
                 </div>
-            </aside>
+            </aside> -->
         </main>
 
     </div>

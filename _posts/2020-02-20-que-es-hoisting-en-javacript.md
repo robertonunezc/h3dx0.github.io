@@ -15,6 +15,7 @@ tags:
 ---
 Hola y bienvenidos a este rinconcito de internet donde comparto lo que voy aprendiendo en el día a día como desarrollador web.
 Hoy quisiera hacerles una breve introducción a uno de los conceptos que enfrentamos cuando comenzamos a aprender JAVASCRIPT y el es HOSTING.
+<!--more-->
 
 ## ¿Que es HOISTING?
 

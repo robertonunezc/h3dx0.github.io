@@ -26,22 +26,22 @@
 <meta property="og:title" content="Flexbox, conceptos básicos (flex-direction)" />
 <meta name="author" content="robert" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="Continuando con la serie de este artículo sobre Flexbox estaremos viendo los conceptos principales que debemos tener en cuenta a la hora de maquetar nuestros layouts con esta técnica en especial la propiedad flex-direction y los axis. Sino lo leíste  aquí hay una introducción para comenzar a usar esta técnica de forma muy fácil." />
-<meta property="og:description" content="Continuando con la serie de este artículo sobre Flexbox estaremos viendo los conceptos principales que debemos tener en cuenta a la hora de maquetar nuestros layouts con esta técnica en especial la propiedad flex-direction y los axis. Sino lo leíste  aquí hay una introducción para comenzar a usar esta técnica de forma muy fácil." />
+<meta name="description" content="Continuando con la serie de este artículo sobre Flexbox estaremos viendo los conceptos principales que debemos tener en cuenta a la hora de maquetar nuestros layouts con esta técnica en especial la propiedad flex-direction y los axis. Sino lo leíste  aquí hay una introducción para comenzar a usar esta técnica de forma muy fácil. Los dos ejes o axis de Flexbox: Para comenzar a trabajar con flexbox se debe tener en cuenta que para acomodar los elementos se hace en base a los  2 ejes o axis que existen, el main axis y el cross axis . Siendo el main axis la principal y que es definida por la propiedad flex-direction. main axis Al definir la propiedad flex-direction: row, estamos diciéndole a nuestro contenedor que acomode los elementos uno al lado del otro, es decir nuestro main-axis será ubicado horizontalmente lo cual debemos tener en cuenta porque muchas otras propiedades dependen de la definición de los axis. Este es el contenedor de los elementos del menú. &lt;nav&gt; &lt;ul&gt; &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Inicio&lt;/a&gt;&lt;/li&gt; &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Quienes somos&lt;/a&gt;&lt;/li&gt; &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Servicios&lt;/a&gt;&lt;/li&gt; &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Contacto&lt;/a&gt;&lt;/li&gt; &lt;/ul&gt; &lt;/nav&gt; CSS aplicado. nav{ background: #008492; } ul{ display:flex; flex-direction:row; } ul &gt; li { margin:10px; } ul &gt; li &gt; a{ color:#fff; text-decoration: none; } li { list-style:none; } Si ya leyeron el artículo anterior pueden notar que no hay cambios en cuanto al resultado que esperamos, en este caso cada elemento del menú se coloca uno al lado del otro. Esto sucede pues al definir en el ul la propiedad display:flex, el comportamiento de los elementos hijos por default es flex-direction:row, por lo que no es necesario definir la propiedad si queremos que su comportamiento sea el establecido. Valores de aceptados por flex-direction Para manipular los axis de nuestro contenedor  flex-direction acepta los siguientes valores: row row-reverse column column-reverse`` Así se vería nuestro menú aplicando los distintos valores a esta propiedad  row-reverse  column  column-reverse En las imágenes anteriores se puede ver claramente como afecta el orden de los elementos al aplicar los distintos valores a  flex-direction.   Cross axis El cross axis es el eje encargado de acomodar los elementos perpendicularmente al main axis, por lo que tenemos que tener en cuenta la orientación del mismo dado que dependen uno de otro. Si el main axis está orientado a column o column-reverse el cross axis estará afectando los elementos horizontalmente. Acá les dejo un codepen para que puedan practicar los conceptos y valores aprendidos." />
+<meta property="og:description" content="Continuando con la serie de este artículo sobre Flexbox estaremos viendo los conceptos principales que debemos tener en cuenta a la hora de maquetar nuestros layouts con esta técnica en especial la propiedad flex-direction y los axis. Sino lo leíste  aquí hay una introducción para comenzar a usar esta técnica de forma muy fácil. Los dos ejes o axis de Flexbox: Para comenzar a trabajar con flexbox se debe tener en cuenta que para acomodar los elementos se hace en base a los  2 ejes o axis que existen, el main axis y el cross axis . Siendo el main axis la principal y que es definida por la propiedad flex-direction. main axis Al definir la propiedad flex-direction: row, estamos diciéndole a nuestro contenedor que acomode los elementos uno al lado del otro, es decir nuestro main-axis será ubicado horizontalmente lo cual debemos tener en cuenta porque muchas otras propiedades dependen de la definición de los axis. Este es el contenedor de los elementos del menú. &lt;nav&gt; &lt;ul&gt; &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Inicio&lt;/a&gt;&lt;/li&gt; &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Quienes somos&lt;/a&gt;&lt;/li&gt; &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Servicios&lt;/a&gt;&lt;/li&gt; &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Contacto&lt;/a&gt;&lt;/li&gt; &lt;/ul&gt; &lt;/nav&gt; CSS aplicado. nav{ background: #008492; } ul{ display:flex; flex-direction:row; } ul &gt; li { margin:10px; } ul &gt; li &gt; a{ color:#fff; text-decoration: none; } li { list-style:none; } Si ya leyeron el artículo anterior pueden notar que no hay cambios en cuanto al resultado que esperamos, en este caso cada elemento del menú se coloca uno al lado del otro. Esto sucede pues al definir en el ul la propiedad display:flex, el comportamiento de los elementos hijos por default es flex-direction:row, por lo que no es necesario definir la propiedad si queremos que su comportamiento sea el establecido. Valores de aceptados por flex-direction Para manipular los axis de nuestro contenedor  flex-direction acepta los siguientes valores: row row-reverse column column-reverse`` Así se vería nuestro menú aplicando los distintos valores a esta propiedad  row-reverse  column  column-reverse En las imágenes anteriores se puede ver claramente como afecta el orden de los elementos al aplicar los distintos valores a  flex-direction.   Cross axis El cross axis es el eje encargado de acomodar los elementos perpendicularmente al main axis, por lo que tenemos que tener en cuenta la orientación del mismo dado que dependen uno de otro. Si el main axis está orientado a column o column-reverse el cross axis estará afectando los elementos horizontalmente. Acá les dejo un codepen para que puedan practicar los conceptos y valores aprendidos." />
 <link rel="canonical" href="/conceptos-basicos-en-flexbox/" />
 <meta property="og:url" content="/conceptos-basicos-en-flexbox/" />
 <meta property="og:site_name" content="Roberto Nuñez Corrales Blog de desarrollo web, Django, HTML, CSS ;VUEJS" />
 <meta property="og:type" content="article" />
 <meta property="article:published_time" content="2018-02-12T22:10:54-06:00" />
 <script type="application/ld+json">
-{"mainEntityOfPage":{"@type":"WebPage","@id":"/conceptos-basicos-en-flexbox/"},"@type":"BlogPosting","author":{"@type":"Person","name":"robert"},"url":"/conceptos-basicos-en-flexbox/","headline":"Flexbox, conceptos básicos (flex-direction)","dateModified":"2018-02-12T22:10:54-06:00","description":"Continuando con la serie de este artículo sobre Flexbox estaremos viendo los conceptos principales que debemos tener en cuenta a la hora de maquetar nuestros layouts con esta técnica en especial la propiedad flex-direction y los axis. Sino lo leíste  aquí hay una introducción para comenzar a usar esta técnica de forma muy fácil.","datePublished":"2018-02-12T22:10:54-06:00","@context":"https://schema.org"}</script>
+{"@type":"BlogPosting","headline":"Flexbox, conceptos básicos (flex-direction)","dateModified":"2018-02-12T22:10:54-06:00","datePublished":"2018-02-12T22:10:54-06:00","mainEntityOfPage":{"@type":"WebPage","@id":"/conceptos-basicos-en-flexbox/"},"author":{"@type":"Person","name":"robert"},"url":"/conceptos-basicos-en-flexbox/","description":"Continuando con la serie de este artículo sobre Flexbox estaremos viendo los conceptos principales que debemos tener en cuenta a la hora de maquetar nuestros layouts con esta técnica en especial la propiedad flex-direction y los axis. Sino lo leíste  aquí hay una introducción para comenzar a usar esta técnica de forma muy fácil. Los dos ejes o axis de Flexbox: Para comenzar a trabajar con flexbox se debe tener en cuenta que para acomodar los elementos se hace en base a los  2 ejes o axis que existen, el main axis y el cross axis . Siendo el main axis la principal y que es definida por la propiedad flex-direction. main axis Al definir la propiedad flex-direction: row, estamos diciéndole a nuestro contenedor que acomode los elementos uno al lado del otro, es decir nuestro main-axis será ubicado horizontalmente lo cual debemos tener en cuenta porque muchas otras propiedades dependen de la definición de los axis. Este es el contenedor de los elementos del menú. &lt;nav&gt; &lt;ul&gt; &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Inicio&lt;/a&gt;&lt;/li&gt; &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Quienes somos&lt;/a&gt;&lt;/li&gt; &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Servicios&lt;/a&gt;&lt;/li&gt; &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Contacto&lt;/a&gt;&lt;/li&gt; &lt;/ul&gt; &lt;/nav&gt; CSS aplicado. nav{ background: #008492; } ul{ display:flex; flex-direction:row; } ul &gt; li { margin:10px; } ul &gt; li &gt; a{ color:#fff; text-decoration: none; } li { list-style:none; } Si ya leyeron el artículo anterior pueden notar que no hay cambios en cuanto al resultado que esperamos, en este caso cada elemento del menú se coloca uno al lado del otro. Esto sucede pues al definir en el ul la propiedad display:flex, el comportamiento de los elementos hijos por default es flex-direction:row, por lo que no es necesario definir la propiedad si queremos que su comportamiento sea el establecido. Valores de aceptados por flex-direction Para manipular los axis de nuestro contenedor  flex-direction acepta los siguientes valores: row row-reverse column column-reverse`` Así se vería nuestro menú aplicando los distintos valores a esta propiedad  row-reverse  column  column-reverse En las imágenes anteriores se puede ver claramente como afecta el orden de los elementos al aplicar los distintos valores a  flex-direction.   Cross axis El cross axis es el eje encargado de acomodar los elementos perpendicularmente al main axis, por lo que tenemos que tener en cuenta la orientación del mismo dado que dependen uno de otro. Si el main axis está orientado a column o column-reverse el cross axis estará afectando los elementos horizontalmente. Acá les dejo un codepen para que puedan practicar los conceptos y valores aprendidos.","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 </head>
 
 <body>
     <header>
-        <div class="container">
+        <div class="container header">
             <a class="link-logo-header text-verde" href="/">Roberto <span class="colored-logo">NUÑEZ</span></a>
             <a class="link-logo-header-mobile text-verde" href="/">
                 <h2>RNC</h2>
@@ -61,16 +61,15 @@
                     <li class="clearfix"></li>
                 </ul>
             </nav>
-            <div class="clearfix">
-            </div>
+
         </div>
     </header>
     <div class="flex direction-column container">
         <section id="personal-info">
-            <h1 class="text-verde text-center mt30">Mi Blog Personal</h1>
-            <h4 class="text-center m0">
-                <p>Aquí podrás encontrar todo lo que he voy aprendiendo en mis proyectos como desarrollador web.</p>
-            </h4>
+            <h1 class="text-verde text-center mt30">¿Estás buscando un programador Freelance?</h1>
+            <!-- <h4 class="text-center m0">
+                <p></p>
+            </h4> -->
         </section>
         <main class="flex container">
             <section class="container-articulos">
@@ -188,7 +187,7 @@ li {
         </aside>
     </article>
 </section>
-            <aside id="side-bar">
+            <!-- <aside id="side-bar">
                 <div class="card personal-info">
                     <img class="yo-img image-responsive img-circle dsp-block" src="/assets/img/yo_web_developer.JPG"
                         width="150" height="150" alt="RobertoNuñez">
@@ -219,7 +218,7 @@ li {
                             </div>
                         </div>
                 </div>
-            </aside>
+            </aside> -->
         </main>
 
     </div>

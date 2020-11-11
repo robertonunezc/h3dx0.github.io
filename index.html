@@ -3,12 +3,75 @@ layout: base_blog
 title: Programador Web, Ingeniero en Sistemas. Roberto Nuñez Corrales
 permalink: /
 ---
+<section id="bio-intro" class="card">
+    <div class="intro-text">
+        <ul class="service-questions">
+            <li>
+                ¿Quieres desarrollar un sitio web para tu negocio?
+            </li>
+            <li>
+                ¿Tienes una empresa y quieres aparecer en GOOGLE?
+            </li>
+            <li>
+                ¿Tienes un sitio web pero es antiguo y el de tu competencia es mejor?
+            </li>
+            <li>
+                ¿No encuentras alguien confiable y con experiencia para encargar tu sitio web?
+            </li>
+            <li>
+                <strong> Puedo ayudarte a responder cualquiera de estas
+                    interrogantes.</strong>
+            </li>
+            <li>
+                <a class="btn-verde">Contrátame</a>
+            </li>
+        </ul>
+    </div>
+    <div class="flex direction-column">
+        <img class="yo-img image-responsive  img-circle " src="/assets/img/yo_web_developer.JPG" width="150"
+            height="150" alt="RobertoNuñez">
+        <p class="fs-10">Programador web, Roberto Nuñez Corrales</p>
+    </div>
+</section>
+<section id="why-me" class="card">
+    <h1 class="text-verde text-center">¿Que más puedo hacer por ti o tu negocio?</h1>
+    <ul>
+        <li>Diseñar y desarrollar un sitio web para tu negocio, basado en tus necesidades.</li>
+        <li>Optimizar tu sitio web para un mejor posicionaminto en GOO GLE.</li>
+        <li>Crear tu sitio web con las más actuales tecnologías y luzca profesional.</li>
+        <li>Si tienes un sitio web antiguo, puedo renovarlo con nuevas tecnologías para que sea más rápido.</li>
+        <li>Tienes un cliente pero no tienes quien programe tu diseño. Yo te ayudo. </li>
+        <li>Realizar un diagnóstico de rendimiento de ti sitio web.</li>
+        <li>Modificar tu sitio web para que se vea correctamente en dispositivos móviles y así no pierdas clientes.</li>
+        <li><strong> Si alguna de estás situaciones te puede servir de ayuda. Estás en el lugar indicado. Estaré
+                encantado de ayudarte</strong>.</li>
+
+    </ul>
+
+</section>
+<section id="why-me" class="card">
+    <h1 class="text-verde text-center">¿Porqué contratarme?</h1>
+    <ul>
+        <li>Si no tienes un sitio web. Estás dejando de ganar dinero</li>
+        <li>Si tu sitio web es viejo, Estas dejando de ganar dinero</li>
+        <li>Soy un profesional con 8 años de experiencia en desarrollo web.</li>
+        <li>Te ayudaré en todo el proceso de desarrollo y posterior a entregar el trabajo me haré cargo de cualquier
+            error.</li>
+        <li>Tienes total garantía de mi trabajo por escrito y firmado.</li>
+        <li>Puedes saber un poco más de mi y mi experiencia dando clic <a href="/quien-soy/">AQUÍ</a></li>
+        <li>
+            <a href="" class="btn-verde">Contrátame</a>
+        </li>
+    </ul>
+
+</section>
+<h1 class="text-verde text-center mt30">Mi Blog</h1>
 <section id="list-post">
     {% for post in site.posts %}
     <div class="post-container-item card ">
         <h2 class="text-verde">{{ post.title }}</h2>
         <hr>
-            <!-- <ul class="tags-list">
+        <!-- <ul class="tags-list">
                 <li class="tag-item mr5">
                     <a href="">
                         <em>javascript</em>
@@ -20,10 +83,10 @@ permalink: /
                     </a>
                 </li>
             </ul> -->
-            <p class="desc">
-              {{post.excerpt}}
-          </p>
-          <a href="{{ post.url }}" class="btn-verproyecto text-verde bold" role="button">Leer artículo completo</a>
-      </div>
-      {% endfor %}
-  </section>
+        <p class="desc">
+            {{post.excerpt}}
+        </p>
+        <a href="{{ post.url }}" class="btn-verproyecto text-verde bold" role="button">Leer artículo completo</a>
+    </div>
+    {% endfor %}
+</section>

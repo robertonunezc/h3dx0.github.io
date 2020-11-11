@@ -26,22 +26,22 @@
 <meta property="og:title" content="Como copiar objetos y arreglos en javascript" />
 <meta name="author" content="robert" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="Hace unos días trabajando en un proyecto con VueJS tuve la necesidad de ver como copiar un arreglo para modificarlo en el componente hijo.(Si no conoces VueJS, date una vuelta por su web, es una librería increible para Javascript)." />
-<meta property="og:description" content="Hace unos días trabajando en un proyecto con VueJS tuve la necesidad de ver como copiar un arreglo para modificarlo en el componente hijo.(Si no conoces VueJS, date una vuelta por su web, es una librería increible para Javascript)." />
+<meta name="description" content="Hace unos días trabajando en un proyecto con VueJS tuve la necesidad de ver como copiar un arreglo para modificarlo en el componente hijo.(Si no conoces VueJS, date una vuelta por su web, es una librería increible para Javascript). En Javascript los arreglos y objetos son creados por referencia, esto quiere decir lo siguiente. let frutas = [&quot;platano&quot;, &quot;fresa&quot;] let mercado = frutas console.log(frutas, mercado) mercado[2] = &quot;manzanas&quot; console.log(frutas, mercado) Array(3) [ &quot;platano&quot;, &quot;fresa&quot;, &quot;manzanas&quot; ] Array(3) [ &quot;platano&quot;, &quot;fresa&quot;, &quot;manzanas&quot; ] Aquí tenemos el problema, el arreglo frutas original también se modificó, por lo que necesitamos hacer que las copias de nuestro arreglo de frutas sean independientes. Solución let frutas2 = [].concat(frutas) frutas2[3] = &quot;peras&quot; console.log(frutas, frutas2) Array(3) [ &quot;platano&quot;, &quot;fresa&quot;, &quot;manzanas&quot; ] Array(4) [ &quot;platano&quot;, &quot;fresa&quot;, &quot;manzanas&quot;, &quot;peras&quot; ] Solución 2 usando Spread Operator de ES6 const frutas3 = [...frutas] frutas3[3] = &quot;peras&quot; console.log(frutas, frutas3) Array(3) [ &quot;platano&quot;, &quot;fresa&quot;, &quot;manzanas&quot; ] Array(4) [ &quot;platano&quot;, &quot;fresa&quot;, &quot;manzanas&quot;, &quot;peras&quot; ] Aquí les dejo el enlace de la explicación detallada de Spread Operator. Una más const frutas4 = Array.from(frutas) frutas4[3] = &quot;mango&quot; console.log(frutas, frutas4) Array(3) [ &quot;platano&quot;, &quot;fresa&quot;, &quot;manzanas&quot; ] Array(4) [ &quot;platano&quot;, &quot;fresa&quot;, &quot;manzanas&quot;, &quot;mango&quot; ] Si quieren investigar más sobre Array.from este es el enlace Hasta aquí vimos varias vias de copiar arreglos para modificarlos nuevos. Con los objetos tenemos el mismo problema pues se copian pero se mantiene la referencia entre los objetos creados. Problema let persona = { nombre: &#39;Juan&#39;, edad: 25, } let persona2 = persona console.log(persona, persona2) persona2.nombre = &quot;Pedro&quot; console.log(persona, persona2) Object { nombre: &quot;Pedro&quot;, edad: 25 } Object { nombre: &quot;Pedro&quot;, edad: 25 } Vemos como al modificar nuestro objeto persona2 el objeto original persona también es modificado. Solución const persona3 = JSON.parse(JSON.stringify(persona)); persona3.nombre = &quot;Pedro&quot;; console.log(persona, persona3) //Resultado Object { nombre: &quot;Juan&quot;, edad: 25 } Object { nombre: &quot;Pedro&quot;, edad: 25 } Solución2 const persona = { nombre : &quot;Juan&quot;, edad: 25} const persona2 = Object.assign({}, persona) persona2.nombre = &quot;Pedro&quot; console.log(persona, persona2) //Resultado Object { nombre: &quot;Juan&quot;, edad: 25 } Object { nombre: &quot;Pedro&quot;, edad: 25 } Espero les sea útil y cualquier comentario es bienvenido. 🙂" />
+<meta property="og:description" content="Hace unos días trabajando en un proyecto con VueJS tuve la necesidad de ver como copiar un arreglo para modificarlo en el componente hijo.(Si no conoces VueJS, date una vuelta por su web, es una librería increible para Javascript). En Javascript los arreglos y objetos son creados por referencia, esto quiere decir lo siguiente. let frutas = [&quot;platano&quot;, &quot;fresa&quot;] let mercado = frutas console.log(frutas, mercado) mercado[2] = &quot;manzanas&quot; console.log(frutas, mercado) Array(3) [ &quot;platano&quot;, &quot;fresa&quot;, &quot;manzanas&quot; ] Array(3) [ &quot;platano&quot;, &quot;fresa&quot;, &quot;manzanas&quot; ] Aquí tenemos el problema, el arreglo frutas original también se modificó, por lo que necesitamos hacer que las copias de nuestro arreglo de frutas sean independientes. Solución let frutas2 = [].concat(frutas) frutas2[3] = &quot;peras&quot; console.log(frutas, frutas2) Array(3) [ &quot;platano&quot;, &quot;fresa&quot;, &quot;manzanas&quot; ] Array(4) [ &quot;platano&quot;, &quot;fresa&quot;, &quot;manzanas&quot;, &quot;peras&quot; ] Solución 2 usando Spread Operator de ES6 const frutas3 = [...frutas] frutas3[3] = &quot;peras&quot; console.log(frutas, frutas3) Array(3) [ &quot;platano&quot;, &quot;fresa&quot;, &quot;manzanas&quot; ] Array(4) [ &quot;platano&quot;, &quot;fresa&quot;, &quot;manzanas&quot;, &quot;peras&quot; ] Aquí les dejo el enlace de la explicación detallada de Spread Operator. Una más const frutas4 = Array.from(frutas) frutas4[3] = &quot;mango&quot; console.log(frutas, frutas4) Array(3) [ &quot;platano&quot;, &quot;fresa&quot;, &quot;manzanas&quot; ] Array(4) [ &quot;platano&quot;, &quot;fresa&quot;, &quot;manzanas&quot;, &quot;mango&quot; ] Si quieren investigar más sobre Array.from este es el enlace Hasta aquí vimos varias vias de copiar arreglos para modificarlos nuevos. Con los objetos tenemos el mismo problema pues se copian pero se mantiene la referencia entre los objetos creados. Problema let persona = { nombre: &#39;Juan&#39;, edad: 25, } let persona2 = persona console.log(persona, persona2) persona2.nombre = &quot;Pedro&quot; console.log(persona, persona2) Object { nombre: &quot;Pedro&quot;, edad: 25 } Object { nombre: &quot;Pedro&quot;, edad: 25 } Vemos como al modificar nuestro objeto persona2 el objeto original persona también es modificado. Solución const persona3 = JSON.parse(JSON.stringify(persona)); persona3.nombre = &quot;Pedro&quot;; console.log(persona, persona3) //Resultado Object { nombre: &quot;Juan&quot;, edad: 25 } Object { nombre: &quot;Pedro&quot;, edad: 25 } Solución2 const persona = { nombre : &quot;Juan&quot;, edad: 25} const persona2 = Object.assign({}, persona) persona2.nombre = &quot;Pedro&quot; console.log(persona, persona2) //Resultado Object { nombre: &quot;Juan&quot;, edad: 25 } Object { nombre: &quot;Pedro&quot;, edad: 25 } Espero les sea útil y cualquier comentario es bienvenido. 🙂" />
 <link rel="canonical" href="/como-copiar-objetos-y-arreglos-en-javascript/" />
 <meta property="og:url" content="/como-copiar-objetos-y-arreglos-en-javascript/" />
 <meta property="og:site_name" content="Roberto Nuñez Corrales Blog de desarrollo web, Django, HTML, CSS ;VUEJS" />
 <meta property="og:type" content="article" />
 <meta property="article:published_time" content="2019-09-18T21:45:30-05:00" />
 <script type="application/ld+json">
-{"mainEntityOfPage":{"@type":"WebPage","@id":"/como-copiar-objetos-y-arreglos-en-javascript/"},"@type":"BlogPosting","author":{"@type":"Person","name":"robert"},"url":"/como-copiar-objetos-y-arreglos-en-javascript/","headline":"Como copiar objetos y arreglos en javascript","dateModified":"2019-09-18T21:45:30-05:00","description":"Hace unos días trabajando en un proyecto con VueJS tuve la necesidad de ver como copiar un arreglo para modificarlo en el componente hijo.(Si no conoces VueJS, date una vuelta por su web, es una librería increible para Javascript).","datePublished":"2019-09-18T21:45:30-05:00","@context":"https://schema.org"}</script>
+{"@type":"BlogPosting","headline":"Como copiar objetos y arreglos en javascript","dateModified":"2019-09-18T21:45:30-05:00","datePublished":"2019-09-18T21:45:30-05:00","mainEntityOfPage":{"@type":"WebPage","@id":"/como-copiar-objetos-y-arreglos-en-javascript/"},"author":{"@type":"Person","name":"robert"},"url":"/como-copiar-objetos-y-arreglos-en-javascript/","description":"Hace unos días trabajando en un proyecto con VueJS tuve la necesidad de ver como copiar un arreglo para modificarlo en el componente hijo.(Si no conoces VueJS, date una vuelta por su web, es una librería increible para Javascript). En Javascript los arreglos y objetos son creados por referencia, esto quiere decir lo siguiente. let frutas = [&quot;platano&quot;, &quot;fresa&quot;] let mercado = frutas console.log(frutas, mercado) mercado[2] = &quot;manzanas&quot; console.log(frutas, mercado) Array(3) [ &quot;platano&quot;, &quot;fresa&quot;, &quot;manzanas&quot; ] Array(3) [ &quot;platano&quot;, &quot;fresa&quot;, &quot;manzanas&quot; ] Aquí tenemos el problema, el arreglo frutas original también se modificó, por lo que necesitamos hacer que las copias de nuestro arreglo de frutas sean independientes. Solución let frutas2 = [].concat(frutas) frutas2[3] = &quot;peras&quot; console.log(frutas, frutas2) Array(3) [ &quot;platano&quot;, &quot;fresa&quot;, &quot;manzanas&quot; ] Array(4) [ &quot;platano&quot;, &quot;fresa&quot;, &quot;manzanas&quot;, &quot;peras&quot; ] Solución 2 usando Spread Operator de ES6 const frutas3 = [...frutas] frutas3[3] = &quot;peras&quot; console.log(frutas, frutas3) Array(3) [ &quot;platano&quot;, &quot;fresa&quot;, &quot;manzanas&quot; ] Array(4) [ &quot;platano&quot;, &quot;fresa&quot;, &quot;manzanas&quot;, &quot;peras&quot; ] Aquí les dejo el enlace de la explicación detallada de Spread Operator. Una más const frutas4 = Array.from(frutas) frutas4[3] = &quot;mango&quot; console.log(frutas, frutas4) Array(3) [ &quot;platano&quot;, &quot;fresa&quot;, &quot;manzanas&quot; ] Array(4) [ &quot;platano&quot;, &quot;fresa&quot;, &quot;manzanas&quot;, &quot;mango&quot; ] Si quieren investigar más sobre Array.from este es el enlace Hasta aquí vimos varias vias de copiar arreglos para modificarlos nuevos. Con los objetos tenemos el mismo problema pues se copian pero se mantiene la referencia entre los objetos creados. Problema let persona = { nombre: &#39;Juan&#39;, edad: 25, } let persona2 = persona console.log(persona, persona2) persona2.nombre = &quot;Pedro&quot; console.log(persona, persona2) Object { nombre: &quot;Pedro&quot;, edad: 25 } Object { nombre: &quot;Pedro&quot;, edad: 25 } Vemos como al modificar nuestro objeto persona2 el objeto original persona también es modificado. Solución const persona3 = JSON.parse(JSON.stringify(persona)); persona3.nombre = &quot;Pedro&quot;; console.log(persona, persona3) //Resultado Object { nombre: &quot;Juan&quot;, edad: 25 } Object { nombre: &quot;Pedro&quot;, edad: 25 } Solución2 const persona = { nombre : &quot;Juan&quot;, edad: 25} const persona2 = Object.assign({}, persona) persona2.nombre = &quot;Pedro&quot; console.log(persona, persona2) //Resultado Object { nombre: &quot;Juan&quot;, edad: 25 } Object { nombre: &quot;Pedro&quot;, edad: 25 } Espero les sea útil y cualquier comentario es bienvenido. 🙂","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 </head>
 
 <body>
     <header>
-        <div class="container">
+        <div class="container header">
             <a class="link-logo-header text-verde" href="/">Roberto <span class="colored-logo">NUÑEZ</span></a>
             <a class="link-logo-header-mobile text-verde" href="/">
                 <h2>RNC</h2>
@@ -61,16 +61,15 @@
                     <li class="clearfix"></li>
                 </ul>
             </nav>
-            <div class="clearfix">
-            </div>
+
         </div>
     </header>
     <div class="flex direction-column container">
         <section id="personal-info">
-            <h1 class="text-verde text-center mt30">Mi Blog Personal</h1>
-            <h4 class="text-center m0">
-                <p>Aquí podrás encontrar todo lo que he voy aprendiendo en mis proyectos como desarrollador web.</p>
-            </h4>
+            <h1 class="text-verde text-center mt30">¿Estás buscando un programador Freelance?</h1>
+            <!-- <h4 class="text-center m0">
+                <p></p>
+            </h4> -->
         </section>
         <main class="flex container">
             <section class="container-articulos">
@@ -197,7 +196,7 @@ los objetos creados.</p>
         </aside>
     </article>
 </section>
-            <aside id="side-bar">
+            <!-- <aside id="side-bar">
                 <div class="card personal-info">
                     <img class="yo-img image-responsive img-circle dsp-block" src="/assets/img/yo_web_developer.JPG"
                         width="150" height="150" alt="RobertoNuñez">
@@ -228,7 +227,7 @@ los objetos creados.</p>
                             </div>
                         </div>
                 </div>
-            </aside>
+            </aside> -->
         </main>
 
     </div>

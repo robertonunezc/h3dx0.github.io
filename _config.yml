@@ -28,6 +28,8 @@ github_username:  h3dx0
 markdown: kramdown
 theme: minima
 paginate: 5
+page_excerpts: true
+excerpt_separator: <!--more-->
 plugins:
   - jekyll-feed
 

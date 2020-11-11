@@ -159,6 +159,11 @@ a:hover {
   font-size: 12px;
 }
 
+.fs-10 {
+  font-size: 10px;
+}
+
+
 /*
  * Hide only visually, but have it available for screen readers:
  * https://snook.ca/archives/html_and_css/hiding-content-for-accessibility
