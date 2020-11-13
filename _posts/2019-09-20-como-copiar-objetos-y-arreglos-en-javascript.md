@@ -20,7 +20,7 @@ Hace unos días trabajando en un proyecto con VueJS tuve la necesidad de ver com
 el componente hijo.(Si no conoces VueJS, date una vuelta por su web, es una librería increible para Javascript).
 
 En Javascript los arreglos y objetos son creados por referencia, esto quiere decir lo siguiente.
-
+ <!--more-->
 ```javascript
 let frutas = ["platano", "fresa"]
 let mercado = frutas

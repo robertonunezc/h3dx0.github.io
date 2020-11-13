@@ -13,8 +13,10 @@ categories:
 ---
 
 Con este artículo quiero enseñarte **como agregar un logo al adminstrador de django**, un requerimiento que muchas veces es útil para darle un toque personal a esta sección tan importante . Puedes ver el video explicativo dando clic <a href="https://youtu.be/wbpeWareO00" target="_blank">aquí</a>
+La mayoría de los proyectos web en la actualidad necesitan que su información sea dinámica y facilemente modificable por el cliente o los encargados de realizar esta tarea. 
+ <!--more-->
 
-La mayoría de los proyectos web en la actualidad necesitan que su información sea dinámica y facilemente modificable por el cliente o los encargados de realizar esta tarea. Aquí es donde entra en juego el **administrador de DJANGO** y casi siempre hay que hacerle las **modificaciones visuales** para que se adapte a nuestro cliente.
+Aquí es donde entra en juego el **administrador de DJANGO**  y casi siempre hay que hacerle las **modificaciones visuales** para que se adapte a nuestro cliente.
 
 Una de estas adecuaciones es [cambiar el título del mismo](/como-cambiar-el-titulo-del-adminsitrador-de-django/) por uno personalizado o simplemente agregar el logo de nuestro cliente. **¿Como cambiamos el título por nuestro logo?**
 

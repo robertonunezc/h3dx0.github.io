@@ -15,7 +15,7 @@ tags:
 - deploy
 ---
 Me pregunté en muchas ocaciones como podría desde mi localhost poder hacerlo visible en internet, para no tener que estar haciendo deploys que en muchos casos son complejos y nos hacen perder mucho tiempo y más cuando el proyecto está en pleno desarrollo.
-
+ <!--more-->
 He trabajado en proyectos donde necesito hacer demos para ir presentando los avances,o simplemente tener el proyecto disponible en Internet para que un amigo haga algunas pruebas. 
 
 Después de varios intentos de configuraciones y no encontrar una vía fácil leí en un grupo de Telegram un solución 

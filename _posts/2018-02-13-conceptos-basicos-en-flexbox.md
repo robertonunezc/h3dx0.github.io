@@ -14,7 +14,8 @@ tags:
   - main-axis
 ---
 Continuando con la serie de este artículo sobre **Flexbox** estaremos viendo los conceptos principales que debemos tener en cuenta a la hora de maquetar nuestros layouts con esta técnica en especial la propiedad **flex-direction** y los axis. Sino lo leíste  [aquí hay una introducción](http://localhost/~h3dx0/wordpress/comenzando-con-flexbox-css/) para comenzar a usar esta técnica de forma muy fácil.
-
+ <!--more-->
+ 
 ## Los dos ejes o axis de Flexbox:
 
 Para comenzar a trabajar con flexbox se debe tener en cuenta que para acomodar los elementos se hace en base a los  2 ejes o axis que existen, el **main axis** y el **cross axis .** Siendo el main axis la principal y que es definida por la propiedad **flex-direction.**

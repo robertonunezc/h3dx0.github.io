@@ -14,8 +14,8 @@ tags:
   - web
 ---
 Continuando con la serie de artículos sobre como **maquetar en css** con flexbox, hoy tendremos como objetivo el **aprender a alinear elementos** dentro de un contenedor.
-
 Una de las funciones o posibiliades que más me llamó la antención al comenzar a trabajar con flexbox fue la facilidad para poder acomodar o alinear elementos, tanto horizontalmente, verticalmente como cada elemento por separado.
+ <!--more-->
 
 Para alinear los elementos nuestro contenedor acepta 4 propiedades fundamentales
 

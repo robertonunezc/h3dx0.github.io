@@ -42,7 +42,7 @@ header {
     width: 100%;
     position: fixed;
     z-index: 1000000;
-    background: #fff;
+    background: #0E5C66;
     border-bottom: none;
     margin-bottom: 15px;
 }
@@ -80,7 +80,7 @@ nav.nav-top>ul {
 
 nav.nav-top>ul>li>a {
     padding: 5px 15px;
-    color: #5c5a5a;
+    color: #fff;
 }
 
 nav.nav-top>ul>li>a:hover {
@@ -274,4 +274,23 @@ a:hover {
     .link-logo-header-mobile {
         display: flex;
     }
+}
+
+#contact-form {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.contact-from {
+    background-color: #0E5C66;
+    color: white;
+    padding: 10px;
+    width: 50%;
+}
+
+.input-wrap {
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
 }

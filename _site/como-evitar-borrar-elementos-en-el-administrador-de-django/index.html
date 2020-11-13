@@ -26,15 +26,15 @@
 <meta property="og:title" content="Como evitar borrar elementos en el administrador de Django" />
 <meta name="author" content="robert" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="Hola a todos y muchas gracias por llegar a mi blog. Espero este artículo te sea de utilidad. En varios proyectos por cuestiones de manejo de información histórica , nuestro cliente nos comenta que no se pueden borrar ciertos datos una ves que ya están en el sistema. Cuando hacemos nuestro administrador desde cero no hay problemas pues controlamos todo el proceso de creación pero si se desea utilizar el administrador que DJANGO nos brinda por cuestiones de agilizar tiempos o cualquier otra razón, este por defecto nos da la opción de eliminar los registros de los modelos que tenemos. &lt;figcaption&gt;Listado Django&lt;/figcaption&gt;&lt;/figure&gt; Como nos muestra la imagen anterior podemos borrar los datos usando el ckeckbox y el select de acciones. Solución En el archivo admin.py de nuestro proyecto donde tenemos registrado el modelo debemos agregar lo siguiente: from miproyecto.admin import NonDeleteAdmin admin.site.register(MiModelo, NonDeleteAdmin) Quedando así el administrador donde se eliminan los checkbox y el select para la acción de borrar. &lt;figcaption&gt;Listado sin opción de eliminar.&lt;/figcaption&gt;&lt;/figure&gt; Espero les sea útil y cualquier comentario es bienvenido. 🙂" />
-<meta property="og:description" content="Hola a todos y muchas gracias por llegar a mi blog. Espero este artículo te sea de utilidad. En varios proyectos por cuestiones de manejo de información histórica , nuestro cliente nos comenta que no se pueden borrar ciertos datos una ves que ya están en el sistema. Cuando hacemos nuestro administrador desde cero no hay problemas pues controlamos todo el proceso de creación pero si se desea utilizar el administrador que DJANGO nos brinda por cuestiones de agilizar tiempos o cualquier otra razón, este por defecto nos da la opción de eliminar los registros de los modelos que tenemos. &lt;figcaption&gt;Listado Django&lt;/figcaption&gt;&lt;/figure&gt; Como nos muestra la imagen anterior podemos borrar los datos usando el ckeckbox y el select de acciones. Solución En el archivo admin.py de nuestro proyecto donde tenemos registrado el modelo debemos agregar lo siguiente: from miproyecto.admin import NonDeleteAdmin admin.site.register(MiModelo, NonDeleteAdmin) Quedando así el administrador donde se eliminan los checkbox y el select para la acción de borrar. &lt;figcaption&gt;Listado sin opción de eliminar.&lt;/figcaption&gt;&lt;/figure&gt; Espero les sea útil y cualquier comentario es bienvenido. 🙂" />
-<link rel="canonical" href="/como-evitar-borrar-elementos-en-el-administrador-de-django/" />
-<meta property="og:url" content="/como-evitar-borrar-elementos-en-el-administrador-de-django/" />
+<meta name="description" content="Hola a todos y muchas gracias por llegar a mi blog. Espero este artículo te sea de utilidad. En varios proyectos por cuestiones de manejo de información histórica , nuestro cliente nos comenta que no se pueden borrar ciertos datos una ves que ya están en el sistema." />
+<meta property="og:description" content="Hola a todos y muchas gracias por llegar a mi blog. Espero este artículo te sea de utilidad. En varios proyectos por cuestiones de manejo de información histórica , nuestro cliente nos comenta que no se pueden borrar ciertos datos una ves que ya están en el sistema." />
+<link rel="canonical" href="http://localhost:4000/como-evitar-borrar-elementos-en-el-administrador-de-django/" />
+<meta property="og:url" content="http://localhost:4000/como-evitar-borrar-elementos-en-el-administrador-de-django/" />
 <meta property="og:site_name" content="Roberto Nuñez Corrales Blog de desarrollo web, Django, HTML, CSS ;VUEJS" />
 <meta property="og:type" content="article" />
 <meta property="article:published_time" content="2019-04-24T21:45:30-05:00" />
 <script type="application/ld+json">
-{"@type":"BlogPosting","headline":"Como evitar borrar elementos en el administrador de Django","dateModified":"2019-04-24T21:45:30-05:00","datePublished":"2019-04-24T21:45:30-05:00","mainEntityOfPage":{"@type":"WebPage","@id":"/como-evitar-borrar-elementos-en-el-administrador-de-django/"},"author":{"@type":"Person","name":"robert"},"url":"/como-evitar-borrar-elementos-en-el-administrador-de-django/","description":"Hola a todos y muchas gracias por llegar a mi blog. Espero este artículo te sea de utilidad. En varios proyectos por cuestiones de manejo de información histórica , nuestro cliente nos comenta que no se pueden borrar ciertos datos una ves que ya están en el sistema. Cuando hacemos nuestro administrador desde cero no hay problemas pues controlamos todo el proceso de creación pero si se desea utilizar el administrador que DJANGO nos brinda por cuestiones de agilizar tiempos o cualquier otra razón, este por defecto nos da la opción de eliminar los registros de los modelos que tenemos. &lt;figcaption&gt;Listado Django&lt;/figcaption&gt;&lt;/figure&gt; Como nos muestra la imagen anterior podemos borrar los datos usando el ckeckbox y el select de acciones. Solución En el archivo admin.py de nuestro proyecto donde tenemos registrado el modelo debemos agregar lo siguiente: from miproyecto.admin import NonDeleteAdmin admin.site.register(MiModelo, NonDeleteAdmin) Quedando así el administrador donde se eliminan los checkbox y el select para la acción de borrar. &lt;figcaption&gt;Listado sin opción de eliminar.&lt;/figcaption&gt;&lt;/figure&gt; Espero les sea útil y cualquier comentario es bienvenido. 🙂","@context":"https://schema.org"}</script>
+{"@type":"BlogPosting","headline":"Como evitar borrar elementos en el administrador de Django","dateModified":"2019-04-24T21:45:30-05:00","datePublished":"2019-04-24T21:45:30-05:00","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/como-evitar-borrar-elementos-en-el-administrador-de-django/"},"author":{"@type":"Person","name":"robert"},"url":"http://localhost:4000/como-evitar-borrar-elementos-en-el-administrador-de-django/","description":"Hola a todos y muchas gracias por llegar a mi blog. Espero este artículo te sea de utilidad. En varios proyectos por cuestiones de manejo de información histórica , nuestro cliente nos comenta que no se pueden borrar ciertos datos una ves que ya están en el sistema.","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 </head>
@@ -42,8 +42,8 @@
 <body>
     <header>
         <div class="container header">
-            <a class="link-logo-header text-verde" href="/">Roberto <span class="colored-logo">NUÑEZ</span></a>
-            <a class="link-logo-header-mobile text-verde" href="/">
+            <a class="link-logo-header text-white" href="/">Roberto <span class="colored-logo">NUÑEZ</span></a>
+            <a class="link-logo-header-mobile" href="/">
                 <h2>RNC</h2>
             </a>
 
@@ -56,7 +56,7 @@
                         <a href="/quien-soy.html">Quien soy</a>
                     </li>
                     <li>
-                        <a href="#" style="color:white" class="bold bg-verde-oscuro">Contáctame</a>
+                        <a href="/contacto" style="color:white" class="bold bg-verde-oscuro">Contáctame</a>
                     </li>
                     <li class="clearfix"></li>
                 </ul>
@@ -99,9 +99,9 @@
         <aside>
             <p>Hola a todos y muchas gracias por llegar a mi blog. Espero este artículo te sea de utilidad.</p>
 
-<p>En varios proyectos por cuestiones de manejo de información histórica , nuestro cliente nos comenta que <strong>no se pueden borrar ciertos datos</strong> una ves que ya están en el sistema.</p>
-
-<p>Cuando hacemos nuestro administrador desde cero no hay problemas pues controlamos todo el proceso de creación pero si se desea utilizar el <strong>administrador que DJANGO</strong> nos brinda por cuestiones de agilizar tiempos o cualquier otra razón, este por defecto <strong>nos da la opción de eliminar los registros de los modelos que tenemos.</strong><figure class="wp-block-image"></figure></p>
+<p>En varios proyectos por cuestiones de manejo de información histórica , nuestro cliente nos comenta que <strong>no se pueden borrar ciertos datos</strong> una ves que ya están en el sistema.
+ <!--more-->
+Cuando hacemos nuestro administrador desde cero no hay problemas pues controlamos todo el proceso de creación pero si se desea utilizar el <strong>administrador que DJANGO</strong> nos brinda por cuestiones de agilizar tiempos o cualquier otra razón, este por defecto <strong>nos da la opción de eliminar los registros de los modelos que tenemos.</strong><figure class="wp-block-image"></figure></p>
 
 <p><img src="http://localhost/~h3dx0/wordpress/wp-content/uploads/2019/04/Firefox_Screenshot_2019-04-25T02-20-59.578Z.png" alt="Listado Django por defecto" class="wp-image-146" srcset="http://localhost/~h3dx0/wordpress/wp-content/uploads/2019/04/Firefox_Screenshot_2019-04-25T02-20-59.578Z.png 466w, http://localhost/~h3dx0/wordpress/wp-content/uploads/2019/04/Firefox_Screenshot_2019-04-25T02-20-59.578Z-300x115.png 300w" sizes="(max-width: 466px) 100vw, 466px" /> &lt;figcaption&gt;Listado Django&lt;/figcaption&gt;&lt;/figure&gt;</p>
 

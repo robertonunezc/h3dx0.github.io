@@ -17,7 +17,7 @@ tags:
   - tutorial
 ---
 Hola a todos, muchas gracias por darte una vuelta a este artículo en el cual aprenderás como iniciar el **maquetado con flexbox** y así darle un impulso a tus conocimientos de frontend web para dejar atrás viejas e inútiles técnicas de maquetado con **CSS3.** Comenzamos&#8230;
-
+ <!--more-->
 ## ¿Que es?
 
 **CSS flexbox layout** es una tecnología o modelo de CSS3 implementada por los navegadores actuales. Tiene como objetivo ayudar a los desarrolladores a crear layouts de sitios web de manera más fácil, reutilizable y eficiente.

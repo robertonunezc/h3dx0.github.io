@@ -12,7 +12,7 @@ categories:
 ---
 Hoy les traigo un **forma muy sencilla** de sacar mejor provecho al administrador de DJANGO, el poder **cambiar los títulos principales** de esta importante sección .
 Queremos modificar los textos tanto en el formulario de inicio de sesión, la barra de título y en el listado principal. Supongamos que tenemos un sistema de inventarios que al inicio se ve así:
-
+ <!--more-->
 
 ![TITULO](/assets/img/posts/cambiar-titulo/TituloOriginal.png)
 <p class="text-center fs12">Textos originales</p>

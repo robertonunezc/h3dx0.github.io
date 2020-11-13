@@ -27,12 +27,12 @@
 <meta property="og:locale" content="en_US" />
 <meta name="description" content="Este es mi blog personal, aqui voy escribiendo todo lo que voy aprendiendo sobre desarrollo web, especificamente DJANGO, VueJs, HTML5, CSS3 y todo aquello que creo puede serle útil a alguien más." />
 <meta property="og:description" content="Este es mi blog personal, aqui voy escribiendo todo lo que voy aprendiendo sobre desarrollo web, especificamente DJANGO, VueJs, HTML5, CSS3 y todo aquello que creo puede serle útil a alguien más." />
-<link rel="canonical" href="/" />
-<meta property="og:url" content="/" />
+<link rel="canonical" href="http://localhost:4000/" />
+<meta property="og:url" content="http://localhost:4000/" />
 <meta property="og:site_name" content="Roberto Nuñez Corrales Blog de desarrollo web, Django, HTML, CSS ;VUEJS" />
-<link rel="prev" href="/page2" />
+<link rel="prev" href="http://localhost:4000/page2" />
 <script type="application/ld+json">
-{"@type":"WebSite","headline":"Programador Web, Ingeniero en Sistemas. Roberto Nuñez Corrales","url":"/","description":"Este es mi blog personal, aqui voy escribiendo todo lo que voy aprendiendo sobre desarrollo web, especificamente DJANGO, VueJs, HTML5, CSS3 y todo aquello que creo puede serle útil a alguien más.","name":"Roberto Nuñez Corrales Blog de desarrollo web, Django, HTML, CSS ;VUEJS","@context":"https://schema.org"}</script>
+{"@type":"WebSite","headline":"Programador Web, Ingeniero en Sistemas. Roberto Nuñez Corrales","url":"http://localhost:4000/","description":"Este es mi blog personal, aqui voy escribiendo todo lo que voy aprendiendo sobre desarrollo web, especificamente DJANGO, VueJs, HTML5, CSS3 y todo aquello que creo puede serle útil a alguien más.","name":"Roberto Nuñez Corrales Blog de desarrollo web, Django, HTML, CSS ;VUEJS","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 </head>
@@ -40,8 +40,8 @@
 <body>
     <header>
         <div class="container header">
-            <a class="link-logo-header text-verde" href="/">Roberto <span class="colored-logo">NUÑEZ</span></a>
-            <a class="link-logo-header-mobile text-verde" href="/">
+            <a class="link-logo-header text-white" href="/">Roberto <span class="colored-logo">NUÑEZ</span></a>
+            <a class="link-logo-header-mobile" href="/">
                 <h2>RNC</h2>
             </a>
 
@@ -54,7 +54,7 @@
                         <a href="/quien-soy.html">Quien soy</a>
                     </li>
                     <li>
-                        <a href="#" style="color:white" class="bold bg-verde-oscuro">Contáctame</a>
+                        <a href="/contacto" style="color:white" class="bold bg-verde-oscuro">Contáctame</a>
                     </li>
                     <li class="clearfix"></li>
                 </ul>
@@ -94,7 +94,7 @@
             </li>
         </ul>
     </div>
-    <div class="flex direction-column">
+    <div class="flex direction-column justify-center">
         <img class="yo-img image-responsive  img-circle " src="/assets/img/yo_web_developer.JPG" width="150"
             height="150" alt="RobertoNuñez">
         <p class="fs-10">Programador web, Roberto Nuñez Corrales</p>
@@ -204,96 +204,6 @@ el componente hijo.(Si no conoces VueJS, date una vuelta por su web, es una libr
 
 <p>En Javascript los arreglos y objetos son creados por referencia, esto quiere decir lo siguiente.</p>
 
-<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">let</span> <span class="nx">frutas</span> <span class="o">=</span> <span class="p">[</span><span class="s2">"platano"</span><span class="p">,</span> <span class="s2">"fresa"</span><span class="p">]</span>
-<span class="kd">let</span> <span class="nx">mercado</span> <span class="o">=</span> <span class="nx">frutas</span>
-<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">frutas</span><span class="p">,</span> <span class="nx">mercado</span><span class="p">)</span>
-
-<span class="nx">mercado</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span> <span class="o">=</span> <span class="s2">"manzanas"</span>
-
-<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">frutas</span><span class="p">,</span> <span class="nx">mercado</span><span class="p">)</span>
-
-<span class="nb">Array</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span> <span class="p">[</span> <span class="s2">"platano"</span><span class="p">,</span> <span class="s2">"fresa"</span><span class="p">,</span> <span class="s2">"manzanas"</span> <span class="p">]</span>
-
-<span class="nb">Array</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span> <span class="p">[</span> <span class="s2">"platano"</span><span class="p">,</span> <span class="s2">"fresa"</span><span class="p">,</span> <span class="s2">"manzanas"</span> <span class="p">]</span>
-</code></pre></div></div>
-<p>Aquí tenemos el problema, el arreglo frutas original también se modificó, por lo que necesitamos hacer que las copias de nuestro arreglo de frutas sean independientes.</p>
-
-<h2 id="solución">Solución</h2>
-<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">let</span> <span class="nx">frutas2</span> <span class="o">=</span> <span class="p">[].</span><span class="nx">concat</span><span class="p">(</span><span class="nx">frutas</span><span class="p">)</span>
-<span class="nx">frutas2</span><span class="p">[</span><span class="mi">3</span><span class="p">]</span> <span class="o">=</span> <span class="s2">"peras"</span>
-<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">frutas</span><span class="p">,</span> <span class="nx">frutas2</span><span class="p">)</span>
-
-<span class="nb">Array</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span> <span class="p">[</span> <span class="s2">"platano"</span><span class="p">,</span> <span class="s2">"fresa"</span><span class="p">,</span> <span class="s2">"manzanas"</span> <span class="p">]</span> 
-<span class="nb">Array</span><span class="p">(</span><span class="mi">4</span><span class="p">)</span> <span class="p">[</span> <span class="s2">"platano"</span><span class="p">,</span> <span class="s2">"fresa"</span><span class="p">,</span> <span class="s2">"manzanas"</span><span class="p">,</span> <span class="s2">"peras"</span> <span class="p">]</span>
-</code></pre></div></div>
-<h2 id="solución-2-usando-spread-operator-de-es6">Solución 2 usando Spread Operator de ES6</h2>
-<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">const</span> <span class="nx">frutas3</span> <span class="o">=</span> <span class="p">[...</span><span class="nx">frutas</span><span class="p">]</span>
-<span class="nx">frutas3</span><span class="p">[</span><span class="mi">3</span><span class="p">]</span> <span class="o">=</span> <span class="s2">"peras"</span>
-<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">frutas</span><span class="p">,</span> <span class="nx">frutas3</span><span class="p">)</span>
-
-<span class="nb">Array</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span> <span class="p">[</span> <span class="s2">"platano"</span><span class="p">,</span> <span class="s2">"fresa"</span><span class="p">,</span> <span class="s2">"manzanas"</span> <span class="p">]</span> 
-<span class="nb">Array</span><span class="p">(</span><span class="mi">4</span><span class="p">)</span> <span class="p">[</span> <span class="s2">"platano"</span><span class="p">,</span> <span class="s2">"fresa"</span><span class="p">,</span> <span class="s2">"manzanas"</span><span class="p">,</span> <span class="s2">"peras"</span> <span class="p">]</span>
-</code></pre></div></div>
-<p><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Spread_syntax" target="_blakn">
-	Aquí
-</a> les dejo el enlace de la explicación detallada de Spread Operator.</p>
-
-<h2 id="una-más">Una más</h2>
-<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">const</span> <span class="nx">frutas4</span> <span class="o">=</span> <span class="nb">Array</span><span class="p">.</span><span class="k">from</span><span class="p">(</span><span class="nx">frutas</span><span class="p">)</span>
-<span class="nx">frutas4</span><span class="p">[</span><span class="mi">3</span><span class="p">]</span> <span class="o">=</span> <span class="s2">"mango"</span>
-<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">frutas</span><span class="p">,</span> <span class="nx">frutas4</span><span class="p">)</span>
-<span class="nb">Array</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span> <span class="p">[</span> <span class="s2">"platano"</span><span class="p">,</span> <span class="s2">"fresa"</span><span class="p">,</span> <span class="s2">"manzanas"</span> <span class="p">]</span> 
-<span class="nb">Array</span><span class="p">(</span><span class="mi">4</span><span class="p">)</span> <span class="p">[</span> <span class="s2">"platano"</span><span class="p">,</span> <span class="s2">"fresa"</span><span class="p">,</span> <span class="s2">"manzanas"</span><span class="p">,</span> <span class="s2">"mango"</span> <span class="p">]</span>
-</code></pre></div></div>
-<p>Si quieren investigar más sobre <em>Array.from</em> este es el <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/from">enlace</a></p>
-
-<p>Hasta aquí vimos varias vias de copiar arreglos para modificarlos nuevos.</p>
-
-<p>Con los objetos tenemos el mismo problema pues se copian pero se mantiene la referencia entre
-los objetos creados.</p>
-
-<h2 id="problema">Problema</h2>
-<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
-<span class="kd">let</span> <span class="nx">persona</span> <span class="o">=</span> <span class="p">{</span>
-	<span class="na">nombre</span><span class="p">:</span> <span class="s1">'Juan'</span><span class="p">,</span>
-	<span class="na">edad</span><span class="p">:</span> <span class="mi">25</span><span class="p">,</span>
-<span class="p">}</span>
-<span class="kd">let</span> <span class="nx">persona2</span> <span class="o">=</span> <span class="nx">persona</span>
-<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">persona</span><span class="p">,</span> <span class="nx">persona2</span><span class="p">)</span>
-
-<span class="nx">persona2</span><span class="p">.</span><span class="nx">nombre</span> <span class="o">=</span> <span class="s2">"Pedro"</span>
-<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">persona</span><span class="p">,</span> <span class="nx">persona2</span><span class="p">)</span>
-
-<span class="nb">Object</span> <span class="p">{</span> <span class="nl">nombre</span><span class="p">:</span> <span class="s2">"Pedro"</span><span class="p">,</span> <span class="nx">edad</span><span class="p">:</span> <span class="mi">25</span> <span class="p">}</span> 
-<span class="nb">Object</span> <span class="p">{</span> <span class="nl">nombre</span><span class="p">:</span> <span class="s2">"Pedro"</span><span class="p">,</span> <span class="nx">edad</span><span class="p">:</span> <span class="mi">25</span> <span class="p">}</span>
-</code></pre></div></div>
-<p>Vemos como al modificar nuestro objeto <em>persona2</em> el objeto original <em>persona</em> también es modificado.</p>
-<h2 id="solución-1">Solución</h2>
-
-<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
-<span class="kd">const</span> <span class="nx">persona3</span> <span class="o">=</span> <span class="nx">JSON</span><span class="p">.</span><span class="nx">parse</span><span class="p">(</span><span class="nx">JSON</span><span class="p">.</span><span class="nx">stringify</span><span class="p">(</span><span class="nx">persona</span><span class="p">));</span>
-<span class="nx">persona3</span><span class="p">.</span><span class="nx">nombre</span> <span class="o">=</span> <span class="s2">"Pedro"</span><span class="p">;</span>
-<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">persona</span><span class="p">,</span> <span class="nx">persona3</span><span class="p">)</span>
-
-<span class="c1">//Resultado</span>
-<span class="nb">Object</span> <span class="p">{</span> <span class="nl">nombre</span><span class="p">:</span> <span class="s2">"Juan"</span><span class="p">,</span> <span class="nx">edad</span><span class="p">:</span> <span class="mi">25</span> <span class="p">}</span>
-<span class="nb">Object</span> <span class="p">{</span> <span class="nl">nombre</span><span class="p">:</span> <span class="s2">"Pedro"</span><span class="p">,</span> <span class="nx">edad</span><span class="p">:</span> <span class="mi">25</span> <span class="p">}</span>
-</code></pre></div></div>
-
-<h2 id="solución2">Solución2</h2>
-
-<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
-<span class="kd">const</span> <span class="nx">persona</span> <span class="o">=</span>  <span class="p">{</span> <span class="na">nombre</span> <span class="p">:</span> <span class="s2">"Juan"</span><span class="p">,</span> <span class="na">edad</span><span class="p">:</span> <span class="mi">25</span><span class="p">}</span>
-<span class="kd">const</span> <span class="nx">persona2</span> <span class="o">=</span> <span class="nb">Object</span><span class="p">.</span><span class="nx">assign</span><span class="p">({},</span> <span class="nx">persona</span><span class="p">)</span>
-<span class="nx">persona2</span><span class="p">.</span><span class="nx">nombre</span> <span class="o">=</span> <span class="s2">"Pedro"</span>
-<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">persona</span><span class="p">,</span> <span class="nx">persona2</span><span class="p">)</span>
-
-<span class="c1">//Resultado</span>
-<span class="nb">Object</span> <span class="p">{</span> <span class="nl">nombre</span><span class="p">:</span> <span class="s2">"Juan"</span><span class="p">,</span> <span class="nx">edad</span><span class="p">:</span> <span class="mi">25</span> <span class="p">}</span>
-<span class="nb">Object</span> <span class="p">{</span> <span class="nl">nombre</span><span class="p">:</span> <span class="s2">"Pedro"</span><span class="p">,</span> <span class="nx">edad</span><span class="p">:</span> <span class="mi">25</span> <span class="p">}</span>
-</code></pre></div></div>
-<p>Espero les sea útil y cualquier comentario es bienvenido. 🙂</p>
-
 
         </p>
         <a href="/como-copiar-objetos-y-arreglos-en-javascript/" class="btn-verproyecto text-verde bold" role="button">Leer artículo completo</a>
@@ -317,53 +227,6 @@ los objetos creados.</p>
         <p class="desc">
             <p>Me pregunté en muchas ocaciones como podría desde mi localhost poder hacerlo visible en internet, para no tener que estar haciendo deploys que en muchos casos son complejos y nos hacen perder mucho tiempo y más cuando el proyecto está en pleno desarrollo.</p>
 
-<p>He trabajado en proyectos donde necesito hacer demos para ir presentando los avances,o simplemente tener el proyecto disponible en Internet para que un amigo haga algunas pruebas.</p>
-
-<p>Después de varios intentos de configuraciones y no encontrar una vía fácil leí en un grupo de Telegram un solución 
-muy cómoda a mi manera de ver.</p>
-
-<h2 id="solución">Solución</h2>
-<p>Existe una herramienta llamada <a href="https://ngrok.com/" target="_blank">NGROK</a>. Esta útil plataforma nos da la opción de 
-facilmente poder publicar nuestro proyecto local en Internet y así evitarnos hacer despliegues en VPS, webhosting 
-ahorrando muchísimo tiempo y frustración.</p>
-
-<h2 id="como-funciona">Como funciona</h2>
-<ol>
-  <li>Es tan sencillo como entrar a su sitio web <a href="https://ngrok.com/" target="_blank">NGROK</a>.</li>
-  <li>Registrarnos para que nos de un API_KEY que nos permitirá publicar nuestro localhost.</li>
-  <li>Descargar ngrok <a href="https://dashboard.ngrok.com/get-started" target="_blank">aquí</a>, está disponible para una amplia variedad de plataformas.</li>
-  <li>Una ves descargado, nos movemos a la carpeta descargada de ngrok y ejecutamos el comando
-    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>./ngrok authtoken NUESTRO_API_KEY
-</code></pre></div>    </div>
-  </li>
-  <li>Suponiendo que tengamos un proyecto de nodejs que queremos probar en internet, el cual ejecutamos con :
-    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>npm run dev o node app.js
-</code></pre></div>    </div>
-  </li>
-  <li>El siguiente paso es publicar en internet el puerto por el cual está corriendo nuestra aplicación. Esto lo podemos 
-verificar en nuestra consola, ExpressJS por defecto sale en el 3000, Django Python en el 8000.
-Ejecutamos
-    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>./ngrok http PUERTO 
-</code></pre></div>    </div>
-    <p>Ejemplo concreto</p>
-    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>./ngrok http 80
-</code></pre></div>    </div>
-    <p>Esto nos genera una dirección temporal para probar nuestro servidor en internet.
-<img src="/assets/img/posts/ngrok-howto.png" alt="NGROK" /></p>
-  </li>
-</ol>
-
-<p>Además de esta dirección en internet, nos permite monitorear los request, tiempos de ejecución todo esto
-accediendo a la <em>http://localhost:4040/</em></p>
-
-<p><img src="/assets/img/posts/ngrok-inspect.png" alt="NGROK" /></p>
-
-<p>Esto ha sido una breve introducción a esta gran herramienta, su sitio web tiene muchísima documentación que 
-los ayudará con más detalle a descubrir todo su pontencial.</p>
-
-<p>Espero les sea útil y cualquier comentario es bienvenido. 🙂</p>
-
-<h6 id="las-imágenes-fueron-tomadas-del-sitio-oficial-de-ngrok">Las imágenes fueron tomadas del sitio oficial de NGROK</h6>
 
         </p>
         <a href="/como-publicar-en-internet-mi-proyectos-locales/" class="btn-verproyecto text-verde bold" role="button">Leer artículo completo</a>
@@ -385,39 +248,9 @@ los ayudará con más detalle a descubrir todo su pontencial.</p>
                 </li>
             </ul> -->
         <p class="desc">
-            <p>Con este artículo quiero enseñarte <strong>como agregar un logo al adminstrador de django</strong>, un requerimiento que muchas veces es útil para darle un toque personal a esta sección tan importante . Puedes ver el video explicativo dando clic <a href="https://youtu.be/wbpeWareO00" target="_blank">aquí</a></p>
+            <p>Con este artículo quiero enseñarte <strong>como agregar un logo al adminstrador de django</strong>, un requerimiento que muchas veces es útil para darle un toque personal a esta sección tan importante . Puedes ver el video explicativo dando clic <a href="https://youtu.be/wbpeWareO00" target="_blank">aquí</a>
+La mayoría de los proyectos web en la actualidad necesitan que su información sea dinámica y facilemente modificable por el cliente o los encargados de realizar esta tarea.</p>
 
-<p>La mayoría de los proyectos web en la actualidad necesitan que su información sea dinámica y facilemente modificable por el cliente o los encargados de realizar esta tarea. Aquí es donde entra en juego el <strong>administrador de DJANGO</strong> y casi siempre hay que hacerle las <strong>modificaciones visuales</strong> para que se adapte a nuestro cliente.</p>
-
-<p>Una de estas adecuaciones es <a href="/como-cambiar-el-titulo-del-adminsitrador-de-django/">cambiar el título del mismo</a> por uno personalizado o simplemente agregar el logo de nuestro cliente. <strong>¿Como cambiamos el título por nuestro logo?</strong></p>
-
-<h2 id="solución">SOLUCIÓN</h2>
-
-<p>1- En la raíz de nuestro proyecto debemos <strong>crear una estructura de carpetas  TEMPLATES/ADMIN.</strong></p>
-
-<p><img class="aligncenter" title="EstructuraProyecto" src="/assets/img/posts/agregar-logo/estructura_proyecto.png" alt="EstructuraProyecto" width="340" height="400" sizes="(max-width: 640px) 100vw, 640px" /></p>
-
-<p>2- En esta carpeta admin el <strong>copiar el archivo base_site.html.</strong> Este archivo se encuentra en el directorio donde <strong>se instaló DJANGO como librería,</strong> acá les dejo una captura de mi proyecto, donde uso un virtual enviroment para que puedan tener como referencia donde encontrar este archivo. Normalmente es dentro del virtual enviroment otra carpeta que se llama <strong>site-packages</strong> y después la estructura que muestro en la imagen. En ese directorio están todas las vistas usadas por el administrador.</p>
-
-<p><img class="aligncenter" title="ArchivosDjango" src="/assets/img/posts/agregar-logo/django.png" alt="ArchivosDjango" width="340" height="500" sizes="(max-width: 640px) 100vw, 640px" /></p>
-
-<p>3- <strong>Editar el base_site.html</strong> copiado en la estructura de <strong>TEMPLATES/ADMIN</strong> creada y agregar los</p>
-
-<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">load</span> <span class="n">staticfiles</span>
-</code></pre></div></div>
-<p>y en el bloque</p>
-<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">block</span> <span class="n">branding</span>
-</code></pre></div></div>
-<p>hacer las modificaciones que querramos para dejar el header como nos guste.</p>
-
-<p><strong>RESULTADO</strong>
-<img class="aligncenter" title="ArchivosDjango" src="/assets/img/posts/agregar-logo/html_final.png" alt="ArchivosDjango" sizes="(max-width: 640px) 100vw, 640px" /></p>
-
-<p><img class="aligncenter" title="LogoAdministradorDjango" src="/assets/img/posts/agregar-logo/admin_logo.png" alt="LogoAdministradorDjango" sizes="(max-width: 640px) 100vw, 640px" /></p>
-
-<p>Este es el principio para hacer cualquier modificación al administrador, el proceso es sobreescribir los archivos .html o .css que tiene el core de DJANGO con nuestras modificaciones. Proximamente estaré escribiendo más artículos sobre esta poderoza herramienta que DJANGO nos brinda.</p>
-
-<p>Happy coding. 🙂</p>
 
         </p>
         <a href="/como-agregar-un-logo-al-administador-de-django/" class="btn-verproyecto text-verde bold" role="button">Leer artículo completo</a>
@@ -465,37 +298,6 @@ los ayudará con más detalle a descubrir todo su pontencial.</p>
             <p>Hoy les traigo un <strong>forma muy sencilla</strong> de sacar mejor provecho al administrador de DJANGO, el poder <strong>cambiar los títulos principales</strong> de esta importante sección .
 Queremos modificar los textos tanto en el formulario de inicio de sesión, la barra de título y en el listado principal. Supongamos que tenemos un sistema de inventarios que al inicio se ve así:</p>
 
-<p><img src="/assets/img/posts/cambiar-titulo/TituloOriginal.png" alt="TITULO" /></p>
-<p class="text-center fs12">Textos originales</p>
-
-<p><strong>Queremos que se vea de la siguiente manera:</strong></p>
-
-<p><img src="/assets/img/posts/cambiar-titulo/NuevoTitulo.png" alt="TITULO" /></p>
-<p class="text-center fs12">Textos después de hacer cambios</p>
-
-<p>Siguiendo unos simples pasos tendremos el resultado esperado que es agregar nuestros propios textos</p>
-
-<h4 id="como-cambiar-el-texto-administración-de-django">Como cambiar el texto “Administración de Django”</h4>
-<p>1 – Abrimos con nuestro editor favorito cualquier archivo <strong>admin.py</strong> del proyecto.</p>
-
-<p><img src="/assets/img/posts/cambiar-titulo/Estructura.png" alt="CODIGO" /></p>
-
-<p>2 – Agregamos al inicio las siguientes líneas.</p>
-
-<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">admin</span><span class="o">.</span><span class="n">site</span><span class="o">.</span><span class="n">site_header</span> <span class="o">=</span> <span class="s">"Sitio web de inventarios"</span>
-<span class="n">admin</span><span class="o">.</span><span class="n">site</span><span class="o">.</span><span class="n">site_title</span> <span class="o">=</span> <span class="s">"Portal de inventarios"</span>
-<span class="n">admin</span><span class="o">.</span><span class="n">site</span><span class="o">.</span><span class="n">index_title</span> <span class="o">=</span> <span class="s">"Bienvenidos al portal de administración"</span>
-</code></pre></div></div>
-<p>Y tenemos el resultado esperado. Esos son títulos de ejemplo obviamente usted debe agregar los que su proyecto requiera.</p>
-
-<p><img src="/assets/img/posts/cambiar-titulo/login.png" alt="INICIO_SESION" /></p>
-<p class="text-center fs12">Textos después de hacer cambios</p>
-
-<p>Acá les dejo un video de los pasos a seguir y su resultado.</p>
-
-<p><a href="http://www.youtube.com/watch?v=d9F8RYpAXFU"><img src="http://img.youtube.com/vi/d9F8RYpAXFU/0.jpg" alt="PASO A PASO" /></a></p>
-
-<p>Espero les sirva.</p>
 
         </p>
         <a href="/como-cambiar-el-titulo-del-adminsitrador-de-django/" class="btn-verproyecto text-verde bold" role="button">Leer artículo completo</a>
@@ -521,24 +323,6 @@ Queremos modificar los textos tanto en el formulario de inicio de sesión, la ba
 
 <p>En varios proyectos por cuestiones de manejo de información histórica , nuestro cliente nos comenta que <strong>no se pueden borrar ciertos datos</strong> una ves que ya están en el sistema.</p>
 
-<p>Cuando hacemos nuestro administrador desde cero no hay problemas pues controlamos todo el proceso de creación pero si se desea utilizar el <strong>administrador que DJANGO</strong> nos brinda por cuestiones de agilizar tiempos o cualquier otra razón, este por defecto <strong>nos da la opción de eliminar los registros de los modelos que tenemos.</strong><figure class="wp-block-image"></figure></p>
-
-<p><img src="http://localhost/~h3dx0/wordpress/wp-content/uploads/2019/04/Firefox_Screenshot_2019-04-25T02-20-59.578Z.png" alt="Listado Django por defecto" class="wp-image-146" srcset="http://localhost/~h3dx0/wordpress/wp-content/uploads/2019/04/Firefox_Screenshot_2019-04-25T02-20-59.578Z.png 466w, http://localhost/~h3dx0/wordpress/wp-content/uploads/2019/04/Firefox_Screenshot_2019-04-25T02-20-59.578Z-300x115.png 300w" sizes="(max-width: 466px) 100vw, 466px" /> &lt;figcaption&gt;Listado Django&lt;/figcaption&gt;&lt;/figure&gt;</p>
-
-<p>Como nos muestra la imagen anterior <strong>podemos borrar los datos</strong> usando el ckeckbox y el select de acciones.</p>
-
-<h2 id="solución">Solución</h2>
-
-<p>En el <strong>archivo admin.py</strong> de nuestro proyecto donde tenemos registrado el modelo debemos agregar lo siguiente:</p>
-
-<p><strong>from miproyecto.admin import NonDeleteAdmin<br />
-admin.site.register(MiModelo, NonDeleteAdmin)</strong></p>
-
-<p>Quedando así el administrador donde se eliminan los checkbox y el select para la acción de borrar.<figure class="wp-block-image"></figure></p>
-
-<p><img src="http://localhost/~h3dx0/wordpress/wp-content/uploads/2019/04/Firefox_Screenshot_2019-04-25T02-25-53.747Z.png" alt="evitar borrar datos administrador django" class="wp-image-147" srcset="http://localhost/~h3dx0/wordpress/wp-content/uploads/2019/04/Firefox_Screenshot_2019-04-25T02-25-53.747Z.png 468w, http://localhost/~h3dx0/wordpress/wp-content/uploads/2019/04/Firefox_Screenshot_2019-04-25T02-25-53.747Z-300x110.png 300w" sizes="(max-width: 468px) 100vw, 468px" /> &lt;figcaption&gt;Listado sin opción de eliminar.&lt;/figcaption&gt;&lt;/figure&gt;</p>
-
-<p>Espero les sea útil y cualquier comentario es bienvenido. 🙂</p>
 
         </p>
         <a href="/como-evitar-borrar-elementos-en-el-administrador-de-django/" class="btn-verproyecto text-verde bold" role="button">Leer artículo completo</a>
@@ -560,118 +344,9 @@ admin.site.register(MiModelo, NonDeleteAdmin)</strong></p>
                 </li>
             </ul> -->
         <p class="desc">
-            <p>Continuando con la serie de artículos sobre como <strong>maquetar en css</strong> con flexbox, hoy tendremos como objetivo el <strong>aprender a alinear elementos</strong> dentro de un contenedor.</p>
+            <p>Continuando con la serie de artículos sobre como <strong>maquetar en css</strong> con flexbox, hoy tendremos como objetivo el <strong>aprender a alinear elementos</strong> dentro de un contenedor.
+Una de las funciones o posibiliades que más me llamó la antención al comenzar a trabajar con flexbox fue la facilidad para poder acomodar o alinear elementos, tanto horizontalmente, verticalmente como cada elemento por separado.</p>
 
-<p>Una de las funciones o posibiliades que más me llamó la antención al comenzar a trabajar con flexbox fue la facilidad para poder acomodar o alinear elementos, tanto horizontalmente, verticalmente como cada elemento por separado.</p>
-
-<p>Para alinear los elementos nuestro contenedor acepta 4 propiedades fundamentales</p>
-
-<ul>
-  <li>justify-content</li>
-  <li>align-items</li>
-  <li>align-self</li>
-</ul>
-
-<p>Puedes ver el video demostrativo en este enlace.</p>
-
-<p><a href="https://youtu.be/PRbfXcKxR8M"><img src="http://img.youtube.com/vi/PRbfXcKxR8M/0.jpg" alt="PASO A PASO" /></a></p>
-
-<p>Estas propiedades colocarán los elementos dependiendo  de como se hubiese definido nuestro main-axis, <a href="/conceptos-basicos-en-flexbox/">aquí</a> puedes darle una revisada a este tema.<br />
-<img class="aligncenter wp-image-75 size-full" title="AxisFlexbox" src="/assets/img/posts/alinear-flexbox/AxisFlexbox.png" alt="AxisFlexbox" width="640" height="400" sizes="(max-width: 640px) 100vw, 640px" /></p>
-
-<p> </p>
-
-<h2 id="justify-content">justify-content:</h2>
-
-<p>Esta propiedad será la encargada de organizar los elementos dentro de nuestro contenedor a través del main-axis (de forma horizontal en el caso de la imagen).</p>
-
-<p>Valores aceptados:</p>
-
-<h3 id="justify-content-flex-start"><strong>justify-content: flex-start;</strong></h3>
-<p class="codepen" data-height="299" data-theme-id="light" data-default-tab="css,result" data-user="h3dx0" data-slug-hash="PRemLd" data-preview="true" style="height: 299px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="ju-co:flsart">
-  <span>See the Pen <a href="https://codepen.io/h3dx0/pen/PRemLd">
-  ju-co:flsart</a> by Robert (<a href="https://codepen.io/h3dx0">@h3dx0</a>)
-  on <a href="https://codepen.io">CodePen</a>.</span>
-</p>
-<script async="" src="https://static.codepen.io/assets/embed/ei.js"></script>
-
-<p>Al aplicar esta propiedad puede que no se vea ningún efecto de inicio dado que nuestro menú en el ejemplo ya tiene asignada la propiedad <strong>flex-direction: row</strong> desde un inicio acomodando los elementos uno al lado del otro,  lo que se quiere lograr es que los elementos se acomoden donde comienza el contenedor que en este caso es de izquierda a derecha.</p>
-
-<h3 id="justify-content-center"><strong>justify-content: center;</strong></h3>
-
-<p class="codepen" data-height="265" data-theme-id="light" data-default-tab="css,result" data-user="h3dx0" data-slug-hash="ZxoKNb" data-preview="true" style="height: 265px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="justcont:center">
-  <span>See the Pen <a href="https://codepen.io/h3dx0/pen/ZxoKNb">
-  justcont:center</a> by Robert (<a href="https://codepen.io/h3dx0">@h3dx0</a>)
-  on <a href="https://codepen.io">CodePen</a>.</span>
-</p>
-<script async="" src="https://static.codepen.io/assets/embed/ei.js"></script>
-
-<p>Aplicando esta propiedad vemos como todos los elementos se centran teniendo en cuenta el main-axis que en este caso es en forma horizontal.</p>
-
-<h3 id="justify-content-flex-end"><strong>justify-content: flex-end;</strong></h3>
-
-<p class="codepen" data-height="265" data-theme-id="light" data-default-tab="css,result" data-user="h3dx0" data-slug-hash="gezWJd" style="height: 265px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="justcont:flexend">
-  <span>See the Pen <a href="https://codepen.io/h3dx0/pen/gezWJd">
-  justcont:flexend</a> by Robert (<a href="https://codepen.io/h3dx0">@h3dx0</a>)
-  on <a href="https://codepen.io">CodePen</a>.</span>
-</p>
-<script async="" src="https://static.codepen.io/assets/embed/ei.js"></script>
-
-<p>Flex-end nos ayuda a alinear nuestros elementos al final de nuestro contenedor en este caso hacia la derecha. Lo que anteriormente lograríamos usando floats.</p>
-
-<p> </p>
-
-<h3 id="justify-content-space-between"><strong>justify-content: space-between;</strong></h3>
-
-<p class="codepen" data-height="265" data-theme-id="light" data-default-tab="css,result" data-user="h3dx0" data-slug-hash="JLvNQN" style="height: 265px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="jcspace-btween">
-  <span>See the Pen <a href="https://codepen.io/h3dx0/pen/JLvNQN">
-  jcspace-btween</a> by Robert (<a href="https://codepen.io/h3dx0">@h3dx0</a>)
-  on <a href="https://codepen.io">CodePen</a>.</span>
-</p>
-<script async="" src="https://static.codepen.io/assets/embed/ei.js"></script>
-
-<p>Space-between es una de las propiedades que más me gustan, dada la facilidad con que se pueden dar espacios exactos (ayudándonos con el diseño responsivo en muchos casos) entre los elementos que estamos colocando. Esta propiedad coloca los elementos hacia los extremos de nuestro contenedor y el espacio restante los distribuye con los demás elementos.</p>
-
-<h3 id="justify-content-space-around"><strong>justify-content: space-around;</strong></h3>
-
-<p class="codepen" data-height="265" data-theme-id="light" data-default-tab="css,result" data-user="h3dx0" data-slug-hash="xWjdvq" style="height: 265px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="jc:space-around">
-  <span>See the Pen <a href="https://codepen.io/h3dx0/pen/xWjdvq">
-  jc:space-around</a> by Robert (<a href="https://codepen.io/h3dx0">@h3dx0</a>)
-  on <a href="https://codepen.io">CodePen</a>.</span>
-</p>
-<script async="" src="https://static.codepen.io/assets/embed/ei.js"></script>
-
-<p>Space-around así como space-between nos ayuda a distribuir de forma equitativa el espacio entre nuestros elementos, a diferencia de de la propiedad anterior , crea espacios iguales entre todos los elementos así como con los límites de nuestro contenedor.</p>
-
-<h2 id="alinear-elementos-según-cross-axis">Alinear elementos según cross-axis</h2>
-
-<h3 id="align-items">align-items:</h3>
-
-<p>Esta propiedad será la encargada de organizar los elementos dentro de nuestro contenedor a través del cross-axis (de forma vertical en el caso de la imagen).</p>
-
-<h3 id="valores-aceptados">Valores aceptados:</h3>
-
-<h3 id="align-items-flex-start">align-items: flex-start:</h3>
-
-<p><img class="alignnone size-full wp-image-89" src="/assets/img/posts/alinear-flexbox/ag-start.png" alt="" width="640" height="400" sizes="(max-width: 640px) 100vw, 640px" /></p>
-
-<h3 id="align-items-flex-end">align-items: flex-end;</h3>
-
-<p><img class="alignnone wp-image-93 size-full" src="/assets/img/posts/alinear-flexbox/ag-end.png" alt="alinear elementos" width="640" height="400" sizes="(max-width: 640px) 100vw, 640px" /></p>
-
-<h3 id="align-items-center">align-items: center;</h3>
-
-<p><img class="alignnone wp-image-93 size-full" src="/assets/img/posts/alinear-flexbox/ag-center.png" alt="alinear elementos" width="640" height="400" sizes="(max-width: 640px) 100vw, 640px" /></p>
-
-<h3 id="align-items-strech">align-items: strech;</h3>
-
-<p><img class="alignnone wp-image-95 size-full" src="/assets/img/posts/alinear-flexbox/ag-strech.png" alt="alinear elementos" width="640" height="400" sizes="(max-width: 640px) 100vw, 640px" /></p>
-
-<p>Estas son las principales propiedades para poder controlar la ubicación de todos los elementos dentro de nuestro contenedor. Muchas de estas propiedades están sujetas a como orientemos nuestros main-axis y cross-axis. Estas son algunos de los resultados que ahora con flexbox se puede lograr de forma mas sencilla.</p>
-
-<p>Muchas gracias por su lectura. Espero que les sirva este artículo para que puedan comenzar a usar estas fantásticas propiedades y atributos.</p>
-
-<p>No lo dudes y regálame un simple GRACIAS.</p>
 
         </p>
         <a href="/alinear-elementos-flexbox/" class="btn-verproyecto text-verde bold" role="button">Leer artículo completo</a>
@@ -695,90 +370,6 @@ admin.site.register(MiModelo, NonDeleteAdmin)</strong></p>
         <p class="desc">
             <p>Continuando con la serie de este artículo sobre <strong>Flexbox</strong> estaremos viendo los conceptos principales que debemos tener en cuenta a la hora de maquetar nuestros layouts con esta técnica en especial la propiedad <strong>flex-direction</strong> y los axis. Sino lo leíste  <a href="http://localhost/~h3dx0/wordpress/comenzando-con-flexbox-css/">aquí hay una introducción</a> para comenzar a usar esta técnica de forma muy fácil.</p>
 
-<h2 id="los-dos-ejes-o-axis-de-flexbox">Los dos ejes o axis de Flexbox:</h2>
-
-<p>Para comenzar a trabajar con flexbox se debe tener en cuenta que para acomodar los elementos se hace en base a los  2 ejes o axis que existen, el <strong>main axis</strong> y el <strong>cross axis .</strong> Siendo el main axis la principal y que es definida por la propiedad <strong>flex-direction.</strong></p>
-
-<figure id="attachment_57" aria-describedby="caption-attachment-57" style="width: 501px" class="wp-caption alignnone"><img class="wp-image-57 size-full" title="main axis" src="http://localhost/~h3dx0/wordpress/wp-content/uploads/2018/02/main_axis.png" alt="Flex-direction main axis" width="501" height="77" srcset="http://localhost/~h3dx0/wordpress/wp-content/uploads/2018/02/main_axis.png 501w, http://localhost/~h3dx0/wordpress/wp-content/uploads/2018/02/main_axis-300x46.png 300w" sizes="(max-width: 501px) 100vw, 501px" /><figcaption id="caption-attachment-57" class="wp-caption-text">main axis</figcaption></figure>
-
-<p>Al definir la propiedad <strong>flex-direction: row,</strong> estamos diciéndole a nuestro contenedor que acomode los elementos uno al lado del otro, es decir nuestro <strong>main-axis será ubicado horizontalmente</strong> lo cual debemos tener en cuenta porque muchas <strong>otras propiedades dependen de la definición de los axis.</strong></p>
-
-<p>Este es el contenedor de los elementos del menú.</p>
-
-<pre class="lang:default decode:true" title="flex-direction html">&lt;nav&gt;
-  &lt;ul&gt;
-    &lt;li&gt;&lt;a href="#"&gt;Inicio&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a href="#"&gt;Quienes somos&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a href="#"&gt;Servicios&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a href="#"&gt;Contacto&lt;/a&gt;&lt;/li&gt;
-  &lt;/ul&gt;
-&lt;/nav&gt;</pre>
-
-<p>CSS aplicado.</p>
-
-<pre class="lang:css decode:true" title="css">nav{
-  background: #008492;  
-}
-
-ul{
-  display:flex;
-  flex-direction:row;
-
-}
-
-ul &gt; li {
-    margin:10px;
-}
-ul &gt; li &gt; a{
-  color:#fff;
-  text-decoration: none;
-}
-li {
-  list-style:none;
-}</pre>
-
-<p>Si ya leyeron el <a href="http://localhost/~h3dx0/wordpress/comenzando-con-flexbox-css/">artículo anterior</a> pueden notar que no hay cambios en cuanto al resultado que esperamos, en este caso cada elemento del menú se coloca uno al lado del otro. Esto sucede pues al definir en el <strong>ul la propiedad display:flex,</strong> el comportamiento de los elementos hijos por <strong>default es flex-direction:row,</strong> por lo que no es necesario definir la propiedad si queremos que su comportamiento sea el establecido.</p>
-
-<h2 id="valores-de-aceptados-por-flex-direction">Valores de aceptados por flex-direction</h2>
-
-<p>Para manipular los axis de nuestro contenedor  flex-direction acepta los siguientes valores:</p>
-
-<ul>
-  <li><code class="highlighter-rouge">row</code></li>
-  <li><code class="highlighter-rouge">row-reverse</code></li>
-  <li><code class="highlighter-rouge">column</code></li>
-  <li><code class="highlighter-rouge">column-reverse</code>``</li>
-</ul>
-
-<p class="">
-  Así se vería nuestro menú aplicando los distintos valores a esta propiedad
-</p>
-
-<h3 id="row-reverse"> row-reverse</h3>
-
-<p><img class="size-full wp-image-66" src="http://localhost/~h3dx0/wordpress/wp-content/uploads/2018/02/Firefox_Screenshot_2018-02-14T03-28-45.768Z.png" alt="flex-direction:row-reverse" width="808" height="62" srcset="http://localhost/~h3dx0/wordpress/wp-content/uploads/2018/02/Firefox_Screenshot_2018-02-14T03-28-45.768Z.png 808w, http://localhost/~h3dx0/wordpress/wp-content/uploads/2018/02/Firefox_Screenshot_2018-02-14T03-28-45.768Z-300x23.png 300w, http://localhost/~h3dx0/wordpress/wp-content/uploads/2018/02/Firefox_Screenshot_2018-02-14T03-28-45.768Z-768x59.png 768w" sizes="(max-width: 808px) 100vw, 808px" /></p>
-
-<h3 id="column"> column</h3>
-
-<p><img class="size-full wp-image-64" src="http://localhost/~h3dx0/wordpress/wp-content/uploads/2018/02/columns.png" alt="flex-direction:column" width="428" height="237" srcset="http://localhost/~h3dx0/wordpress/wp-content/uploads/2018/02/columns.png 428w, http://localhost/~h3dx0/wordpress/wp-content/uploads/2018/02/columns-300x166.png 300w" sizes="(max-width: 428px) 100vw, 428px" /></p>
-
-<h3 id="column-reverse"> column-reverse</h3>
-
-<p><img class="alignnone size-full wp-image-67" src="http://localhost/~h3dx0/wordpress/wp-content/uploads/2018/02/Firefox_Screenshot_2018-02-14T03-31-29.538Z.png" alt="" width="251" height="183" /></p>
-
-<p>En las imágenes anteriores se puede ver claramente como afecta el orden de los elementos al aplicar los distintos valores a  <strong>flex-direction.</strong></p>
-
-<p> </p>
-
-<h2 id="cross-axis">Cross axis</h2>
-
-<p>El cross axis es el eje encargado de acomodar los elementos perpendicularmente al main axis, por lo que tenemos que tener en cuenta la orientación del mismo dado que dependen uno de otro.</p>
-
-<blockquote>
-  <p>Si el main axis está orientado a column o column-reverse el cross axis estará afectando los elementos horizontalmente.</p>
-</blockquote>
-
-<p>Acá les dejo un codepen para que puedan practicar los conceptos y valores aprendidos.</p>
 
         </p>
         <a href="/conceptos-basicos-en-flexbox/" class="btn-verproyecto text-verde bold" role="button">Leer artículo completo</a>
@@ -802,88 +393,6 @@ li {
         <p class="desc">
             <p>Hola a todos, muchas gracias por darte una vuelta a este artículo en el cual aprenderás como iniciar el <strong>maquetado con flexbox</strong> y así darle un impulso a tus conocimientos de frontend web para dejar atrás viejas e inútiles técnicas de maquetado con <strong>CSS3.</strong> Comenzamos…</p>
 
-<h2 id="que-es">¿Que es?</h2>
-
-<p><strong>CSS flexbox layout</strong> es una tecnología o modelo de CSS3 implementada por los navegadores actuales. Tiene como objetivo ayudar a los desarrolladores a crear layouts de sitios web de manera más fácil, reutilizable y eficiente.</p>
-
-<h2 id="por-qué-usarlo">¿Por qué usarlo?</h2>
-
-<p>Porque la vida serás mas sencilla a la hora de maquetar  Viene a resolver muchos problemas que anteriormente se tenían que solucionar de forma poco ortodoxa, creando hacks y código poco legible. Con flexbox muchos problemas de posicionamiento de elementos, ordenamiento de los mismo se puede lograr de manera muy sencilla.</p>
-
-<h2 id="como-usarlo">¿Como usarlo?</h2>
-
-<p>Vamos a crear un menú para nuestro sitio con los enlaces de comunes</p>
-
-<p>Nuestro código HTML se vería así:</p>
-
-<pre class="lang:xhtml decode:true" title="Menu">&lt;nav&gt;
-  &lt;ul&gt;
-    &lt;li&gt;&lt;a href="#"&gt;Inicio&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a href="#"&gt;Quienes somos&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a href="#"&gt;Servicios&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a href="#"&gt;Contacto&lt;/a&gt;&lt;/li&gt;
-  &lt;/ul&gt;
-&lt;/nav&gt;</pre>
-
-<p>Nuestro CSS de inicio para dar un poco de estilos sería algo así:</p>
-
-<pre class="lang:css decode:true" title="CSS Inicio">nav {
-  background: #008492;  
-}
-ul &gt; li &gt; a {
-  color:#fff;
-  text-decoration: none;
-}
-li {
-  list-style:none;
-}</pre>
-
-<p>El resultado sería algo como esto</p>
-
-<p><img class="size-full wp-image-47" src="http://localhost/~h3dx0/wordpress/wp-content/uploads/2018/01/Firefox_Screenshot_2018-01-30T02-51-28.619Z.png" alt="ResultadoSinFlexbox" width="317" height="97" srcset="http://localhost/~h3dx0/wordpress/wp-content/uploads/2018/01/Firefox_Screenshot_2018-01-30T02-51-28.619Z.png 317w, http://localhost/~h3dx0/wordpress/wp-content/uploads/2018/01/Firefox_Screenshot_2018-01-30T02-51-28.619Z-300x92.png 300w" sizes="(max-width: 317px) 100vw, 317px" /></p>
-
-<p>Aquí es donde entra <strong>flexbox</strong> al rescate <strong>evitando</strong> el uso de <strong>floats</strong> y <strong>clearfix.</strong></p>
-
-<p>Agregando solamente esta línea  a nuestro ejemplo tenemos un resultado mucho mejor</p>
-
-<pre class="lang:css decode:true " title="DisplayFlex">ul {
-  display:flex;
-}</pre>
-
-<p><img class="wp-image-46 size-full" title="ResultadoConFlexbox" src="http://localhost/~h3dx0/wordpress/wp-content/uploads/2018/01/Firefox_Screenshot_2018-01-30T02-49-38.166Z.png" alt="ResultadoConFlexbox" width="743" height="62" srcset="http://localhost/~h3dx0/wordpress/wp-content/uploads/2018/01/Firefox_Screenshot_2018-01-30T02-49-38.166Z.png 743w, http://localhost/~h3dx0/wordpress/wp-content/uploads/2018/01/Firefox_Screenshot_2018-01-30T02-49-38.166Z-300x25.png 300w, http://localhost/~h3dx0/wordpress/wp-content/uploads/2018/01/Firefox_Screenshot_2018-01-30T02-49-38.166Z-740x62.png 740w" sizes="(max-width: 743px) 100vw, 743px" /></p>
-
-<p>Al agregar esta simple línea  al contenedor de los elementos que se quieren acomodar aplicando <strong>FLEXBOX</strong>,  el contenedor reorganizará sus elementos hijos colocándolos uno al lado del otro, como si usáramos los incómodos <strong>float.</strong> Este comportamiento se ejecutará de forma similar en cualquier caso que se aplique el display:flex;</p>
-
-<p>Este es el primer paso para comenzar a utilizar FLEXBOX, debemos detectar nuestro <strong>elemento padre o contenedor</strong> y <strong>agregar</strong> la propiedad <strong>display:flex.</strong></p>
-
-<p>A continuación el código completo del ejemplo CSS. Donde la parte fundamental y objetivo es la línea 6.</p>
-
-<pre class="lang:css decode:true" title="Final">nav{
-  background: #008492;  
-}
-
-ul{
-  display:flex;// Contenedor que usa FLEXBOX
-}
-
-ul &gt; li {
-    margin:10px;
-}
-ul &gt; li &gt; a{
-  color:#fff;
-  text-decoration: none;
-}
-li {
-  list-style:none;
-}</pre>
-
-<p>Acá les dejo otro ejemplo que ilustra muy bien el uso sencillo de FLEXBOX. Imaginen que estamos creando un sitio de ecommerce y estamos desarrollando la vista donde se muestran los productos.</p>
-
-<p>Le dejo el CODEPEN para no hacer más extenso el artículo. Prueben quitando el display:flex y verán la difrencia.</p>
-
-<p>Espero les sea de utilidad este artículo, es simplemente el inicio ya que flexbox tiene muchas más aplicaciones que veremos en otros artículos proximamente.</p>
-
-<p>No dudes en dejar un comentario. Un gracias o feedback siempre es bienvenido y dá mucho ánimo.</p>
 
         </p>
         <a href="/comenzando-con-flexbox-css/" class="btn-verproyecto text-verde bold" role="button">Leer artículo completo</a>

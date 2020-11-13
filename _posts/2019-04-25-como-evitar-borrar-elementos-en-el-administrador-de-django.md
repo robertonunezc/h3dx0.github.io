@@ -18,7 +18,7 @@ tags:
 Hola a todos y muchas gracias por llegar a mi blog. Espero este artículo te sea de utilidad.
 
 En varios proyectos por cuestiones de manejo de información histórica , nuestro cliente nos comenta que **no se pueden borrar ciertos datos** una ves que ya están en el sistema.
-
+ <!--more-->
 Cuando hacemos nuestro administrador desde cero no hay problemas pues controlamos todo el proceso de creación pero si se desea utilizar el **administrador que DJANGO** nos brinda por cuestiones de agilizar tiempos o cualquier otra razón, este por defecto **nos da la opción de eliminar los registros de los modelos que tenemos.**<figure class="wp-block-image">
 
 <img src="http://localhost/~h3dx0/wordpress/wp-content/uploads/2019/04/Firefox_Screenshot_2019-04-25T02-20-59.578Z.png" alt="Listado Django por defecto" class="wp-image-146" srcset="http://localhost/~h3dx0/wordpress/wp-content/uploads/2019/04/Firefox_Screenshot_2019-04-25T02-20-59.578Z.png 466w, http://localhost/~h3dx0/wordpress/wp-content/uploads/2019/04/Firefox_Screenshot_2019-04-25T02-20-59.578Z-300x115.png 300w" sizes="(max-width: 466px) 100vw, 466px" /> <figcaption>Listado Django</figcaption></figure> 
