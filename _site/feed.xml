@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2020-11-13T16:43:48-06:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Roberto Nuñez Corrales Blog de desarrollo web, Django, HTML, CSS ;VUEJS</title><subtitle>Este es mi blog personal, aqui voy escribiendo todo lo que voy aprendiendo sobre  desarrollo web, especificamente DJANGO, VueJs, HTML5, CSS3 y todo aquello que  creo puede serle útil a alguien más.</subtitle><entry><title type="html">Que es hoisting en javascript</title><link href="http://localhost:4000/que-es-hoisting-en-javascript/" rel="alternate" type="text/html" title="Que es hoisting en javascript" /><published>2020-02-20T00:00:00-06:00</published><updated>2020-02-20T00:00:00-06:00</updated><id>http://localhost:4000/que-es-hoisting-en-javacript</id><content type="html" xml:base="http://localhost:4000/que-es-hoisting-en-javascript/">&lt;p&gt;Hola y bienvenidos a este rinconcito de internet donde comparto lo que voy aprendiendo en el día a día como desarrollador web.
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2020-12-22T19:27:06-06:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Roberto Nuñez Corrales Blog de desarrollo web, Django, HTML, CSS ;VUEJS</title><subtitle>Este es mi blog personal, aqui voy escribiendo todo lo que voy aprendiendo sobre  desarrollo web, especificamente DJANGO, VueJs, HTML5, CSS3 y todo aquello que  creo puede serle útil a alguien más.</subtitle><entry><title type="html">Que es hoisting en javascript</title><link href="http://localhost:4000/que-es-hoisting-en-javascript/" rel="alternate" type="text/html" title="Que es hoisting en javascript" /><published>2020-02-20T00:00:00-06:00</published><updated>2020-02-20T00:00:00-06:00</updated><id>http://localhost:4000/que-es-hoisting-en-javacript</id><content type="html" xml:base="http://localhost:4000/que-es-hoisting-en-javascript/">&lt;p&gt;Hola y bienvenidos a este rinconcito de internet donde comparto lo que voy aprendiendo en el día a día como desarrollador web.
 Hoy quisiera hacerles una breve introducción a uno de los conceptos que enfrentamos cuando comenzamos a aprender JAVASCRIPT y el es HOSTING.
 &lt;!--more--&gt;&lt;/p&gt;
 
@@ -71,7 +71,91 @@ a las carpetas físicas que configuramos anteriormente en el paso 1. Si no tiene
 &lt;p&gt;Si subimos el proyecto así tal cual está tendríamos problemas, pues debemos colocar nuestra variable Debug a False para pasar a ambiente de 
 producción. Esto causaría que nuestros archivos css, js y demás no se visualizaran y&lt;/p&gt;
 
-&lt;p&gt;Es una muy breve explicación pero espero les sirva como introducción al tema.&lt;/p&gt;</content><author><name>robert</name></author><category term="python" /><category term="archivos" /><category term="produccion" /><summary type="html">Hola y bienvenidos a este rinconcito de internet donde comparto lo que voy aprendiendo en el día a día como desarrollador web. Un problema bastante común que nos pasa a los desarrolladores cuando comenzamos a trabajar en Django,</summary></entry><entry><title type="html">Como publicar en internet mis proyectos locales</title><link href="http://localhost:4000/como-publicar-en-internet-mi-proyectos-locales/" rel="alternate" type="text/html" title="Como publicar en internet mis proyectos locales" /><published>2019-09-18T21:45:30-05:00</published><updated>2019-09-18T21:45:30-05:00</updated><id>http://localhost:4000/como-publicar-en-internet-mi-proyectos-locales</id><content type="html" xml:base="http://localhost:4000/como-publicar-en-internet-mi-proyectos-locales/">&lt;p&gt;Me pregunté en muchas ocaciones como podría desde mi localhost poder hacerlo visible en internet, para no tener que estar haciendo deploys que en muchos casos son complejos y nos hacen perder mucho tiempo y más cuando el proyecto está en pleno desarrollo.
+&lt;p&gt;Es una muy breve explicación pero espero les sirva como introducción al tema.&lt;/p&gt;</content><author><name>robert</name></author><category term="python" /><category term="archivos" /><category term="produccion" /><summary type="html">Hola y bienvenidos a este rinconcito de internet donde comparto lo que voy aprendiendo en el día a día como desarrollador web. Un problema bastante común que nos pasa a los desarrolladores cuando comenzamos a trabajar en Django,</summary></entry><entry><title type="html">Como usar DOCKER en un proyecto de DJANGO</title><link href="http://localhost:4000/como-usar-docker-y-django/" rel="alternate" type="text/html" title="Como usar DOCKER en un proyecto de DJANGO" /><published>2020-02-20T00:00:00-06:00</published><updated>2020-02-20T00:00:00-06:00</updated><id>http://localhost:4000/como-ejecutar-django-con-docker</id><content type="html" xml:base="http://localhost:4000/como-usar-docker-y-django/">&lt;p&gt;Hola y bienvenidos a este nuevo artículo. Una de las herramientas que más auge ha tenido en los últimos años ha sido &lt;strong&gt;DOCKER y todo su ecosistema&lt;/strong&gt;. Nos ha venido a ayudar y hacer más fácil  las tareas despliegue y desarrollo de nuestras aplicaciones.
+&lt;!--more--&gt;&lt;/p&gt;
+&lt;h2 id=&quot;introduccion&quot;&gt;INTRODUCCION&lt;/h2&gt;
+&lt;p&gt;Para los que no sepan que es DOCKER acá les dejo el enlace donde se explica con más detalles pero en resumen es &lt;strong&gt;poder ejecutar dentro de un contenedor(mini máquina virtual) solo nuestro proyecto de DJANGO y sus dependencias&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;Si, suena raro pero es en realidad bastante simple. Actualmente la mayoría de los ambientes de desarrollo y producción de DJANGO, es una carpeta con todo el código del proyecto, un servidor MYSQL y un virtualenviroment, todo esto en la misma computadora o servidor. Acá puedes ver como hacer una &lt;a href=&quot;https://www.youtube.com/watch?v=TqSSOhfRzTU&quot;&gt;instalación de DJANGO tradicional&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Si tenemos un problema en nuestro servidor de bases de datos y tenemos más proyectos en el mismo servidor, todos fallan.&lt;/p&gt;
+
+&lt;p&gt;Los mismo con un proyecto de DJANGO, todos depende de NGINX o APACHE dado que comparten el los mismos recursos del sistemas.&lt;/p&gt;
+
+&lt;p&gt;Docker nos viene a ayudar dando la opción aislar o contener cada proyecto, herramienta (REDIS, RABBITMQ)o servidor de MYSQL en una mini máquina virtual dentro de nuestro servidor, como muestra la imágen.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/img/posts/dockerex.png&quot; alt=&quot;Arquitectura Docker&quot; title=&quot;Arquitectura DOCKER&quot; style=&quot;width:40%;margin:0 auto; display:block&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;En la imagen cada &lt;strong&gt;CONTAINER es independiente de los demás&lt;/strong&gt; aunque se ejecutan sobre el mismo KERNEL de sistema.&lt;/p&gt;
+
+&lt;p&gt;Si ocurre un error en el &lt;strong&gt;CONTAINER de PHP los demás no se ven afectados&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;h2 id=&quot;configurando-docker&quot;&gt;CONFIGURANDO DOCKER&lt;/h2&gt;
+&lt;p&gt;1- En nuestro proyecto de DJANGO creamos en la raíz un archivo llamado DOCKERFILE&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/img/posts/dockerfile.png&quot; alt=&quot;Docker con DJANGO&quot; title=&quot;Docker con DJANGO&quot; style=&quot;width:60%;margin:0 auto; display:block&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;2- Agregamos las siguientes líneas para tener las indicaciones de que hará nuestro contenedor.&lt;/p&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;FROM python:3.8  ***Version de python a usar***
+ENV PYTHONBUFFERED 1 ***Variable de entorno que necesitarás si haces deploy ***
+WORKDIR /app -- Directorio dentro de nuestro contenedor donde estará el código de la aplicación 
+
+COPY requirements.txt /app/requirements.txt  ** Copiar el requirements local y pasarlo al contendor***
+
+RUN pip3 install -r requirements.txt ***Ejecutar el pip para instalar nuestras dependencias***
+COPY . /app   ***Copiar todo nuestro código (.) al directorio /app dentro del contenedor ***
+
+CMD python3 manage.py runserver 0.0.0.0:8000 *** Ejecutar el comando para correr el proyecto en el contenedor***
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;3 - &lt;strong&gt;Crear un fichero docker-compose.yml&lt;/strong&gt; en la raíz del proyecto:
+Docker compose nos va a ayudar a gestionar varios contenedores y a configurar y ejecutar de manera mas sencilla los mismos.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/img/posts/docker-compose.png&quot; alt=&quot;DockerCompose con Django &quot; title=&quot;DockerCompose con Django&quot; style=&quot;width:60%;margin:0 auto; display:block&quot; /&gt;&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;version: '3.8'
+services: *** Por cada herramienta o aplicación debemos tener un servicio declarado ***
+  backend:
+    build:
+      context: .
+      dockerfile: Dockerfile ***Nuestro dockerfile creado anteriormente *** 
+    ports:
+      - 8000:8000 ***  puerto local del servidor : puerto interno del contenedor docker ***
+    volumes:
+      - .:/app
+    depends_on:
+      - db  *** Necesitamos que se ejecute el sevicio de BD antes de ejecutar el django ***
+  db:
+    image: mysql:5.7.22 *** Versión de mysql ****
+    restart: always
+    environment:
+      MYSQL_DATABASE: admin
+      MYSQL_USER: root
+      MYSQL_PASSWORD: root
+      MYSQL_ROOT_PASSWORD: root
+    volumes:
+      - .dbdata:/var/lib/mysql  *** montamos todo lo que hay en /var/lib/mysql a nuestro contenedor
+    ports:
+      - 33066:3306  *** puerto local en le sevidor : puerto interno de docker.
+
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Después de tener estos archivos configurados solamente debemos ejecutar :&lt;/p&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;sudo docker-compose up
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Y debemos tener nuestro proyecto listo en localhost:8000&lt;/p&gt;
+
+&lt;p&gt;Para correr un comando dentro de uno de los contenedores :&lt;/p&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;sudo docker-compose exec backend sh
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;Donde BACKEND es el nombre del servicio que creamos en el compose.yml.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Como dato interesante el contenedor debe estarse ejecutando para poder acceder a él&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Espero les sirva y ayude a entrar en el mundo de DOCKER y todas sus ventajas.&lt;/p&gt;
+
+&lt;p&gt;No dudes en contactarme si tienes alguna duda o problema.&lt;/p&gt;</content><author><name>robert</name></author><category term="python" /><category term="archivos" /><category term="produccion" /><category term="docker" /><category term="devops" /><category term="deploy" /><summary type="html">Hola y bienvenidos a este nuevo artículo. Una de las herramientas que más auge ha tenido en los últimos años ha sido DOCKER y todo su ecosistema. Nos ha venido a ayudar y hacer más fácil las tareas despliegue y desarrollo de nuestras aplicaciones.</summary></entry><entry><title type="html">Como publicar en internet mis proyectos locales</title><link href="http://localhost:4000/como-publicar-en-internet-mi-proyectos-locales/" rel="alternate" type="text/html" title="Como publicar en internet mis proyectos locales" /><published>2019-09-18T21:45:30-05:00</published><updated>2019-09-18T21:45:30-05:00</updated><id>http://localhost:4000/como-publicar-en-internet-mi-proyectos-locales</id><content type="html" xml:base="http://localhost:4000/como-publicar-en-internet-mi-proyectos-locales/">&lt;p&gt;Me pregunté en muchas ocaciones como podría desde mi localhost poder hacerlo visible en internet, para no tener que estar haciendo deploys que en muchos casos son complejos y nos hacen perder mucho tiempo y más cuando el proyecto está en pleno desarrollo.
  &lt;!--more--&gt;
 He trabajado en proyectos donde necesito hacer demos para ir presentando los avances,o simplemente tener el proyecto disponible en Internet para que un amigo haga algunas pruebas.&lt;/p&gt;
 
@@ -444,90 +528,4 @@ Una de las funciones o posibiliades que más me llamó la antención al comenzar
 
 &lt;p&gt;Muchas gracias por su lectura. Espero que les sirva este artículo para que puedan comenzar a usar estas fantásticas propiedades y atributos.&lt;/p&gt;
 
-&lt;p&gt;No lo dudes y regálame un simple GRACIAS.&lt;/p&gt;</content><author><name>robert</name></author><category term="flexbox" /><category term="maquetado" /><category term="web" /><summary type="html">Continuando con la serie de artículos sobre como maquetar en css con flexbox, hoy tendremos como objetivo el aprender a alinear elementos dentro de un contenedor. Una de las funciones o posibiliades que más me llamó la antención al comenzar a trabajar con flexbox fue la facilidad para poder acomodar o alinear elementos, tanto horizontalmente, verticalmente como cada elemento por separado.</summary></entry><entry><title type="html">Flexbox, conceptos básicos (flex-direction)</title><link href="http://localhost:4000/conceptos-basicos-en-flexbox/" rel="alternate" type="text/html" title="Flexbox, conceptos básicos (flex-direction)" /><published>2018-02-12T22:10:54-06:00</published><updated>2018-02-12T22:10:54-06:00</updated><id>http://localhost:4000/conceptos-basicos-en-flexbox</id><content type="html" xml:base="http://localhost:4000/conceptos-basicos-en-flexbox/">&lt;p&gt;Continuando con la serie de este artículo sobre &lt;strong&gt;Flexbox&lt;/strong&gt; estaremos viendo los conceptos principales que debemos tener en cuenta a la hora de maquetar nuestros layouts con esta técnica en especial la propiedad &lt;strong&gt;flex-direction&lt;/strong&gt; y los axis. Sino lo leíste  &lt;a href=&quot;http://localhost/~h3dx0/wordpress/comenzando-con-flexbox-css/&quot;&gt;aquí hay una introducción&lt;/a&gt; para comenzar a usar esta técnica de forma muy fácil.
- &lt;!--more--&gt;&lt;/p&gt;
-
-&lt;h2 id=&quot;los-dos-ejes-o-axis-de-flexbox&quot;&gt;Los dos ejes o axis de Flexbox:&lt;/h2&gt;
-
-&lt;p&gt;Para comenzar a trabajar con flexbox se debe tener en cuenta que para acomodar los elementos se hace en base a los  2 ejes o axis que existen, el &lt;strong&gt;main axis&lt;/strong&gt; y el &lt;strong&gt;cross axis .&lt;/strong&gt; Siendo el main axis la principal y que es definida por la propiedad &lt;strong&gt;flex-direction.&lt;/strong&gt;&lt;/p&gt;
-
-&lt;figure id=&quot;attachment_57&quot; aria-describedby=&quot;caption-attachment-57&quot; style=&quot;width: 501px&quot; class=&quot;wp-caption alignnone&quot;&gt;&lt;img class=&quot;wp-image-57 size-full&quot; title=&quot;main axis&quot; src=&quot;http://localhost/~h3dx0/wordpress/wp-content/uploads/2018/02/main_axis.png&quot; alt=&quot;Flex-direction main axis&quot; width=&quot;501&quot; height=&quot;77&quot; srcset=&quot;http://localhost/~h3dx0/wordpress/wp-content/uploads/2018/02/main_axis.png 501w, http://localhost/~h3dx0/wordpress/wp-content/uploads/2018/02/main_axis-300x46.png 300w&quot; sizes=&quot;(max-width: 501px) 100vw, 501px&quot; /&gt;&lt;figcaption id=&quot;caption-attachment-57&quot; class=&quot;wp-caption-text&quot;&gt;main axis&lt;/figcaption&gt;&lt;/figure&gt;
-
-&lt;p&gt;Al definir la propiedad &lt;strong&gt;flex-direction: row,&lt;/strong&gt; estamos diciéndole a nuestro contenedor que acomode los elementos uno al lado del otro, es decir nuestro &lt;strong&gt;main-axis será ubicado horizontalmente&lt;/strong&gt; lo cual debemos tener en cuenta porque muchas &lt;strong&gt;otras propiedades dependen de la definición de los axis.&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;Este es el contenedor de los elementos del menú.&lt;/p&gt;
-
-&lt;pre class=&quot;lang:default decode:true&quot; title=&quot;flex-direction html&quot;&gt;&amp;lt;nav&amp;gt;
-  &amp;lt;ul&amp;gt;
-    &amp;lt;li&amp;gt;&amp;lt;a href=&quot;#&quot;&amp;gt;Inicio&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;
-    &amp;lt;li&amp;gt;&amp;lt;a href=&quot;#&quot;&amp;gt;Quienes somos&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;
-    &amp;lt;li&amp;gt;&amp;lt;a href=&quot;#&quot;&amp;gt;Servicios&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;
-    &amp;lt;li&amp;gt;&amp;lt;a href=&quot;#&quot;&amp;gt;Contacto&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;
-  &amp;lt;/ul&amp;gt;
-&amp;lt;/nav&amp;gt;&lt;/pre&gt;
-
-&lt;p&gt;CSS aplicado.&lt;/p&gt;
-
-&lt;pre class=&quot;lang:css decode:true&quot; title=&quot;css&quot;&gt;nav{
-  background: #008492;  
-}
-
-ul{
-  display:flex;
-  flex-direction:row;
-
-}
-
-ul &amp;gt; li {
-    margin:10px;
-}
-ul &amp;gt; li &amp;gt; a{
-  color:#fff;
-  text-decoration: none;
-}
-li {
-  list-style:none;
-}&lt;/pre&gt;
-
-&lt;p&gt;Si ya leyeron el &lt;a href=&quot;http://localhost/~h3dx0/wordpress/comenzando-con-flexbox-css/&quot;&gt;artículo anterior&lt;/a&gt; pueden notar que no hay cambios en cuanto al resultado que esperamos, en este caso cada elemento del menú se coloca uno al lado del otro. Esto sucede pues al definir en el &lt;strong&gt;ul la propiedad display:flex,&lt;/strong&gt; el comportamiento de los elementos hijos por &lt;strong&gt;default es flex-direction:row,&lt;/strong&gt; por lo que no es necesario definir la propiedad si queremos que su comportamiento sea el establecido.&lt;/p&gt;
-
-&lt;h2 id=&quot;valores-de-aceptados-por-flex-direction&quot;&gt;Valores de aceptados por flex-direction&lt;/h2&gt;
-
-&lt;p&gt;Para manipular los axis de nuestro contenedor  flex-direction acepta los siguientes valores:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;row&lt;/code&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;row-reverse&lt;/code&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;column&lt;/code&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;column-reverse&lt;/code&gt;``&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p class=&quot;&quot;&gt;
-  Así se vería nuestro menú aplicando los distintos valores a esta propiedad
-&lt;/p&gt;
-
-&lt;h3 id=&quot;row-reverse&quot;&gt; row-reverse&lt;/h3&gt;
-
-&lt;p&gt;&lt;img class=&quot;size-full wp-image-66&quot; src=&quot;http://localhost/~h3dx0/wordpress/wp-content/uploads/2018/02/Firefox_Screenshot_2018-02-14T03-28-45.768Z.png&quot; alt=&quot;flex-direction:row-reverse&quot; width=&quot;808&quot; height=&quot;62&quot; srcset=&quot;http://localhost/~h3dx0/wordpress/wp-content/uploads/2018/02/Firefox_Screenshot_2018-02-14T03-28-45.768Z.png 808w, http://localhost/~h3dx0/wordpress/wp-content/uploads/2018/02/Firefox_Screenshot_2018-02-14T03-28-45.768Z-300x23.png 300w, http://localhost/~h3dx0/wordpress/wp-content/uploads/2018/02/Firefox_Screenshot_2018-02-14T03-28-45.768Z-768x59.png 768w&quot; sizes=&quot;(max-width: 808px) 100vw, 808px&quot; /&gt;&lt;/p&gt;
-
-&lt;h3 id=&quot;column&quot;&gt; column&lt;/h3&gt;
-
-&lt;p&gt;&lt;img class=&quot;size-full wp-image-64&quot; src=&quot;http://localhost/~h3dx0/wordpress/wp-content/uploads/2018/02/columns.png&quot; alt=&quot;flex-direction:column&quot; width=&quot;428&quot; height=&quot;237&quot; srcset=&quot;http://localhost/~h3dx0/wordpress/wp-content/uploads/2018/02/columns.png 428w, http://localhost/~h3dx0/wordpress/wp-content/uploads/2018/02/columns-300x166.png 300w&quot; sizes=&quot;(max-width: 428px) 100vw, 428px&quot; /&gt;&lt;/p&gt;
-
-&lt;h3 id=&quot;column-reverse&quot;&gt; column-reverse&lt;/h3&gt;
-
-&lt;p&gt;&lt;img class=&quot;alignnone size-full wp-image-67&quot; src=&quot;http://localhost/~h3dx0/wordpress/wp-content/uploads/2018/02/Firefox_Screenshot_2018-02-14T03-31-29.538Z.png&quot; alt=&quot;&quot; width=&quot;251&quot; height=&quot;183&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;En las imágenes anteriores se puede ver claramente como afecta el orden de los elementos al aplicar los distintos valores a  &lt;strong&gt;flex-direction.&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt; &lt;/p&gt;
-
-&lt;h2 id=&quot;cross-axis&quot;&gt;Cross axis&lt;/h2&gt;
-
-&lt;p&gt;El cross axis es el eje encargado de acomodar los elementos perpendicularmente al main axis, por lo que tenemos que tener en cuenta la orientación del mismo dado que dependen uno de otro.&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;Si el main axis está orientado a column o column-reverse el cross axis estará afectando los elementos horizontalmente.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;Acá les dejo un codepen para que puedan practicar los conceptos y valores aprendidos.&lt;/p&gt;</content><author><name>robert</name></author><category term="flex-direction" /><category term="flexbox" /><category term="main-axis" /><summary type="html">Continuando con la serie de este artículo sobre Flexbox estaremos viendo los conceptos principales que debemos tener en cuenta a la hora de maquetar nuestros layouts con esta técnica en especial la propiedad flex-direction y los axis. Sino lo leíste  aquí hay una introducción para comenzar a usar esta técnica de forma muy fácil.</summary></entry></feed>
+&lt;p&gt;No lo dudes y regálame un simple GRACIAS.&lt;/p&gt;</content><author><name>robert</name></author><category term="flexbox" /><category term="maquetado" /><category term="web" /><summary type="html">Continuando con la serie de artículos sobre como maquetar en css con flexbox, hoy tendremos como objetivo el aprender a alinear elementos dentro de un contenedor. Una de las funciones o posibiliades que más me llamó la antención al comenzar a trabajar con flexbox fue la facilidad para poder acomodar o alinear elementos, tanto horizontalmente, verticalmente como cada elemento por separado.</summary></entry></feed>

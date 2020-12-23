@@ -1,0 +1,237 @@
+<!doctype html>
+<html class="no-js" lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Como usar DOCKER en un proyecto de DJANGO</title>
+    <meta name="description"
+        content="Artículos sobre desarrollo web, python, django, html, css y todo lo que voy aprendiendo sobre la web en mi día a día">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="manifest" href="site.webmanifest">
+    <link rel="apple-touch-icon" href="icon.png">
+    <!-- Place favicon.ico in the root directory -->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/assets/css/normalize.css">
+    <link rel="stylesheet" href="/assets/css/animate.css">
+    <link rel="stylesheet" href="/assets/css/main_blog.css">
+    <link rel="stylesheet" href="/assets/css/animations.css">
+    <link rel="stylesheet" href="/assets/css/utils.css">
+    <link rel="stylesheet" href="/assets/css/icons.css">
+    <!-- Begin Jekyll SEO tag v2.6.1 -->
+<title>Como usar DOCKER en un proyecto de DJANGO | Roberto Nuñez Corrales Blog de desarrollo web, Django, HTML, CSS ;VUEJS</title>
+<meta name="generator" content="Jekyll v3.8.5" />
+<meta property="og:title" content="Como usar DOCKER en un proyecto de DJANGO" />
+<meta name="author" content="robert" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Hola y bienvenidos a este nuevo artículo. Una de las herramientas que más auge ha tenido en los últimos años ha sido DOCKER y todo su ecosistema. Nos ha venido a ayudar y hacer más fácil las tareas despliegue y desarrollo de nuestras aplicaciones." />
+<meta property="og:description" content="Hola y bienvenidos a este nuevo artículo. Una de las herramientas que más auge ha tenido en los últimos años ha sido DOCKER y todo su ecosistema. Nos ha venido a ayudar y hacer más fácil las tareas despliegue y desarrollo de nuestras aplicaciones." />
+<link rel="canonical" href="http://localhost:4000/como-usar-docker-y-django/" />
+<meta property="og:url" content="http://localhost:4000/como-usar-docker-y-django/" />
+<meta property="og:site_name" content="Roberto Nuñez Corrales Blog de desarrollo web, Django, HTML, CSS ;VUEJS" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2020-02-20T00:00:00-06:00" />
+<script type="application/ld+json">
+{"@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/como-usar-docker-y-django/"},"url":"http://localhost:4000/como-usar-docker-y-django/","author":{"@type":"Person","name":"robert"},"headline":"Como usar DOCKER en un proyecto de DJANGO","dateModified":"2020-02-20T00:00:00-06:00","description":"Hola y bienvenidos a este nuevo artículo. Una de las herramientas que más auge ha tenido en los últimos años ha sido DOCKER y todo su ecosistema. Nos ha venido a ayudar y hacer más fácil las tareas despliegue y desarrollo de nuestras aplicaciones.","datePublished":"2020-02-20T00:00:00-06:00","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+    <header>
+        <div class="container header">
+            <a class="link-logo-header text-white" href="/">Roberto <span class="colored-logo">NUÑEZ</span></a>
+            <a class="link-logo-header-mobile text-white" href="/">
+                <h2>RNC</h2>
+            </a>
+
+            <nav class="nav-top mobile-nav">
+                <ul>
+                    <li>
+                        <a href="/">Inicio</a>
+                    </li>
+                    <li>
+                        <a href="/quien-soy.html">Sobre mi</a>
+                    </li>
+                    <li>
+                        <a href="/contacto" style="color:white" class="bold bg-verde-oscuro">Contáctame</a>
+                    </li>
+                    <li class="clearfix"></li>
+                </ul>
+            </nav>
+
+        </div>
+    </header>
+    <div class="flex direction-column container">
+        <section id="personal-info">
+            <h1 class="text-verde text-center mt30">¿Estás buscando un programador Freelance?</h1>
+            <!-- <h4 class="text-center m0">
+                <p></p>
+            </h4> -->
+        </section>
+        <main class="flex container">
+            <section class="container-articulos">
+    <article class="detalle-articulo card">
+        <h2 class="text-verde">Como usar DOCKER en un proyecto de DJANGO</h2>
+        <hr/>
+        <aside class="article-data flex">
+            <span class="fs12 mr15">
+                <i class="fa fa-calendar-plus-o text-verde" aria-hidden="true"></i>
+                February 20, 2020
+            </span>
+            <!-- 
+                TODO revisar como hacer esto dinamico 
+                <ul class="tags-list">
+                <li class="tag-item mr5">
+                    <a href="">
+                        <em> javascript</em>
+                    </a>
+                </li>
+                <li class="tag-item">
+                    <a href="">
+                        <em>javascript</em>
+                    </a>
+                </li>
+            </ul> -->
+        </aside>
+        <aside>
+            <p>Hola y bienvenidos a este nuevo artículo. Una de las herramientas que más auge ha tenido en los últimos años ha sido <strong>DOCKER y todo su ecosistema</strong>. Nos ha venido a ayudar y hacer más fácil  las tareas despliegue y desarrollo de nuestras aplicaciones.
+<!--more--></p>
+<h2 id="introduccion">INTRODUCCION</h2>
+<p>Para los que no sepan que es DOCKER acá les dejo el enlace donde se explica con más detalles pero en resumen es <strong>poder ejecutar dentro de un contenedor(mini máquina virtual) solo nuestro proyecto de DJANGO y sus dependencias</strong>.</p>
+
+<p>Si, suena raro pero es en realidad bastante simple. Actualmente la mayoría de los ambientes de desarrollo y producción de DJANGO, es una carpeta con todo el código del proyecto, un servidor MYSQL y un virtualenviroment, todo esto en la misma computadora o servidor. Acá puedes ver como hacer una <a href="https://www.youtube.com/watch?v=TqSSOhfRzTU">instalación de DJANGO tradicional</a>.</p>
+
+<p>Si tenemos un problema en nuestro servidor de bases de datos y tenemos más proyectos en el mismo servidor, todos fallan.</p>
+
+<p>Los mismo con un proyecto de DJANGO, todos depende de NGINX o APACHE dado que comparten el los mismos recursos del sistemas.</p>
+
+<p>Docker nos viene a ayudar dando la opción aislar o contener cada proyecto, herramienta (REDIS, RABBITMQ)o servidor de MYSQL en una mini máquina virtual dentro de nuestro servidor, como muestra la imágen.</p>
+
+<p><img src="/assets/img/posts/dockerex.png" alt="Arquitectura Docker" title="Arquitectura DOCKER" style="width:40%;margin:0 auto; display:block" /></p>
+
+<p>En la imagen cada <strong>CONTAINER es independiente de los demás</strong> aunque se ejecutan sobre el mismo KERNEL de sistema.</p>
+
+<p>Si ocurre un error en el <strong>CONTAINER de PHP los demás no se ven afectados</strong>.</p>
+
+<h2 id="configurando-docker">CONFIGURANDO DOCKER</h2>
+<p>1- En nuestro proyecto de DJANGO creamos en la raíz un archivo llamado DOCKERFILE</p>
+
+<p><img src="/assets/img/posts/dockerfile.png" alt="Docker con DJANGO" title="Docker con DJANGO" style="width:60%;margin:0 auto; display:block" /></p>
+
+<p>2- Agregamos las siguientes líneas para tener las indicaciones de que hará nuestro contenedor.</p>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>FROM python:3.8  ***Version de python a usar***
+ENV PYTHONBUFFERED 1 ***Variable de entorno que necesitarás si haces deploy ***
+WORKDIR /app -- Directorio dentro de nuestro contenedor donde estará el código de la aplicación 
+
+COPY requirements.txt /app/requirements.txt  ** Copiar el requirements local y pasarlo al contendor***
+
+RUN pip3 install -r requirements.txt ***Ejecutar el pip para instalar nuestras dependencias***
+COPY . /app   ***Copiar todo nuestro código (.) al directorio /app dentro del contenedor ***
+
+CMD python3 manage.py runserver 0.0.0.0:8000 *** Ejecutar el comando para correr el proyecto en el contenedor***
+</code></pre></div></div>
+
+<p>3 - <strong>Crear un fichero docker-compose.yml</strong> en la raíz del proyecto:
+Docker compose nos va a ayudar a gestionar varios contenedores y a configurar y ejecutar de manera mas sencilla los mismos.</p>
+
+<p><img src="/assets/img/posts/docker-compose.png" alt="DockerCompose con Django " title="DockerCompose con Django" style="width:60%;margin:0 auto; display:block" /></p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>version: '3.8'
+services: *** Por cada herramienta o aplicación debemos tener un servicio declarado ***
+  backend:
+    build:
+      context: .
+      dockerfile: Dockerfile ***Nuestro dockerfile creado anteriormente *** 
+    ports:
+      - 8000:8000 ***  puerto local del servidor : puerto interno del contenedor docker ***
+    volumes:
+      - .:/app
+    depends_on:
+      - db  *** Necesitamos que se ejecute el sevicio de BD antes de ejecutar el django ***
+  db:
+    image: mysql:5.7.22 *** Versión de mysql ****
+    restart: always
+    environment:
+      MYSQL_DATABASE: admin
+      MYSQL_USER: root
+      MYSQL_PASSWORD: root
+      MYSQL_ROOT_PASSWORD: root
+    volumes:
+      - .dbdata:/var/lib/mysql  *** montamos todo lo que hay en /var/lib/mysql a nuestro contenedor
+    ports:
+      - 33066:3306  *** puerto local en le sevidor : puerto interno de docker.
+
+</code></pre></div></div>
+
+<p>Después de tener estos archivos configurados solamente debemos ejecutar :</p>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo docker-compose up
+</code></pre></div></div>
+
+<p>Y debemos tener nuestro proyecto listo en localhost:8000</p>
+
+<p>Para correr un comando dentro de uno de los contenedores :</p>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo docker-compose exec backend sh
+</code></pre></div></div>
+<p>Donde BACKEND es el nombre del servicio que creamos en el compose.yml.</p>
+
+<p><strong>Como dato interesante el contenedor debe estarse ejecutando para poder acceder a él</strong></p>
+
+<p>Espero les sirva y ayude a entrar en el mundo de DOCKER y todas sus ventajas.</p>
+
+<p>No dudes en contactarme si tienes alguna duda o problema.</p>
+
+
+        </aside>
+    </article>
+</section>
+            <!-- <aside id="side-bar">
+                <div class="card personal-info">
+                    <img class="yo-img image-responsive img-circle dsp-block" src="/assets/img/yo_web_developer.JPG"
+                        width="150" height="150" alt="RobertoNuñez">
+                    <h3 class="text-center">Roberto Nuñez Corrales</h2>
+                        <div class="separator bg-verde-oscuro centered"></div>
+                        <p class="text-center text-verde">Desarrollador Web Full-stack </p>
+                        <p>
+                            Me apasiona desarrollar para la web. Llevo más de 10 años creando soluciones con estas
+                            tecnologías.
+                            Creo que internet debe ser recurso al alcance de todos así como el conocimiento. He creado
+                            este blog
+                            para compartir todo aquello que voy aprendiendo en mis proyectos y espero les sea útil.
+                        </p>
+                        <div class="flex">
+                            <div class="col-xs-3">
+                                <a href="https://github.com/h3dx0" class="fa fa-github"></a>
+                            </div>
+                            <div class="col-xs-3">
+                                <a href="#" class="fa fa-twitter"></a>
+
+                            </div>
+                            <div class="col-xs-3">
+                                <a href="https://www.linkedin.com/in/roberto-corrales-16225995/"
+                                    class="fa fa-linkedin"></a>
+                            </div>
+                            <div class="col-xs-3">
+                                <a href="#" class="fa fa-youtube"></a>
+                            </div>
+                        </div>
+                </div>
+            </aside> -->
+        </main>
+
+    </div>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-53521755-4"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-53521755-4');
+    </script>
+
+</body>
+
+</html>

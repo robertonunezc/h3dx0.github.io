@@ -9,30 +9,6 @@ body {
     background-color: #e7e7e7;
 }
 
-@media (min-width: 768px) {
-    .container {
-        width: 750px;
-    }
-}
-
-@media (max-width: 768px) {
-    main {
-        flex-direction: column;
-    }
-}
-
-@media (min-width: 992px) {
-    .container {
-        width: 970px;
-    }
-}
-
-@media (min-width: 1200px) {
-    .container {
-        width: 1170px;
-    }
-}
-
 .container {
     flex-direction: column;
     margin: 0 auto;
@@ -159,6 +135,13 @@ main {
     padding: 5px 15px;
 }
 
+.btn-naranja {
+    background-color: #d35501;
+    color: #fff;
+    border: none;
+    padding: 5px 15px;
+}
+
 .personal-info .fa {
     width: 30px;
     margin: 5px;
@@ -258,6 +241,13 @@ li {
     border: solid 1px #008492;
 }
 
+.btn-naranja:hover {
+    background-color: white;
+    color: #008492;
+    border: solid 1px #008492;
+}
+
+button:hover,
 a:hover {
     cursor: pointer;
 }
@@ -293,4 +283,48 @@ a:hover {
     display: flex;
     flex-direction: column;
     margin: 10px;
+}
+
+@media (min-width: 768px) {
+    .container {
+        width: 750px;
+    }
+}
+
+@media (max-width: 768px) {
+    main {
+        flex-direction: column;
+    }
+
+    .mobile-nav>ul {
+        padding: 0;
+    }
+
+    .mobile-nav>ul>li {
+        margin: 0;
+    }
+
+    #bio-intro {
+        flex-direction: column-reverse;
+    }
+
+    .post-container-item {
+        flex: 1 1 100% !important;
+    }
+
+    .contact-from {
+        width: 100%;
+    }
+}
+
+@media (min-width: 992px) {
+    .container {
+        width: 970px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .container {
+        width: 1170px;
+    }
 }
