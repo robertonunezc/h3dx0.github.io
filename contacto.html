@@ -26,28 +26,31 @@ title: Programador Web, Ingeniero en Sistemas. Roberto Nuñez Corrales
     </div>
 </section>
 <script>
-    const name = document.getElementById('name-contact');
-    const email = document.getElementById('email-contact');
-    const message = document.getElementById('message-contact');
     const btnSend = document.getElementById('btn-send');
+    btnSend.addEventListener('click', function () {
+        const name = document.getElementById('name-contact');
+        const email = document.getElementById('email-contact');
+        const message = document.getElementById('message-contact');
 
-    const data = {
-        from: 'contacto@robertonunezc.com',
-        to: 'rcorralesn@gmail.com',
-        subject: "Contacto desde la web",
-        message: `Name: ${name} , ${email}, ${message}`
-    }
+        const data = {
+            from: 'contacto@robertonunezc.com',
+            to: 'rcorralesn@gmail.com',
+            subject: "Contacto desde la web",
+            message: `Name: ${name} , ${email}, ${message}`
+        }
 
-    let response = fetch('http://email.puntoreica.com/send/email/', {
-        method: 'POST',
-        headers: {
-            'Content-Type': 'application/json;charset=utf-8'
-        },
-        body: JSON.stringify(data)
+        let response = fetch('http://email.puntoreica.com/send/email/', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json;charset=utf-8'
+            },
+            body: JSON.stringify(data)
+        })
+            .then(response => { return response.json() })
+            .then(result => alert(result.message))
+            .catch(err => alert(err));
+
     })
-        .then(response => { return response.json() })
-        .then(result => alert(result.message))
-        .catch(err => alert(err));
 
 
 </script>
