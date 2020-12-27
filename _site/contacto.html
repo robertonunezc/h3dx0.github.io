@@ -87,7 +87,8 @@
 </section>
 <script>
     const btnSend = document.getElementById('btn-send');
-    btnSend.addEventListener('click', function () {
+    btnSend.addEventListener('click', function (event) {
+        event.preventDefault();
         const name = document.getElementById('name-contact');
         const email = document.getElementById('email-contact');
         const message = document.getElementById('message-contact');
