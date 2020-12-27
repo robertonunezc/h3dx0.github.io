@@ -72,18 +72,45 @@
                 <label for="name-contact">Nombre</label>
                 <input type="text" name="name-contact" id="name-contact" placeholder="Pedro Perez" required="">
             </div>
-            <div class="input-wrap"><label for="email-address-contact">Correo electrónico o teléfono</label>
-                <input type="email" name="email-address-contact" id="email-address-contact"
+            <div class="input-wrap"><label for="email-contact">Correo electrónico o teléfono</label>
+                <input type="email" name="email-contact" id="email-contact"
                     placeholder="pedro@email.com o 4421111111111" required="">
             </div>
             <div class="input-wrap"><label for="message-contact">Mensaje</label>
                 <textarea></textarea>
             </div>
-            <button class="btn-naranja m10">Contrátame hoy</button> <span class="fs-10"><em> Respondo en menos de 24
+            <button class="btn-naranja m10" id="btn-send">Contrátame hoy</button> <span class="fs-10"><em> Respondo en
+                    menos de 24
                     hrs</em></span>
         </form>
     </div>
 </section>
+<script>
+    const name = document.getElementById('name-contact');
+    const email = document.getElementById('email-contact');
+    const message = document.getElementById('message-contact');
+    const btnSend = document.getElementById('btn-send');
+
+    const data = {
+        from: 'contacto@robertonunezc.com',
+        to: 'rcorralesn@gmail.com',
+        subject: "Contacto desde la web",
+        message: `Name: ${name} , ${email}, ${message}`
+    }
+
+    let response = fetch('http://email.puntoreica.com/send/email/', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json;charset=utf-8'
+        },
+        body: JSON.stringify(data)
+    })
+        .then(response => { return response.json() })
+        .then(result => alert(result.message))
+        .catch(err => alert(err));
+
+
+</script>
     </main>
 </body>
 
