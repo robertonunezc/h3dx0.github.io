@@ -30,12 +30,12 @@ title: Programador Web, Ingeniero en Sistemas. Roberto Nuñez Corrales
     const btnSend = document.getElementById('btn-send');
     btnSend.addEventListener('click', function (event) {
         event.preventDefault();
-        const name = document.getElementById('name-contact');
-        const email = document.getElementById('email-contact');
-        const message = document.getElementById('message-contact');
+        const name = document.getElementById('name-contact').value;
+        const email = document.getElementById('email-contact').value;
+        const message = document.getElementById('message-contact').value;
 
         const data = {
-            from: 'contacto@robertonunezc.com',
+            from: 'soporte@puntoreica.com',
             to: 'rcorralesn@gmail.com',
             subject: "Contacto desde la web",
             message: `Name: ${name} , ${email}, ${message}`
