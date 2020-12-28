@@ -101,8 +101,13 @@
             message: `Name: ${name} , ${email}, ${message}`
         }
         axios.post('http://email.puntoreica.com/email/send/', data)
-            .then(response => { return response.json() })
-            .then(result => alert(result.message))
+            .then(result => {
+                if (result.status == 200) {
+                    alert('Mensaje enviado');
+                    return;
+                }
+                alert('Mensaje no enviado. Intente más tarde');
+            })
             .catch(err => alert(err));
     })
 
