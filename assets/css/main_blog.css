@@ -252,6 +252,12 @@ a:hover {
     cursor: pointer;
 }
 
+.yo-img {
+    border: solid 2px #008492;
+    
+
+}
+
 @media screen and (max-width: 900px) {
     main {
         width: 100vw;

@@ -13,21 +13,19 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: Roberto Nuñez Corrales Blog de desarrollo web, Django, HTML, CSS ;VUEJS
+title: Programador web Freelance | Roberto Nuñez Corrales y Blog de desarrollo web, Django, HTML, CSS ;VUEJS
 email: contacto@robertonunezc.com
 description: >- # this means to ignore newlines until "baseurl:"
- Este es mi blog personal, aqui voy escribiendo todo lo que voy aprendiendo sobre 
- desarrollo web, especificamente DJANGO, VueJs, HTML5, CSS3 y todo aquello que 
- creo puede serle útil a alguien más.
+ Programador freelance. Creación de sitios webs, sistemas de gestión, además artículos de django, javascript programación web en general.
 baseurl: "/" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+url: "http://robertonunezc.com" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: robertico_cuba2
 github_username:  h3dx0
 
 # Build settings
 markdown: kramdown
 theme: minima
-paginate: 5
+#paginate: 5
 page_excerpts: true
 excerpt_separator: <!--more-->
 plugins:
