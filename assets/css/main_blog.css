@@ -164,6 +164,11 @@ main {
     margin-bottom: 10px
 }
 
+iframe {
+    display: block;
+    margin: 0 auto;
+}
+
 .article-data .fa {
     font-size: 20px;
     width: 20px;
@@ -173,6 +178,7 @@ pre.highlight {
     background-color: black;
     color: white;
     padding: 10px;
+    overflow: auto;
 }
 
 .link-logo-header-mobile {
@@ -254,7 +260,7 @@ a:hover {
 
 .yo-img {
     border: solid 2px #008492;
-    
+
 
 }
 
