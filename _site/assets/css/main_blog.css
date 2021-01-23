@@ -242,6 +242,17 @@ pre.highlight {
     margin: 0.5rem;
 }
 
+footer .fa {
+    font-size: 30px;
+    width: 30px;
+    margin: 0.5rem;
+    border: none;
+}
+
+footer {
+    margin-bottom: 40px;
+}
+
 /*BIO HOME*/
 
 #bio-intro {
