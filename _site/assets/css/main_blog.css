@@ -228,10 +228,12 @@ pre.highlight {
 #comments {
     display: flex;
     margin: 1rem;
+    flex-wrap: wrap;
 }
 
 .item-comment {
     display: flex;
+    flex: 0 1 45%;
     background-color: white;
     padding: 0.5rem;
     margin: 0.5rem;
@@ -349,6 +351,18 @@ a:hover {
 
     .post-container-item {
         flex: 1 1 100% !important;
+    }
+
+    #comments {
+        flex-direction: column;
+    }
+
+    .item-comment {
+        flex-direction: column;
+    }
+
+    .item-comment>img {
+        display: none;
     }
 
     .contact-from {
