@@ -1,4 +1,38 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="http://robertonunezc.com/feed.xml" rel="self" type="application/atom+xml" /><link href="http://robertonunezc.com/" rel="alternate" type="text/html" /><updated>2021-01-27T08:45:24-06:00</updated><id>http://robertonunezc.com/feed.xml</id><title type="html">Programador web Freelance | Roberto Nuñez Corrales y Blog de desarrollo web, Django, HTML, CSS ;VUEJS</title><subtitle>Programador freelance. Creación de sitios webs, sistemas de gestión, además artículos de django, javascript programación web en general.</subtitle><entry><title type="html">Que es hoisting en javascript</title><link href="http://robertonunezc.com/que-es-hoisting-en-javascript/" rel="alternate" type="text/html" title="Que es hoisting en javascript" /><published>2020-02-20T00:00:00-06:00</published><updated>2020-02-20T00:00:00-06:00</updated><id>http://robertonunezc.com/que-es-hoisting-en-javacript</id><content type="html" xml:base="http://robertonunezc.com/que-es-hoisting-en-javascript/">&lt;p&gt;Hola y bienvenidos a este rinconcito de internet donde comparto lo que voy aprendiendo en el día a día como desarrollador web.
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="http://robertonunezc.com/feed.xml" rel="self" type="application/atom+xml" /><link href="http://robertonunezc.com/" rel="alternate" type="text/html" /><updated>2021-02-03T11:55:44-06:00</updated><id>http://robertonunezc.com/feed.xml</id><title type="html">Programador web Freelance | Roberto Nuñez Corrales y Blog de desarrollo web, Django, HTML, CSS ;VUEJS</title><subtitle>Programador freelance. Creación de sitios webs, sistemas de gestión, además artículos de django, javascript programación web en general.</subtitle><entry><title type="html">Como instalar Strapi en Ubuntu</title><link href="http://robertonunezc.com/como-instalar-strapi-a-Ubuntu/" rel="alternate" type="text/html" title="Como instalar Strapi en Ubuntu" /><published>2021-01-31T22:58:01-06:00</published><updated>2021-01-31T22:58:01-06:00</updated><id>http://robertonunezc.com/como-instalar-strapi-en-ubuntu</id><content type="html" xml:base="http://robertonunezc.com/como-instalar-strapi-a-Ubuntu/">&lt;p&gt;Bienvenidos a este artículo donde aprenderemos &lt;strong&gt;como instalar Strapi en Ubuntu&lt;/strong&gt;. Strapi es una herramienta increible que nos va a ayudar a &lt;strong&gt;crear un ApiRest en cuestión de minutos&lt;/strong&gt; y con unos &lt;strong&gt;pocos clicks&lt;/strong&gt;. Tendremos nuestros endpoints, un administrador de contenidos super útil listos para conectar con nuestro frontend en cuestión de minutos.
+Para los que no lo conocen &lt;a href=&quot;https://strapi.io/&quot; target=&quot;_blank&quot;&gt;Strapi&lt;/a&gt; es uno de los &lt;strong&gt;HEADLESSCMS&lt;/strong&gt; más utilizados actualmente.
+&lt;!--more--&gt;&lt;/p&gt;
+&lt;h1 id=&quot;video&quot;&gt;Video&lt;/h1&gt;
+&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/gF-q5y70UEQ&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;h1 id=&quot;requisitios-para-instalar-strapi&quot;&gt;Requisitios para instalar Strapi&lt;/h1&gt;
+
+&lt;p&gt;1- Instalar NODEJS. En este &lt;a href=&quot;https://www.digitalocean.com/community/tutorials/how-to-install-node-js-on-ubuntu-20-04&quot;&gt;enlace&lt;/a&gt; puedes ver como instalar NODEJ en Ubuntu.&lt;/p&gt;
+
+&lt;p&gt;2- Instalar npx. En este &lt;a href=&quot;https://www.npmjs.com/package/npx&quot; target=&quot;_blank&quot;&gt; enlace&lt;/a&gt; puedes ver como completar esta tarea.&lt;/p&gt;
+
+&lt;h1 id=&quot;instalar-strapi&quot;&gt;Instalar Strapi&lt;/h1&gt;
+&lt;p&gt;Después de tener los requisitos antes mensionados pasamos a instalar strapi.&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;npx create-strapi-app my-project --quickstart
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Donde &lt;strong&gt;my-project&lt;/strong&gt; sería el nombre que le quieras poner a tu proyecto.&lt;/p&gt;
+
+&lt;p&gt;Después de la instalación debemos tener en nuestra consola una imagen como la siguiente:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/img/posts/strapi.png&quot; alt=&quot;StrapiInstalar&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Podemos acceder al administrador de contenidos y permisos que nos da Strapi y crear nuestro usuario de administración.&lt;/p&gt;
+
+&lt;p&gt;Una vez creado el usuario de administración accedemos a crear nuestros enpoints, modelos y demás.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/img/posts/strapiAdmin.png&quot; alt=&quot;StrapiAdmin&quot; width=&quot;100%&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;En un siguiente artículo vamos a crear nuestros endpoints de forma rápida y visual haciendo uso de este administrador con solo unos clicks.&lt;/p&gt;
+
+&lt;p&gt;Happy coding. 🙂&lt;/p&gt;</content><author><name>robert</name></author><summary type="html">Bienvenidos a este artículo donde aprenderemos como instalar Strapi en Ubuntu. Strapi es una herramienta increible que nos va a ayudar a crear un ApiRest en cuestión de minutos y con unos pocos clicks. Tendremos nuestros endpoints, un administrador de contenidos super útil listos para conectar con nuestro frontend en cuestión de minutos. Para los que no lo conocen Strapi es uno de los HEADLESSCMS más utilizados actualmente.</summary></entry><entry><title type="html">Que es hoisting en javascript</title><link href="http://robertonunezc.com/que-es-hoisting-en-javascript/" rel="alternate" type="text/html" title="Que es hoisting en javascript" /><published>2020-02-20T00:00:00-06:00</published><updated>2020-02-20T00:00:00-06:00</updated><id>http://robertonunezc.com/que-es-hoisting-en-javacript</id><content type="html" xml:base="http://robertonunezc.com/que-es-hoisting-en-javascript/">&lt;p&gt;Hola y bienvenidos a este rinconcito de internet donde comparto lo que voy aprendiendo en el día a día como desarrollador web.
 Hoy quisiera hacerles una breve introducción a uno de los conceptos que enfrentamos cuando comenzamos a aprender JAVASCRIPT y el es HOSTING.
 &lt;!--more--&gt;&lt;/p&gt;
 
@@ -330,7 +364,7 @@ La mayoría de los proyectos web en la actualidad necesitan que su información 
 
 &lt;p&gt;Este es el principio para hacer cualquier modificación al administrador, el proceso es sobreescribir los archivos .html o .css que tiene el core de DJANGO con nuestras modificaciones. Proximamente estaré escribiendo más artículos sobre esta poderoza herramienta que DJANGO nos brinda.&lt;/p&gt;
 
-&lt;p&gt;Happy coding. 🙂&lt;/p&gt;</content><author><name>robert</name></author><summary type="html">Con este artículo quiero enseñarte como agregar un logo al adminstrador de django, un requerimiento que muchas veces es útil para darle un toque personal a esta sección tan importante . Puedes ver el video explicativo dando clic aquí La mayoría de los proyectos web en la actualidad necesitan que su información sea dinámica y facilemente modificable por el cliente o los encargados de realizar esta tarea.</summary></entry><entry><title type="html">Como agregar bootstrap a DJANGO</title><link href="http://robertonunezc.com/como-agregar-bootstrap-a-django/" rel="alternate" type="text/html" title="Como agregar bootstrap a DJANGO" /><published>2019-06-11T23:58:01-05:00</published><updated>2019-06-11T23:58:01-05:00</updated><id>http://robertonunezc.com/como-agregar-bootstrap-a-django</id><content type="html" xml:base="http://robertonunezc.com/como-agregar-bootstrap-a-django/">&lt;p&gt;Con este artículo quiero enseñarte &lt;strong&gt;como agregar o integrar Bootstrap a django&lt;/strong&gt;, un requerimiento que muchas veces es útil para desarrollar nuestro frontend de forma más rápida y usando buenas prácticas.
+&lt;p&gt;Happy coding. 🙂&lt;/p&gt;</content><author><name>robert</name></author><summary type="html">Con este artículo quiero enseñarte como agregar un logo al adminstrador de django, un requerimiento que muchas veces es útil para darle un toque personal a esta sección tan importante . Puedes ver el video explicativo dando clic aquí La mayoría de los proyectos web en la actualidad necesitan que su información sea dinámica y facilemente modificable por el cliente o los encargados de realizar esta tarea.</summary></entry><entry><title type="html">Como agregar bootstrap a DJANGO</title><link href="http://robertonunezc.com/como-agregar-bootstrap-a-django/" rel="alternate" type="text/html" title="Como agregar bootstrap a DJANGO" /><published>2019-06-11T23:58:01-05:00</published><updated>2019-06-11T23:58:01-05:00</updated><id>http://robertonunezc.com/como-agregar-bootstrap-a-django%20copy</id><content type="html" xml:base="http://robertonunezc.com/como-agregar-bootstrap-a-django/">&lt;p&gt;Con este artículo quiero enseñarte &lt;strong&gt;como agregar o integrar Bootstrap a django&lt;/strong&gt;, un requerimiento que muchas veces es útil para desarrollar nuestro frontend de forma más rápida y usando buenas prácticas.
 Para los que no lo conocen &lt;a href=&quot;https://getbootstrap.com/&quot; target=&quot;_blank&quot;&gt;Bootstrap&lt;/a&gt; es uno de los frameworks de maquetado más usados en el mundo.
 &lt;!--more--&gt;&lt;/p&gt;
 &lt;h1 id=&quot;video&quot;&gt;Video&lt;/h1&gt;
@@ -454,25 +488,4 @@ Queremos modificar los textos tanto en el formulario de inicio de sesión, la ba
 
 &lt;p&gt;&lt;a href=&quot;http://www.youtube.com/watch?v=d9F8RYpAXFU&quot;&gt;&lt;img src=&quot;http://img.youtube.com/vi/d9F8RYpAXFU/0.jpg&quot; alt=&quot;PASO A PASO&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;Espero les sirva.&lt;/p&gt;</content><author><name>robert</name></author><summary type="html">Hoy les traigo un forma muy sencilla de sacar mejor provecho al administrador de DJANGO, el poder cambiar los títulos principales de esta importante sección . Queremos modificar los textos tanto en el formulario de inicio de sesión, la barra de título y en el listado principal. Supongamos que tenemos un sistema de inventarios que al inicio se ve así:</summary></entry><entry><title type="html">Como evitar borrar elementos en el administrador de Django</title><link href="http://robertonunezc.com/como-evitar-borrar-elementos-en-el-administrador-de-django/" rel="alternate" type="text/html" title="Como evitar borrar elementos en el administrador de Django" /><published>2019-04-24T21:45:30-05:00</published><updated>2019-04-24T21:45:30-05:00</updated><id>http://robertonunezc.com/como-evitar-borrar-elementos-en-el-administrador-de-django</id><content type="html" xml:base="http://robertonunezc.com/como-evitar-borrar-elementos-en-el-administrador-de-django/">&lt;p&gt;Hola a todos y muchas gracias por llegar a mi blog. Espero este artículo te sea de utilidad.&lt;/p&gt;
-
-&lt;p&gt;En varios proyectos por cuestiones de manejo de información histórica , nuestro cliente nos comenta que &lt;strong&gt;no se pueden borrar ciertos datos&lt;/strong&gt; una ves que ya están en el sistema.
- &lt;!--more--&gt;
-Cuando hacemos nuestro administrador desde cero no hay problemas pues controlamos todo el proceso de creación pero si se desea utilizar el &lt;strong&gt;administrador que DJANGO&lt;/strong&gt; nos brinda por cuestiones de agilizar tiempos o cualquier otra razón, este por defecto &lt;strong&gt;nos da la opción de eliminar los registros de los modelos que tenemos.&lt;/strong&gt;&lt;figure class=&quot;wp-block-image&quot;&gt;&lt;/figure&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;http://localhost/~h3dx0/wordpress/wp-content/uploads/2019/04/Firefox_Screenshot_2019-04-25T02-20-59.578Z.png&quot; alt=&quot;Listado Django por defecto&quot; class=&quot;wp-image-146&quot; srcset=&quot;http://localhost/~h3dx0/wordpress/wp-content/uploads/2019/04/Firefox_Screenshot_2019-04-25T02-20-59.578Z.png 466w, http://localhost/~h3dx0/wordpress/wp-content/uploads/2019/04/Firefox_Screenshot_2019-04-25T02-20-59.578Z-300x115.png 300w&quot; sizes=&quot;(max-width: 466px) 100vw, 466px&quot; /&gt; &amp;lt;figcaption&amp;gt;Listado Django&amp;lt;/figcaption&amp;gt;&amp;lt;/figure&amp;gt;&lt;/p&gt;
-
-&lt;p&gt;Como nos muestra la imagen anterior &lt;strong&gt;podemos borrar los datos&lt;/strong&gt; usando el ckeckbox y el select de acciones.&lt;/p&gt;
-
-&lt;h2 id=&quot;solución&quot;&gt;Solución&lt;/h2&gt;
-
-&lt;p&gt;En el &lt;strong&gt;archivo admin.py&lt;/strong&gt; de nuestro proyecto donde tenemos registrado el modelo debemos agregar lo siguiente:&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;from miproyecto.admin import NonDeleteAdmin&lt;br /&gt;
-admin.site.register(MiModelo, NonDeleteAdmin)&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;Quedando así el administrador donde se eliminan los checkbox y el select para la acción de borrar.&lt;figure class=&quot;wp-block-image&quot;&gt;&lt;/figure&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;http://localhost/~h3dx0/wordpress/wp-content/uploads/2019/04/Firefox_Screenshot_2019-04-25T02-25-53.747Z.png&quot; alt=&quot;evitar borrar datos administrador django&quot; class=&quot;wp-image-147&quot; srcset=&quot;http://localhost/~h3dx0/wordpress/wp-content/uploads/2019/04/Firefox_Screenshot_2019-04-25T02-25-53.747Z.png 468w, http://localhost/~h3dx0/wordpress/wp-content/uploads/2019/04/Firefox_Screenshot_2019-04-25T02-25-53.747Z-300x110.png 300w&quot; sizes=&quot;(max-width: 468px) 100vw, 468px&quot; /&gt; &amp;lt;figcaption&amp;gt;Listado sin opción de eliminar.&amp;lt;/figcaption&amp;gt;&amp;lt;/figure&amp;gt;&lt;/p&gt;
-
-&lt;p&gt;Espero les sea útil y cualquier comentario es bienvenido. 🙂&lt;/p&gt;</content><author><name>robert</name></author><category term="admindjango" /><category term="backend" /><category term="django" /><category term="howto" /><category term="python" /><summary type="html">Hola a todos y muchas gracias por llegar a mi blog. Espero este artículo te sea de utilidad. En varios proyectos por cuestiones de manejo de información histórica , nuestro cliente nos comenta que no se pueden borrar ciertos datos una ves que ya están en el sistema.</summary></entry></feed>
+&lt;p&gt;Espero les sirva.&lt;/p&gt;</content><author><name>robert</name></author><summary type="html">Hoy les traigo un forma muy sencilla de sacar mejor provecho al administrador de DJANGO, el poder cambiar los títulos principales de esta importante sección . Queremos modificar los textos tanto en el formulario de inicio de sesión, la barra de título y en el listado principal. Supongamos que tenemos un sistema de inventarios que al inicio se ve así:</summary></entry></feed>

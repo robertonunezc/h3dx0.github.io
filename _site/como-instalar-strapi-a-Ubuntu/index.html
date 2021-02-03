@@ -1,0 +1,208 @@
+<!doctype html>
+<html class="no-js" lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="manifest" href="site.webmanifest">
+    <link rel="apple-touch-icon" href="icon.png">
+    <!-- Place favicon.ico in the root directory -->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/assets/css/normalize.css">
+    <link rel="stylesheet" href="/assets/css/main_blog.css">
+    <link rel="stylesheet" href="/assets/css/utils.css">
+    <link rel="stylesheet" href="/assets/css/icons.css">
+    <!-- Begin Jekyll SEO tag v2.6.1 -->
+<title>Como instalar Strapi en Ubuntu | Programador web Freelance Roberto Nuñez Corrales y Blog de desarrollo web, Django, HTML, CSS ;VUEJS</title>
+<meta name="generator" content="Jekyll v3.8.5" />
+<meta property="og:title" content="Como instalar Strapi en Ubuntu" />
+<meta name="author" content="robert" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Bienvenidos a este artículo donde aprenderemos como instalar Strapi en Ubuntu. Strapi es una herramienta increible que nos va a ayudar a crear un ApiRest en cuestión de minutos y con unos pocos clicks. Tendremos nuestros endpoints, un administrador de contenidos super útil listos para conectar con nuestro frontend en cuestión de minutos. Para los que no lo conocen Strapi es uno de los HEADLESSCMS más utilizados actualmente." />
+<meta property="og:description" content="Bienvenidos a este artículo donde aprenderemos como instalar Strapi en Ubuntu. Strapi es una herramienta increible que nos va a ayudar a crear un ApiRest en cuestión de minutos y con unos pocos clicks. Tendremos nuestros endpoints, un administrador de contenidos super útil listos para conectar con nuestro frontend en cuestión de minutos. Para los que no lo conocen Strapi es uno de los HEADLESSCMS más utilizados actualmente." />
+<link rel="canonical" href="http://robertonunezc.com/como-instalar-strapi-a-Ubuntu/" />
+<meta property="og:url" content="http://robertonunezc.com/como-instalar-strapi-a-Ubuntu/" />
+<meta property="og:site_name" content="Programador web Freelance Roberto Nuñez Corrales y Blog de desarrollo web, Django, HTML, CSS ;VUEJS" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2021-01-31T22:58:01-06:00" />
+<script type="application/ld+json">
+{"@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"http://robertonunezc.com/como-instalar-strapi-a-Ubuntu/"},"url":"http://robertonunezc.com/como-instalar-strapi-a-Ubuntu/","author":{"@type":"Person","name":"robert"},"headline":"Como instalar Strapi en Ubuntu","dateModified":"2021-01-31T22:58:01-06:00","description":"Bienvenidos a este artículo donde aprenderemos como instalar Strapi en Ubuntu. Strapi es una herramienta increible que nos va a ayudar a crear un ApiRest en cuestión de minutos y con unos pocos clicks. Tendremos nuestros endpoints, un administrador de contenidos super útil listos para conectar con nuestro frontend en cuestión de minutos. Para los que no lo conocen Strapi es uno de los HEADLESSCMS más utilizados actualmente.","datePublished":"2021-01-31T22:58:01-06:00","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+    <header>
+        <div class="container header">
+            <a class="link-logo-header text-white" href="/">Roberto <span class="colored-logo">NUÑEZ</span></a>
+            <a class="link-logo-header-mobile text-white" href="/">
+                <h1>RNC</h1>
+            </a>
+
+            <nav class="nav-top mobile-nav">
+                <ul>
+                    <li>
+                        <a href="/">Inicio</a>
+                    </li>
+                    <li>
+                        <a href="/quien-soy.html">Sobre mi</a>
+                    </li>
+                    <li>
+                        <a href="/contacto.html" class="bold btn-naranja">Contáctame</a>
+                    </li>
+                    <li class="clearfix"></li>
+                </ul>
+            </nav>
+
+        </div>
+    </header>
+    <div class="flex direction-column container">
+        <section id="personal-info">
+            <h1 class="text-verde text-center mt30">¿Estás buscando un programador Freelance?</h1>
+            <!-- <h4 class="text-center m0">
+                <p></p>
+            </h4> -->
+        </section>
+        <main class="flex container">
+            <section class="container-articulos">
+    <article class="detalle-articulo card">
+        <h2 class="text-verde">Como instalar Strapi en Ubuntu</h2>
+        <hr />
+        <aside class="article-data flex">
+            <span class="fs12 mr15">
+                <i class="fa fa-calendar-plus-o text-verde" aria-hidden="true"></i>
+                January 31, 2021
+            </span>
+            <!-- 
+                TODO revisar como hacer esto dinamico 
+                <ul class="tags-list">
+                <li class="tag-item mr5">
+                    <a href="">
+                        <em> javascript</em>
+                    </a>
+                </li>
+                <li class="tag-item">
+                    <a href="">
+                        <em>javascript</em>
+                    </a>
+                </li>
+            </ul> -->
+        </aside>
+        <aside>
+            <p>Bienvenidos a este artículo donde aprenderemos <strong>como instalar Strapi en Ubuntu</strong>. Strapi es una herramienta increible que nos va a ayudar a <strong>crear un ApiRest en cuestión de minutos</strong> y con unos <strong>pocos clicks</strong>. Tendremos nuestros endpoints, un administrador de contenidos super útil listos para conectar con nuestro frontend en cuestión de minutos.
+Para los que no lo conocen <a href="https://strapi.io/" target="_blank">Strapi</a> es uno de los <strong>HEADLESSCMS</strong> más utilizados actualmente.
+<!--more--></p>
+<h1 id="video">Video</h1>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/gF-q5y70UEQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+
+<p><br /></p>
+
+<h1 id="requisitios-para-instalar-strapi">Requisitios para instalar Strapi</h1>
+
+<p>1- Instalar NODEJS. En este <a href="https://www.digitalocean.com/community/tutorials/how-to-install-node-js-on-ubuntu-20-04">enlace</a> puedes ver como instalar NODEJ en Ubuntu.</p>
+
+<p>2- Instalar npx. En este <a href="https://www.npmjs.com/package/npx" target="_blank"> enlace</a> puedes ver como completar esta tarea.</p>
+
+<h1 id="instalar-strapi">Instalar Strapi</h1>
+<p>Después de tener los requisitos antes mensionados pasamos a instalar strapi.</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>npx create-strapi-app my-project --quickstart
+</code></pre></div></div>
+
+<p>Donde <strong>my-project</strong> sería el nombre que le quieras poner a tu proyecto.</p>
+
+<p>Después de la instalación debemos tener en nuestra consola una imagen como la siguiente:</p>
+
+<p><img src="/assets/img/posts/strapi.png" alt="StrapiInstalar" /></p>
+
+<p>Podemos acceder al administrador de contenidos y permisos que nos da Strapi y crear nuestro usuario de administración.</p>
+
+<p>Una vez creado el usuario de administración accedemos a crear nuestros enpoints, modelos y demás.</p>
+
+<p><img src="/assets/img/posts/strapiAdmin.png" alt="StrapiAdmin" width="100%" /></p>
+
+<p>En un siguiente artículo vamos a crear nuestros endpoints de forma rápida y visual haciendo uso de este administrador con solo unos clicks.</p>
+
+<p>Happy coding. 🙂</p>
+
+        </aside>
+        <!-- <aside class="vote">
+            <img src="/assets/img/okvote.png" alt="" id="okvote">
+            <img src="/assets/img/okvote.png" alt="" id="badvote">
+        </aside> -->
+    </article>
+</section>
+            <!-- <aside id="side-bar">
+                <div class="card personal-info">
+                    <img class="yo-img image-responsive img-circle dsp-block" src="/assets/img/yo_web_developer.JPG"
+                        width="150" height="150" alt="RobertoNuñez">
+                    <h3 class="text-center">Roberto Nuñez Corrales</h2>
+                        <div class="separator bg-verde-oscuro centered"></div>
+                        <p class="text-center text-verde">Desarrollador Web Full-stack </p>
+                        <p>
+                            Me apasiona desarrollar para la web. Llevo más de 10 años creando soluciones con estas
+                            tecnologías.
+                            Creo que internet debe ser recurso al alcance de todos así como el conocimiento. He creado
+                            este blog
+                            para compartir todo aquello que voy aprendiendo en mis proyectos y espero les sea útil.
+                        </p>
+                        <div class="flex">
+                            <div class="col-xs-3">
+                                <a href="https://github.com/h3dx0" class="fa fa-github"></a>
+                            </div>
+                            <div class="col-xs-3">
+                                <a href="#" class="fa fa-twitter"></a>
+
+                            </div>
+                            <div class="col-xs-3">
+                                <a href="https://www.linkedin.com/in/roberto-corrales-16225995/"
+                                    class="fa fa-linkedin"></a>
+                            </div>
+                            <div class="col-xs-3">
+                                <a href="#" class="fa fa-youtube"></a>
+                            </div>
+                        </div>
+                </div>
+            </aside> -->
+        </main>
+
+    </div>
+    <hr>
+    <footer>
+        <div>
+            <div class="flex justify-center">
+                <div class="col-xs-3">
+                    <a href="https://twitter.com/rob3r_cuba2" target="_blank" class="fa fa-twitter"></a>
+
+                </div>
+                <div class="col-xs-3">
+                    <a href="https://www.linkedin.com/in/roberto-nu%C3%B1ez-16225995/" target="_blank"
+                        class="fa fa-linkedin"></a>
+
+                </div>
+                <div class="col-xs-3">
+                    <a href="https://www.youtube.com/channel/UCDbGgmXz39F1tkF2rThehlQ" target="_blank"
+                        class="fa fa-youtube"></a>
+                </div>
+            </div>
+            <div class="text-center mt10">
+                <strong> Sitio web creado con <a class="text-verde" href="https://jekyllrb.com/">JEKYLL</a> y
+                    MARKDOWN</strong>
+            </div>
+    </footer>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-53521755-4"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-53521755-4');
+    </script>
+
+</body>
+
+</html>

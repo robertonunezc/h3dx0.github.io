@@ -1,5 +1,5 @@
 ---
-id: 200
+id: 121
 title: Como agregar bootstrap a DJANGO
 date: 2019-06-12T04:58:01+00:00
 author: robert
