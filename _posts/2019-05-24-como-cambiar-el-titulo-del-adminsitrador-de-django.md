@@ -43,6 +43,7 @@ Y tenemos el resultado esperado. Esos son títulos de ejemplo obviamente usted d
 
 Acá les dejo un video de los pasos a seguir y su resultado.
 
-[![PASO A PASO](http://img.youtube.com/vi/d9F8RYpAXFU/0.jpg)](http://www.youtube.com/watch?v=d9F8RYpAXFU)
+# Video paso a paso
+<iframe width="560" height="315" src="https://www.youtube.com/embed/d9F8RYpAXFU" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 Espero les sirva.
