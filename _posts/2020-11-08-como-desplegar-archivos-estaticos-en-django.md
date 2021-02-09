@@ -4,7 +4,7 @@ title: Como visualizar archivos estáticos en django cuando subimos a producció
 date: 2020-02-20
 author: robert
 layout: post
-permalink: /que-es-hoisting-en-javascript/
+permalink: /como-desplegar-archivos-estaticos-django/
 categories:
 - Django
 - Python

@@ -16,20 +16,20 @@
     <link rel="stylesheet" href="/assets/css/utils.css">
     <link rel="stylesheet" href="/assets/css/icons.css">
     <!-- Begin Jekyll SEO tag v2.6.1 -->
-<title>Que es hoisting en javascript | Programador web Freelance Roberto Nuñez Corrales y Blog de desarrollo web, Django, HTML, CSS ;VUEJS</title>
+<title>Como visualizar archivos estáticos en django cuando subimos a producción usando NGINX | Programador web Freelance Roberto Nuñez Corrales y Blog de desarrollo web, Django, HTML, CSS ;VUEJS</title>
 <meta name="generator" content="Jekyll v3.8.5" />
-<meta property="og:title" content="Que es hoisting en javascript" />
+<meta property="og:title" content="Como visualizar archivos estáticos en django cuando subimos a producción usando NGINX" />
 <meta name="author" content="robert" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="Hola y bienvenidos a este rinconcito de internet donde comparto lo que voy aprendiendo en el día a día como desarrollador web. Hoy quisiera hacerles una breve introducción a uno de los conceptos que enfrentamos cuando comenzamos a aprender JAVASCRIPT y el es HOSTING." />
-<meta property="og:description" content="Hola y bienvenidos a este rinconcito de internet donde comparto lo que voy aprendiendo en el día a día como desarrollador web. Hoy quisiera hacerles una breve introducción a uno de los conceptos que enfrentamos cuando comenzamos a aprender JAVASCRIPT y el es HOSTING." />
-<link rel="canonical" href="http://robertonunezc.com/que-es-hoisting-en-javascript/" />
-<meta property="og:url" content="http://robertonunezc.com/que-es-hoisting-en-javascript/" />
+<meta name="description" content="Hola y bienvenidos a este rinconcito de internet donde comparto lo que voy aprendiendo en el día a día como desarrollador web. Un problema bastante común que nos pasa a los desarrolladores cuando comenzamos a trabajar en Django," />
+<meta property="og:description" content="Hola y bienvenidos a este rinconcito de internet donde comparto lo que voy aprendiendo en el día a día como desarrollador web. Un problema bastante común que nos pasa a los desarrolladores cuando comenzamos a trabajar en Django," />
+<link rel="canonical" href="http://robertonunezc.com/como-desplegar-archivos-estaticos-django/" />
+<meta property="og:url" content="http://robertonunezc.com/como-desplegar-archivos-estaticos-django/" />
 <meta property="og:site_name" content="Programador web Freelance Roberto Nuñez Corrales y Blog de desarrollo web, Django, HTML, CSS ;VUEJS" />
 <meta property="og:type" content="article" />
 <meta property="article:published_time" content="2020-02-20T00:00:00-06:00" />
 <script type="application/ld+json">
-{"@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"http://robertonunezc.com/que-es-hoisting-en-javascript/"},"url":"http://robertonunezc.com/que-es-hoisting-en-javascript/","author":{"@type":"Person","name":"robert"},"headline":"Que es hoisting en javascript","dateModified":"2020-02-20T00:00:00-06:00","description":"Hola y bienvenidos a este rinconcito de internet donde comparto lo que voy aprendiendo en el día a día como desarrollador web. Hoy quisiera hacerles una breve introducción a uno de los conceptos que enfrentamos cuando comenzamos a aprender JAVASCRIPT y el es HOSTING.","datePublished":"2020-02-20T00:00:00-06:00","@context":"https://schema.org"}</script>
+{"@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"http://robertonunezc.com/como-desplegar-archivos-estaticos-django/"},"url":"http://robertonunezc.com/como-desplegar-archivos-estaticos-django/","author":{"@type":"Person","name":"robert"},"headline":"Como visualizar archivos estáticos en django cuando subimos a producción usando NGINX","dateModified":"2020-02-20T00:00:00-06:00","description":"Hola y bienvenidos a este rinconcito de internet donde comparto lo que voy aprendiendo en el día a día como desarrollador web. Un problema bastante común que nos pasa a los desarrolladores cuando comenzamos a trabajar en Django,","datePublished":"2020-02-20T00:00:00-06:00","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 </head>
@@ -69,7 +69,7 @@
         <main class="flex container">
             <section class="container-articulos">
     <article class="detalle-articulo card">
-        <h2 class="text-verde">Que es hoisting en javascript</h2>
+        <h2 class="text-verde">Como visualizar archivos estáticos en django cuando subimos a producción usando NGINX</h2>
         <hr />
         <aside class="article-data flex">
             <span class="fs12 mr15">
@@ -93,33 +93,48 @@
         </aside>
         <aside>
             <p>Hola y bienvenidos a este rinconcito de internet donde comparto lo que voy aprendiendo en el día a día como desarrollador web.
-Hoy quisiera hacerles una breve introducción a uno de los conceptos que enfrentamos cuando comenzamos a aprender JAVASCRIPT y el es HOSTING.
-<!--more--></p>
+Un problema bastante común que nos pasa a los desarrolladores cuando comenzamos a trabajar en Django,
+<!--more-->
+es que los archivos CSS y las
+imágenes que subimos mediante formularios en nuestra aplicación, no los podemos visualizar.</p>
 
-<h2 id="que-es-hoisting">¿Que es HOISTING?</h2>
+<p>En modo desarrollo casi siempre nos funciona todo de maravillas, con solo agregar unas pocas configuraciones podemos tener todo listo.
+Aclarar que Django sabe cuando estamos en modo desarrollo o en modo producción de nuestra aplicación por la variable Debug que hay en
+el archivo settings.py</p>
 
-<p>Hoisting es un problema que ocurre cuando se declaran variables después de usarlas, me dirán muchos eso es imposible no tiene sentido, pero si puede ocurrir y el motor de JS lo permite, pongo un ejemplo:</p>
-<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">mensaje</span><span class="p">);</span>
-<span class="kd">var</span> <span class="nx">mensaje</span> <span class="o">=</span> <span class="err">“</span><span class="nx">Hola</span> <span class="nx">a</span> <span class="nx">todos</span><span class="err">”</span><span class="p">;</span>
+<p><img src="/assets/img/posts/debugTrue.png" /></p>
+
+<h2 id="pasos-para-visualizar-archivos-estáticos-en-modo-desarrollo">Pasos para visualizar archivos estáticos en modo desarrollo</h2>
+<p>1- En nuestro settings.py agregar unas variables que tendrá la dirección donde estarán los css, js, imagenes de nuestra aplicación.</p>
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">STATIC_URL</span> <span class="o">=</span> <span class="s">'/static/'</span> 
+<span class="n">STATIC_ROOT</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">BASE_DIR</span><span class="p">,</span> <span class="s">'static'</span><span class="p">)</span> 
+<span class="n">MEDIA_ROOT</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">BASE_DIR</span><span class="p">,</span> <span class="s">'uploaded_files'</span><span class="p">)</span>
+<span class="n">MEDIA_URL</span> <span class="o">=</span> <span class="s">'/files/'</span>
 </code></pre></div></div>
+<p><strong>STATIC_URL = ‘/static/’</strong> #URL en el navegador desde donde se van a cargar los archivos.</p>
 
-<p>Este código no arroja error,  esto se debe a que la declaración de la variable se hace primero en el motor de JS y posteriormente se ejecuta la asignación de los valores a la misma.</p>
+<p><strong>STATIC_ROOT = os.path.join(BASE_DIR, ‘static’)</strong> #Carpeta fisica desde donde se van a leer los archivos por django server.</p>
 
-<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">var</span> <span class="nx">mensaje</span><span class="p">;</span>
-<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">mensaje</span><span class="p">);</span>
-<span class="nx">mensaje</span> <span class="o">=</span> <span class="err">“</span><span class="nx">Hola</span> <span class="nx">a</span> <span class="nx">todos</span><span class="err">”</span><span class="p">;</span>
+<p><strong>MEDIA_ROOT = os.path.join(BASE_DIR, ‘uploaded_files’)</strong> #Carpeta fisica desde donde se van a leer los archivos que se suban desde formularios por django server.</p>
+
+<p><strong>MEDIA_URL = ‘/files/’</strong> #URL en el navegador desde donde se van a cargar los archivos que se suban desde forms.</p>
+
+<p>2- En el <strong>archivo url.py principal</strong> de nuestro proyecto, agregar una configuración para que Django sepa de donde buscar los archivos de css, js, imagenes de nuestra aplicación.</p>
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">urlpatterns</span> <span class="o">+=</span> <span class="n">static</span><span class="p">(</span><span class="n">settings</span><span class="o">.</span><span class="n">MEDIA_URL</span><span class="p">,</span> <span class="n">document_root</span><span class="o">=</span><span class="n">settings</span><span class="o">.</span><span class="n">MEDIA_ROOT</span><span class="p">)</span>
 </code></pre></div></div>
-<p>En esa secuencia es  como  se ejecuta el código y a ese comportamiento se le llama HOISTING.</p>
-
-<h3 id="como-evitar-el-hoisting">Como evitar el HOISTING?</h3>
-
-<p>La principal medida es usar <strong>let</strong> y <strong>const</strong> para crear nuestras variables a la hora de programar en JS.
-Otra regla general que podemos optar es siempre declarar nuestras variables al inicio de nuestro scope, esto nos va a ayudar a evitar el hoisting en caso que usemos var para declarar las variables.</p>
-
-<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">let</span> <span class="nx">libreria</span> <span class="o">=</span> <span class="err">“</span><span class="nx">Alamos</span><span class="err">”</span><span class="p">;</span>
-<span class="kd">let</span> <span class="nx">cantidadLibros</span> <span class="o">=</span> <span class="mi">50</span><span class="p">;</span>
-<span class="kd">const</span> <span class="nx">descuento</span> <span class="o">=</span> <span class="mi">10</span><span class="p">;</span>
+<p>3- Ejecutar el comando que nos copiará todos los archivos css, js, e imágenes que tengamos en nuestro proyecto dentro de nuestros módulos 
+a las carpetas físicas que configuramos anteriormente en el paso 1. Si no tienes un virtualenviroment configurado te recomiendo que veas como hacerlo , para que te sea más fácil el desarrollar en Django. <a href="https://www.youtube.com/watch?v=TqSSOhfRzTU" target="_blank">Ver video</a></p>
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">python3</span> <span class="n">manage</span><span class="o">.</span><span class="n">py</span> <span class="n">collectstatic</span>
 </code></pre></div></div>
+<p>4- En cada template que usamos debemos incluir lo siguiente cuando vayamos a cargar algún css, imagen o js. El caso de una imagen se vería así:
+<img src="/assets/img/posts/imagenStatic.png" alt="MI imagen" /></p>
+
+<p>Al terminar todo el desarrollo de nuestra aplicación, debemos poner en producción, es decir subir nuestro proyecto django a un servidor en internet, digitalocean, aws, google cloud o el de nuestra preferencia y configurar un servidor web para que publique nuestro proyecto.</p>
+
+<p>Yo uso NGINX por su simplicidad y ligereza.</p>
+
+<p>Si subimos el proyecto así tal cual está tendríamos problemas, pues debemos colocar nuestra variable Debug a False para pasar a ambiente de 
+producción. Esto causaría que nuestros archivos css, js y demás no se visualizaran y</p>
 
 <p>Es una muy breve explicación pero espero les sirva como introducción al tema.</p>
 
