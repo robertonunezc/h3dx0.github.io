@@ -3,10 +3,19 @@ html {
     font-size: 1em;
     line-height: 1.4;
 }
+@font-face {
+  font-family: logoFont;
+  src: url(IntroBlackInline.otf);
+}
+
+:root {
+    --main-color:#183d8d;
+    --card-bg:#ffffff;
+}
 
 body {
     font-family: "Arial", sans-serif;
-    background-color: #584477;
+    background-color: #e9e9e9;
 }
 
 .container {
@@ -18,9 +27,9 @@ header {
     width: 100%;
     position: fixed;
     z-index: 1000000;
-    background: #c8c7d5;
+    background: #183d8d;
     margin-bottom: 15px;
-    border-bottom: solid 1px #291448;
+    border-bottom: solid 1px black;
 
 }
 
@@ -29,7 +38,6 @@ header {
     justify-content: space-between;
     align-items: center;
     flex-direction: row;
-
 }
 
 .colored-logo {
@@ -37,16 +45,25 @@ header {
     font-size: 30px;
     line-height: 10px;
     padding: 0 5px 4px;
-    background-color: #0E5C66;
+    background-color: var(--main-color);
 }
-
-a.link-logo-header {
-    height: 60px;
-    line-height: 60px;
-    padding-bottom: 0px;
-    padding-top: 0px;
-    font-size: 25px;
-    font-weight: bold;
+.link-logo-header {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+}
+.logo {
+    margin: 0;
+    font-size: 2.5rem;
+    font-family: logoFont;
+    text-align: center;
+    line-height: 50px;
+}
+.sub-logo {
+    margin: 0;
+    font-size: 1rem;
+    font-family: logoFont;
 }
 
 nav.nav-top>ul {
@@ -58,13 +75,13 @@ nav.nav-top>ul {
 
 nav.nav-top>ul>li>a {
     padding: 5px 15px;
-    color: #291448;
+    color: #ffffff;
     font-weight: bold;
 }
 
 nav.nav-top>ul>li>a:hover {
-    background-color: #291448;
-    color: #fff;
+    background-color:#ffffff;
+    color:var(--main-color);
 }
 
 nav.nav-top>ul>li {
@@ -81,7 +98,7 @@ nav.nav-top>ul>li {
 
 #personal-info {
     flex: 1;
-    margin-top: 60px;
+    margin-top: 80px;
     padding: 0 15px;
 }
 
@@ -111,8 +128,8 @@ main {
 
 .card {
     padding: 15px;
-    background-color: #c8c7d5;
-    box-shadow: 0 2px 2px #ccc8c8;
+    background-color: var(--card-bg);
+    border: solid 1px var(--main-color);
     color: #000;
     margin: 15px;
 }
@@ -237,10 +254,11 @@ pre.highlight {
 .item-comment {
     display: flex;
     flex: 0 1 45%;
-    background-color: #c8c7d5;
+    background-color: var(--card-bg);
     padding: 0.5rem;
     margin: 0.5rem;
     max-height: 180px;
+    border: solid 1px var(--main-color);
 }
 
 .comment {
@@ -256,6 +274,11 @@ footer .fa {
 
 footer {
     margin-bottom: 40px;
+}
+
+
+.text-primary {
+  color: var(--main-color);
 }
 
 /*BIO HOME*/
@@ -296,20 +319,6 @@ a:hover {
 
 }
 
-@media screen and (max-width: 900px) {
-    main {
-        width: 100vw;
-    }
-
-    .link-logo-header {
-        display: none;
-    }
-
-    .link-logo-header-mobile {
-        display: flex;
-    }
-}
-
 #contact-form {
     display: flex;
     justify-content: center;
@@ -317,7 +326,7 @@ a:hover {
 }
 
 .contact-from {
-    background-color: #291448;
+    background-color: var(--main-color);
     color: white;
     padding: 10px;
     width: 50%;
@@ -382,5 +391,20 @@ a:hover {
 @media (min-width: 1200px) {
     .container {
         width: 1170px;
+    }
+}
+
+
+@media screen and (max-width: 900px) {
+    main {
+        width: 100vw;
+    }
+
+    .link-logo-header {
+        display: none;
+    }
+
+    .link-logo-header-mobile {
+        display: flex;
     }
 }
