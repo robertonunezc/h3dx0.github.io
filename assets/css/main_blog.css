@@ -3,10 +3,7 @@ html {
     font-size: 1em;
     line-height: 1.4;
 }
-@font-face {
-  font-family: logoFont;
-  src: url(IntroBlackInline.otf);
-}
+
 
 :root {
     --main-color:#183d8d;
@@ -56,14 +53,12 @@ header {
 .logo {
     margin: 0;
     font-size: 2.5rem;
-    font-family: logoFont;
     text-align: center;
     line-height: 50px;
 }
 .sub-logo {
     margin: 0;
     font-size: 1rem;
-    font-family: logoFont;
 }
 
 nav.nav-top>ul {
